@@ -62,7 +62,33 @@ It may be very instructive to add charts, tables and graphs from our models to o
 
 The LogisticEnsembles package hosted on CRAN can accomplish all of these requirements, and will be used for this data set.
 
-<h4>Step 2: Building the models</h4>
+<h4>Step 2: Building the models using the LogisticEnsembles package</h4>
+```
+library(LogisticEnsembles)
+
+start_time <- Sys.time()
+Logistic(data = read.csv('/Users/russellconte/creditcard.csv'),
+         colnum = 31,
+         numresamples = 2,
+         positive_rate = 0.001727486,
+         remove_VIF_greater_than <- 5.00,
+         save_all_trained_models = "Y",
+         save_all_plots = "Y",
+         set_seed = "Y",
+         how_to_handle_strings = 0,
+         do_you_have_new_data = "N",
+         stratified_column_number = 0,
+         remove_data_correlations_greater_than = 0.99,
+         remove_ensemble_correlations_greater_than = 0.99,
+         use_parallel = "Y",
+         train_amount = 0.50,
+         test_amount = 0.25,
+         validation_amount = 0.25)
+end_time <- Sys.time()
+duration <- end_time - start_time
+duration
+warnings()
+```
 
 <h4>Step 3: Model results</h4>
 
