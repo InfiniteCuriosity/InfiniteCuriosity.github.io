@@ -108,7 +108,7 @@ Head of the data. Note that only V1 through V5 are shown, but the original data 
 
 <h4>Summary of the Exploratory Data Analysis</h4>
 
-The Exploratory Data Analysis of the Credit Card data provides evidence that the predictors, V1 to V30, are not strongly correlated to Class, they have a narrow distribution, and all the features except Time containt values outside the Interquartile range.
+The Exploratory Data Analysis of the Credit Card data provides evidence that the predictors, V1 to V30, are not strongly correlated to Class, they have a narrow distribution, and all the features except Time contain values outside the Interquartile range. The values of V1 through V30 vary across a wide range: For example, V1 varies from -56.40751 to 2.45493, but V5 varies from -113.74331 to 34.80167. 
 
 <h4>What the Exploratory Data Analysis suggests</h4><br>
 
