@@ -213,11 +213,11 @@ One regular model (XGBoost) and three ensembles (Ensemble C50, Ensemble Elastic 
 
 <h4>Which variables are the strongest predictors, and how strong are they?</h4>
 
-We begin by looking at a table of the importance of the predictors. Several points stand out:
+We begin by looking at a table of the importance of the predictors. Several points stand out:<br>
 
-• Ten of the 12 largest predictors have a negative influence on the result
-• The ten most important variable account for 77.32% of the total, and more than 66.81% of the value is negative.
-• It is strongly recommended to look at variables V17, V14, V12, V10, V16, V7, and V3, as they are all negative, and constitute more than 63% of the total.
+• Ten of the 12 largest predictors have a negative influence on the result<br>
+• The ten most important variable account for 77.32% of the total, and more than 66.81% of the value is negative.<br>
+• It is strongly recommended to look at variables V17, V14, V12, V10, V16, V7, and V3, as they are all negative, and constitute more than 63% of the total.<br>
 
 ![Variable importance table](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_Credit_Card_Fraud_Variable_Importance_Report.jpg)<br>
 
