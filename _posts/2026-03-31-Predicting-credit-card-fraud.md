@@ -23,7 +23,7 @@ The report from the European Central Bank breaks down the numbers as follows:
 
 >"For 2024, the overall losses for credit transfers were €2.200 billion (a year-on-year increase of 16%), and for card payments with cards issued in the EU/EEA they were €1.329 billion (a year-on-year increase of 29%). For credit transfers, payment service users bore approximately 85% of total fraud losses in 2024, mainly as a result of scams that tricked users into initiating fraudulent transactions."
 
-<h2>Step 1: Looking at the data</h2>
+<h2>Step 1: Looking at the data (Boxplots, histograms, head of the data, summary of the data, correlation of each feature to the target) </h2>
 We will begin by looking at boxplots of the data:<br>
 
 ![Boxplots](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_boxplots.jpg)
@@ -49,7 +49,6 @@ The histograms confirm what the boxplots showed: The majority of the values for 
 
 <h4>Step 1c: Head of the data for selected columns: Time, V1–V5, Class</h4>
 Head of the data. Note that only V1 through V5 are shown, but the original data has columns V1 through V28, columns for Time, Amount and Class, as noted below:
-
 
 | Time  | V1         | V2         | V3        | V4         | V5         | Amount | Class |
 |:-----:|:----------:|:----------:|:---------:|:----------:|:----------:|:------:|:-----:|
