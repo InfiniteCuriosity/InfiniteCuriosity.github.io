@@ -23,8 +23,8 @@ The report from the European Central Bank breaks down the numbers as follows:
 
 >"For 2024, the overall losses for credit transfers were €2.200 billion (a year-on-year increase of 16%), and for card payments with cards issued in the EU/EEA they were €1.329 billion (a year-on-year increase of 29%). For credit transfers, payment service users bore approximately 85% of total fraud losses in 2024, mainly as a result of scams that tricked users into initiating fraudulent transactions."
 
-<h4>Step 1: Looking at the data</h4>
-![boxplots](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/boxplots.jpg)
+<h4>Step 1: Looking at the data: Boxplots</h4>
+![boxplots](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/boxplots.jpg)<br>
 What are boxplots, and what are they telling us about the credit card fraud data?
 
 Boxplots provide a five number summary of each variable. The five values are:
@@ -39,3 +39,4 @@ In addition, the Interquartile Range provides:IQR = Q3 - Q1<br><br>
 
 The boxplots for the Credit Card Fraud data set clearly show the values for V1 through v28 have a very small interquartile range, and number of values above and below that range for virtually all features.The values for each feature vary across the data set. For example, the Boxplots show that V10 has values between approximately -24 and 24, but V24 has values between approximately -3 and 5.The boxplot for y (the target) only has values of 0 and 1, without any interquartile range.
 
+<h4>Step 1: Looking at the data: Histograms of the data</h4>
