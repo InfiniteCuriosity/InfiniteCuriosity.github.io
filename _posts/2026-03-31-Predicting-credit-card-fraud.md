@@ -185,9 +185,22 @@ The process is timed.<br>
 
 <h4>Everything ran in 3.016171 minutes without any errors, warnings, or issues. The majority of the time was spent saving the image files and trained models. If the models and images are not saved, everything completed in 1.776362 mins, a substnatially shorter run time.</h4>
 
-<h2>Step 3: Results on the holdout data</h2>
+<h2>Step 3: Summary results on the holdout data</h2>
 
-
+|Model                          | Area_Under_Curve| True_Positive_Rate_aka_Sensitivity| True_Negative_Rate_aka_Specificity| False_Positive_Rate_aka_Type_I_Error| False_Negative_Rate_aka_Type_II_Error| Positive_Predictive_Value_aka_Precision| Negative_Predictive_Value| F1_Score| Duration| Duration_sd|
+|:------------------------------|----------------:|----------------------------------:|----------------------------------:|------------------------------------:|-------------------------------------:|---------------------------------------:|-------------------------:|--------:|--------:|-----------:|
+|XGBoost                        |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   0.7763|      0.0264|
+|Ensemble C50                   |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   1.0697|      0.0044|
+|Ensemble Elastic               |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   1.0019|      0.0601|
+|Ensemble XGBoost               |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   0.1817|      0.0087|
+|Generalized Additive Models    |           0.9104|                             0.8611|                             0.9597|                               0.0403|                                0.1389|                                  0.0325|                    0.9998|   0.0626|   1.1270|      0.1512|
+|Ensemble Neuralnet             |           0.9102|                             0.8501|                             0.9587|                               0.0413|                                0.1499|                                  0.0267|                    0.9998|   0.0517|   0.2246|      0.1515|
+|Flexible Discriminant Analysis |           0.8340|                             0.6526|                             0.9999|                               0.0001|                                0.3474|                                  0.9058|                    0.9995|   0.7515|   0.6751|      0.1948|
+|Ensemble GLM                   |           0.7766|                             0.5404|                             1.0000|                               0.0000|                                0.4596|                                  0.9286|                    0.9994|   0.6829|   0.6606|      0.0096|
+|Elastic                        |           0.7734|                             0.5393|                             0.5393|                               0.0000|                                0.4607|                                  0.7425|                    0.9993|   0.6248|   4.9798|      0.3573|
+|Generalized Linear Models      |           0.7712|                             0.5325|                             0.9997|                               0.0003|                                0.4675|                                  0.7386|                    0.9993|   0.6188|   5.0943|      0.4767|
+|Neuralnet                      |           0.7543|                             0.9831|                             0.5265|                               0.4735|                                0.0169|                                  0.0033|                    0.9999|   0.0065|   2.1872|      0.0810|
+|Gradient Boosted               |           0.5067|                             0.0145|                             1.0000|                               0.0000|                                0.9855|                                  0.3000|                    0.9985|   0.0277|   5.6235|      0.6494|
 
 
 
