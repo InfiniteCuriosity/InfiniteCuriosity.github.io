@@ -25,3 +25,15 @@ The report from the European Central Bank breaks down the numbers as follows:
 
 <h4>Step 1: Looking at the data</h4>
 ![boxplots](/images/boxplots.png)
+What are boxplots, and what are they telling us about the credit card fraud data?
+
+Boxplots provide a five number summary of each variable. The five values are:
+<br>
+• Minimum (or 0%) value. This is the lowest value for the specific feature.
+• Maximum (or 100%) value. This is the maximum value for the specific feature.
+• Median value. 50% of the data is above the median, and 50% is below the median.
+• First Quartile (Q1 or 25th percentile). The median of the lower 50% of the data set.
+• Third Quartile (Q3 or75th percentile). The median of the upper 50% of the data set.
+<br>
+In addition, the Interquartile Range provides:IQR = Q3 - Q1The boxplots for the Credit Card Fraud data set clearly show the values for V1 through v28 have a very small interquartile range, and number of values above and below that range for virtually all features.The values for each feature vary across the data set. For example, the Boxplots show that V10 has values between approximately -24 and 24, but V24 has values between approximately -3 and 5.The boxplot for y (the target) only has values of 0 and 1, without any interquartile range.
+
