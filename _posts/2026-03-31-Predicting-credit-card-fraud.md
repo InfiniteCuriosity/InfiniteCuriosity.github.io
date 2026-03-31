@@ -256,6 +256,16 @@ Neither the original data nor the ensemble had strongly correlated predictors:
 
 The correlation table for the ensemble:
 
+|                               | Elastic| Flexible_Discriminant_Analysis| Generalized_Additive_Models| Generalized_Linear_Models| Gradient_Boosted| Neuralnet|      y|
+|:------------------------------|-------:|------------------------------:|---------------------------:|-------------------------:|----------------:|---------:|------:|
+|Elastic                        |  1.0000|                         0.7049|                      0.1621|                    0.9845|           0.0246|    0.0355| 0.6414|
+|Flexible_Discriminant_Analysis |  0.7049|                         1.0000|                      0.1584|                    0.7010|           0.0242|    0.0361| 0.7718|
+|Generalized_Additive_Models    |  0.1621|                         0.1584|                      1.0000|                    0.1616|           0.0276|    0.2028| 0.1626|
+|Generalized_Linear_Models      |  0.9845|                         0.7010|                      0.1616|                    1.0000|           0.0247|    0.0354| 0.6381|
+|Gradient_Boosted               |  0.0246|                         0.0242|                      0.0276|                    0.0247|           1.0000|    0.0088| 0.0632|
+|Neuralnet                      |  0.0355|                         0.0361|                      0.2028|                    0.0354|           0.0088|    1.0000| 0.0403|
+|y                              |  0.6414|                         0.7718|                      0.1626|                    0.6381|           0.0632|    0.0403| 1.0000|
+
 
 R version 4.5.2 (2025-10-31) -- "[Not] Part in a Rumble"
 Copyright (C) 2025 The R Foundation for Statistical Computing
