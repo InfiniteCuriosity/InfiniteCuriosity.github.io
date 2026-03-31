@@ -1,0 +1,489 @@
+**Introduction**
+
+Kaggle.com posted a 66.3 MB (megabyte) file showing credit card fraud data. The data:
+
+Reports transactions "made by credit cards in September 2013 by European cardholders."
+
+The data contains 492 frauds out of 284,807 transactions (~ 0.172% of the total)
+
+The data has been anonymized, but the label (fraud or genuine) and amounts are accurate.
+
+The data is highly imbalanced, so Area Under the Curve is an appropriate measure. Accuracy measures are not meaningful for highly imbalanced data sets such as this one.
+
+The data set contains 284,807 rows, and 31 variables. It is 66.3 MB in size.
+
+The data is transformed by Principal Components Analysis, due to confidentiality of the original data.
+
+The target column, Class, only has values of 1 (fraud) or 0 (no fraud).
+
+The LogisticEnsembles package was used to analyze the data. The results of the analysis:
+
+Eight individual models and four ensembles of models were automatically constructed from the data.
+
+A seed was set (12345) to ensure the results are fully reproducible.
+
+One of the individual models and three of the ensembles achieved 100% accuracy as measured by the AUC curves on the holdout data.
+
+The NumericEnsembles package also automatically provided nine reports and 32 graphs and plots, allowing a complete description and analysis of the data and the recommended solutions.
+
+Based on the analysis, the following are recommended:
+
+Four of the logistic models, (XGBoost, Ensemble C50, Ensemble Elastic and Ensemble XGBoost) achieved 100% scores on AUC, Sensitivity, Specificity, Positive Predictive Value, Negative Predictive Value, and F1 Score. They also achieved 0% on False Positive and False Negative tests. These are the models which are most likely to provide accurate predictions from the data.
+
+Statement of the problem from the customer’s perspective
+
+According to a paper from the European Central Bank report on payment fraud dated 15 December, 2025, "In 2024 payment fraud rate in European Economic Area stable at around 0.002% of total value of transactions in a calendar year." This amounted to a total of €4.2 billion in 2024, which is an increase from € 3.5 billion in 2023 and € 3.4 billion in 2022.
+
+The report breaks down the numbers as follows:
+
+For 2024, the overall losses for credit transfers were €2.200 billion (a year-on-year increase of 16%), and for card payments with cards issued in the EU/EEA they were €1.329 billion (a year-on-year increase of 29%). For credit transfers, payment service users bore approximately 85% of total fraud losses in 2024, mainly as a result of scams that tricked users into initiating fraudulent transactions.
+
+FICO posted on a blog post, How Is Credit Card Fraud Changing in Europe? which is based on data from Euromonitor International showed that credit card fraud is steadily rising. According to the report,
+
+Key countries driving the overall increase since 2021 are:
+
+Norway, where fraud losses have dramatically increased from €14M to €26.4M
+
+Denmark, with a more than twofold increase in fraud losses (€19.6M to €47.6M)
+
+Hungary, which has jumped from €3.3M to €22.4M
+
+Greece, with a twofold increase from €13.4M to €28.4M
+
+Sweden, where losses have risen from €13.1M to €24.2M, an increase of around 85%.
+
+The FICO report discusses what credit card issuers can do to fight fraud, and conclude with these recommendations:
+
+Fraudsters will always seek the weakest point in the hull of a lender’s ship. A unified approach (across channels, products, industries, organisations, regions) ensures that there is no easy entry, and uses all the data and technology at a lender’s disposal to offer maximum protection.
+
+This report will provide statistical models which will prove highly accurate on holdout data, very fast to complete, and run without any errors or warnings, as a way to help organizations fight credit card fraud.
+
+Exploratory data analysis
+
+Head of the data. Note that only V1 through V5 are shown, but the original data has columns V1 through V28, columns for Time, Amount and Class, as noted below:
+
+Time
+
+V1
+
+V2
+
+V3
+
+V4
+
+V5
+
+Amount
+
+Class
+
+0
+
+-1.3598071
+
+-0.0727812
+
+2.5363467
+
+1.3781552
+
+-0.3383208
+
+149.62
+
+0
+
+0
+
+1.1918571
+
+0.2661507
+
+0.1664801
+
+0.4481541
+
+0.0600176
+
+2.69
+
+0
+
+1
+
+-1.3583541
+
+-1.3401631
+
+1.7732093
+
+0.3797796
+
+-0.5031981
+
+378.66
+
+0
+
+1
+
+-0.9662717
+
+-0.1852260
+
+1.7929933
+
+-0.8632913
+
+-0.0103089
+
+123.50
+
+0
+
+2
+
+-1.1582331
+
+0.8777368
+
+1.5487178
+
+0.4030339
+
+-0.4071934
+
+69.99
+
+0
+
+2
+
+-0.4259659
+
+0.9605230
+
+1.1411093
+
+-0.1682521
+
+0.4209869
+
+3.67
+
+0
+
+From the original report on Kaggle.com:
+
+(The data) contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, we cannot provide the original features and more background information about the data. Features V1, V2, … V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset.
+
+Boxplots of the numeric data
+
+Boxplots
+
+Boxplots provide a five number summary of each variable. The five values are:
+
+Minimum (or 0%) value. This is the lowest value for the specific feature.Maximum (or 100%) value. This is the maximum value for the specific feature.Median value. 50% of the data is above the median, and 50% is below the median.First Quartile (Q1 or 25th percentile). The median of the lower 50% of the data set.Third Quartile (Q3 or75th percentile). The median of the upper 50% of the data set.In addition, the Interquartile Range provides:IQR = Q3 - Q1The boxplots for the Credit Card Fraud data set clearly show the values for V1 through v28 have a very small interquartile range, and number of values above and below that range for virtually all features.The values for each feature vary across the data set. For example, the Boxplots show that V10 has values between approximately -24 and 24, but V24 has values between approximately -3 and 5.The boxplot for y (the target) only has values of 0 and 1, without any interquartile range.
+
+Histograms of the numeric data
+
+Histograms
+
+The histograms confirm what the boxplots showed: The majority of the values for each feature are narrowly spread out. Only the time feature has data which is widely spread out.
+
+Data Summary
+
+Time
+
+V1
+
+V2
+
+V3
+
+V4
+
+V5
+
+Class
+
+Min. : 0
+
+Min. -56.40751
+
+Min. -72.71573
+
+Min. -48.3256
+
+Min. -5.68317
+
+Min. -113.74331
+
+Min. :0.000000
+
+1st Qu.: 54202
+
+1st Qu.: 0.92037
+
+1st Qu.: -0.59855
+
+1st Qu.: -0.8904
+
+1st: Qu.:-0.84864
+
+1st Qu.: -0.69160
+
+1st Qu.: 0.000000
+
+Median : 84692
+
+Median : 0.01811
+
+Median : 0.06549
+
+Median : 0.1798
+
+Median: -0.01985
+
+Median : -0.05434
+
+Median: 0.000000
+
+Mean : 94814
+
+Mean : 0.00000
+
+Mean : 0.00000
+
+Mean : 0.0000
+
+Mean : 0.00000
+
+Mean : 0.00000
+
+Mean: 0.001727
+
+3rd Qu.:139320
+
+3rd Qu.: 1.31564
+
+3rd Qu.: 0.80372
+
+3rd Qu.: 1.0272
+
+3rd Qu.: 0.74334
+
+3rd Qu.: 0.61193
+
+3rd Qu.: 0.000000
+
+Max.:172792
+
+Max. : 2.45493
+
+Max. : 22.05773
+
+Max. : 9.3826
+
+Max.: 16.87534
+
+Max. : 34.80167
+
+Max.: 1.000000
+
+Correlation of the data to the target variable (Class):
+
+Feature
+
+Correlation to Class
+
+Time
+
+-0.0123226
+
+V1
+
+-0.1013473
+
+V2
+
+0.0912887
+
+V3
+
+-0.1929608
+
+V4
+
+0.1334475
+
+V5
+
+-0.0949743
+
+V6
+
+-0.0436432
+
+V7
+
+-0.1872566
+
+V8
+
+0.0198751
+
+V9
+
+-0.0977327
+
+V10
+
+-0.2168829
+
+V11
+
+0.1548756
+
+V12
+
+-0.2605929
+
+V13
+
+-0.0045698
+
+V14
+
+-0.3025437
+
+V15
+
+-0.0042234
+
+V16
+
+-0.1965389
+
+V17
+
+-0.3264811
+
+V18
+
+-0.1114853
+
+V19
+
+0.0347830
+
+V20
+
+0.0200903
+
+V21
+
+0.0404134
+
+V22
+
+0.0008053
+
+V23
+
+-0.0026852
+
+V24
+
+-0.0072209
+
+V25
+
+0.0033077
+
+V26
+
+0.0044554
+
+V27
+
+0.0175797
+
+V28
+
+0.0095360
+
+Amount
+
+0.0056318
+
+Class
+
+1.0000000
+
+As the table shows, the features have very low correlation to Class.
+
+The deciles of correlation of V1 to V30 are:
+
+Deciles
+
+Correlation
+
+10%
+
+-0.2168829
+
+20%
+
+-0.1872566
+
+30%
+
+-0.0977327
+
+40%
+
+-0.0123226
+
+50%
+
+-0.0042234
+
+60%
+
+0.0033077
+
+70%
+
+0.0095360
+
+80%
+
+0.0200903
+
+90%
+
+0.0912887
+
+Clearly the features V1 to V30 are not strongly correlated to Class.
+
+Summary of the Exploratory Data Analysis
+
+The Exploratory Data Analysis of the Credit Card data provides evidence that the predictors, V1 to V30, are not strongly correlated to Class, they have a narrow distribution, and all the features except Time containt values outside the Interquartile range.
+
+What the Exploratory Data Analysis suggests
+
+The value of an Exploratory Data Analysis is that it suggests methods to accurately model the data. Given the nature of the data:
+
+The target, Class, is logistic (either fraud or not fraud)
+
+Fraud is indicated in 492 out of the 284,807 rows, so AUC is a much more reliable measure than Accuracy.
+
+A range of models is suggested, as this might provide a better result than a single modeling system, such as Generalized Linear Models.
+
+We will use seven individual models and five ensembles of models in our analysis.
+
+It may be very instructive to add numerous charts, tables and graphs to our result.
+
+The LogisticEnsembles package hosted on CRAN can accomplish all of these requirements, and will be used for this data set.
