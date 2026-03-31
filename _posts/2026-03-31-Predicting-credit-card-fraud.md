@@ -72,7 +72,7 @@ Head of the data. Note that only V1 through V5 are shown, but the original data 
 |Max| 172792   | 2.45493   | 22.05773   | 9.3826    | 16.87534    | 34.80167   | 1.000000    |
 
 
-<h4>Correlation of the target (Class) to each variable (closer to 1.00 is better</h4>
+<h4>Correlation of the target (Class) to each variable (closer to 1.00 is better)</h4>
 
 | Feature | Correlation to Class |
 |:--------|---------------------:|
