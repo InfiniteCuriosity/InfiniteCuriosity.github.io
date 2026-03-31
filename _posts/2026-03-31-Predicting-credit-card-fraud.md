@@ -44,7 +44,7 @@ The boxplots for the Credit Card Fraud data set clearly show the values for V1 t
 
 The histograms confirm what the boxplots showed: The majority of the values for each feature are narrowly spread out. Only the time feature has data which is widely spread out.
 
-<h4>Step 1c: Head of the data</h4>
+<h4>Step 1c: Head of the data for selected columns: Time, V1–V5, Class</h4>
 Head of the data. Note that only V1 through V5 are shown, but the original data has columns V1 through V28, columns for Time, Amount and Class, as noted below:
 
 
@@ -58,7 +58,7 @@ Head of the data. Note that only V1 through V5 are shown, but the original data 
 | 2     | -0.4259659 | 0.9605230  | 1.1411093 | -0.1682521 | 0.4209869  | 3.67   | 0     |
 
 
-<h4>Step 1d: Data summary</h4>
+<h4>Step 1d: Data summary for selected columns: Time, V1–V5, Class</h4>
 
 |Measure | Time           | V1               | V2                | V3               | V4                | V5                | Class             |
 |:------:|:--------------:|:----------------:|:-----------------:|:----------------:|:-----------------:|:-----------------:|:-----------------:|
