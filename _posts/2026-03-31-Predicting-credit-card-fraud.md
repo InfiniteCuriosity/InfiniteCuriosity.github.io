@@ -66,7 +66,7 @@ The LogisticEnsembles package hosted on CRAN can accomplish all of these require
 
 <h4>Step 3: Model results</h4>
 
-<h4>Step 5: Strongest evidence based recommendations</h4>
+<h4>Step 5: Strongest evidence based recommendations to fight credit card fraud based on the data set</h4>
 
 <h4>Step 6: Conclusions</h4>
 
