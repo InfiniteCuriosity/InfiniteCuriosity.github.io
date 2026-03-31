@@ -174,6 +174,16 @@ duration
 warnings()
 ```
 
+Comments:
+
+The data is stored on my local computer, since it is 150 MB in size.
+The models are only resampled twice, because the seed is set, so the results will be identical for all runs.
+All the plots and models are saved to be used in writing reports and summaries.
+Both data and ensemble correlations > 0.99 are removed, thus removing the possibility of perfectly correlated features.
+The process is timed.
+
+<h4>Everything ran in 3.016171 minutes without any errors, warnings, or issues.</h4>
+
 <h2>Step 3: Model results</h2>
 
 <h2>Step 5: Strongest evidence based recommendations to fight credit card fraud based on the data set</h2>
