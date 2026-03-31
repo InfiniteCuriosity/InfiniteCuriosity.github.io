@@ -126,6 +126,19 @@ It may be very instructive to add charts, tables and graphs from our models to o
 The LogisticEnsembles package hosted on CRAN can accomplish all of these requirements, and will be used for this data set.
 
 <h2>Step 2: Building the models using the LogisticEnsembles package</h2>
+
+Next we will build a set of logistic models. The models used by the LogisticEnsembles package are a team of rivals. Some of the models are individual, others are ensembles, some are regular learning, others are deep learning, some are tuned models, others are not tuned models.<br>
+
+Logitic model summaries:<br>
+| Model name  | Individual | Ensemble | Regular Learning  | Deep Learning | Tuned | Not Tuned |
+|:-----:|:----------:|:----------:|:---------:|:----------:|:----------:|:------:|
+| Elastic| Yes | No | Yes | No  | Cross-Validation | N/A |
+| Flexible Discriminant Analysis | Yes | No  | Yes | No  | Not Tuned | Not Tuned |
+| Generalized Linear Models | Yes | No | Yes | No  | Not Tuned | Not Tuned |
+| Gradient Boosted | Yes | No | No | Yes | Not Tuned | Not Tuned |
+| Neuralnet | Individual | no  | No | Yes  | Yes | Tuned  |
+| XGBoost     | Yes | No  | No | Yes | Tuned  | Tuned   |
+
 ```
 library(LogisticEnsembles)
 
