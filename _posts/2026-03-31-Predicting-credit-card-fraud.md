@@ -130,19 +130,20 @@ The LogisticEnsembles package hosted on CRAN can accomplish all of these require
 Next we will build a set of logistic models. The models used by the LogisticEnsembles package are a team of rivals. Some of the models are individual, others are ensembles, some are regular learning, others are deep learning, some are tuned models, others are not tuned models.<br>
 
 Logistic model summaries:<br>
-| Model name  | Individual | Ensemble | Regular Learning  | Deep Learning | Tuned | Not Tuned |
-|:-----:|:----------:|:----------:|:---------:|:----------:|:----------:|:------:|
-| Elastic| Yes | No | Yes | No  | Cross-Validation | N/A |
-| Flexible Discriminant Analysis | Yes | No  | Yes | No  | Not Tuned | Not Tuned |
-| Generalized Linear Models | Yes | No | Yes | No  | Not Tuned | Not Tuned |
-| Gradient Boosted | Yes | No | No | Yes | Not Tuned | Not Tuned |
-| Neuralnet | Individual | no  | No | Yes  | Yes | Tuned  |
-| XGBoost     | Yes | No  | No | Yes | Tuned  | Tuned   |
-| Ensemble C50 | No | Yes | Yes | No | Not tuned | Not tuned |
-| Ensemble Elastic | No | Yes | Yes | No | Yes | No |
-| Ensemble GLMNET | No | Yes | Yes | No | Yes | No |
-| Ensemble Neuralnet | No | Yes | No | Yes | Yes | No |
-| Ensemble XGBoost | No | Yes | No | Yes | | Yes | No |
+| Model name  | Individual or Ensemble | Type of Learning  | Type of Tuning |
+|:-----:|:----------:|:----------:|:---------:|
+| Elastic| Individual | Regular Learning | Cross-Validation |
+| Flexible Discriminant Analysis | Individual | Regular Learning | Not Tuned |
+| Generalized Additve Models | Individual | Regular Learning | Not Tuned |
+| Generalized Linear Models | Individual | Regular Learning | Cross-Validation |
+| Gradient Boosted | Individual | Deep Learning | Optimize trees = 100, depth = 1 |
+| Neuralnet | Individual | Deep Learning | Linout = True, Skip = True |
+| XGBoost  | Individual | Deep Learning | Validation |
+| Ensemble C50 | Ensemble | Regular Learning | Not Tuned |
+| Ensemble Elastic | Ensemble | Regular Learning | Cross-Validation |
+| Ensemble GLMNET | Ensemble | Deep Learning | Cross-Validation |
+| Ensemble Neuralnet | Ensemble | Deep Learning | Linout = True, Skip = True |
+| Ensemble XGBoost | Ensemble | Deep Learning | Validation |
 
 
 ```
