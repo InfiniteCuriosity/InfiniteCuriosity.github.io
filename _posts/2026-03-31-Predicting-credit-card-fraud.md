@@ -205,7 +205,7 @@ The process is timed.<br>
 Comments:
 One regular model (XGBoost) and three ensembles (Ensemble C50, Ensemble Elastic and Ensemble XGBoost) had 100% accuracy as measured by the AUC score on the holdout data. This can be viewed by looking at the curves for the data:
 
-
+![ROC Curves](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_ROC_curves.jpg)<br>
 
 <h2>Step 5: Strongest evidence based recommendations to fight credit card fraud based on the data set</h2>
 
