@@ -44,6 +44,26 @@ The boxplots for the Credit Card Fraud data set clearly show the values for V1 t
 
 The histograms confirm what the boxplots showed: The majority of the values for each feature are narrowly spread out. Only the time feature has data which is widely spread out.
 
+<h4>Step 1c: Head of the data</h4>
+Head of the data. Note that only V1 through V5 are shown, but the original data has columns V1 through V28, columns for Time, Amount and Class, as noted below:
+
++-------+------------+------------+-----------+------------+------------+--------+-------+
+| Time  | V1         | V2         | V3        | V4         | V5         | Amount | Class |
++======:+===========:+===========:+==========:+===========:+===========:+=======:+======:+
+| 0     | -1.3598071 | -0.0727812 | 2.5363467 | 1.3781552  | -0.3383208 | 149.62 | 0     |
++-------+------------+------------+-----------+------------+------------+--------+-------+
+| 0     | 1.1918571  | 0.2661507  | 0.1664801 | 0.4481541  | 0.0600176  | 2.69   | 0     |
++-------+------------+------------+-----------+------------+------------+--------+-------+
+| 1     | -1.3583541 | -1.3401631 | 1.7732093 | 0.3797796  | -0.5031981 | 378.66 | 0     |
++-------+------------+------------+-----------+------------+------------+--------+-------+
+| 1     | -0.9662717 | -0.1852260 | 1.7929933 | -0.8632913 | -0.0103089 | 123.50 | 0     |
++-------+------------+------------+-----------+------------+------------+--------+-------+
+| 2     | -1.1582331 | 0.8777368  | 1.5487178 | 0.4030339  | -0.4071934 | 69.99  | 0     |
++-------+------------+------------+-----------+------------+------------+--------+-------+
+| 2     | -0.4259659 | 0.9605230  | 1.1411093 | -0.1682521 | 0.4209869  | 3.67   | 0     |
++-------+------------+------------+-----------+------------+------------+--------+-------+
+
+
 <h4>Summary of the Exploratory Data Analysis</h4>
 
 The Exploratory Data Analysis of the Credit Card data provides evidence that the predictors, V1 to V30, are not strongly correlated to Class, they have a narrow distribution, and all the features except Time containt values outside the Interquartile range.
