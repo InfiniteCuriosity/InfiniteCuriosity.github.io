@@ -9,7 +9,7 @@ One of the largest credit card fraud data sets was posted at https://www.kaggle.
 The data:<br>
 • Reports transactions "made by credit cards in September 2013 by European cardholders."<br>
 • Contains 492 frauds out of 284,807 transactions (~ 0.172% of the total)<br>
-• Has been anonymized, but the label (fraud or genuine) and amounts are accurate.<br>
+• Has been anonymized, but the label (fraud or genuine) and dollar amounts are accurate.<br>
 • The data set contains 284,807 rows, and 31 variables. It is 66.3 MB in size.<br>
 • The data is transformed by Principal Components Analysis, due to confidentiality of the original data.<br>
 
