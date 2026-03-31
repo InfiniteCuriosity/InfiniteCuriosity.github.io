@@ -208,6 +208,10 @@ One regular model (XGBoost) and three ensembles (Ensemble C50, Ensemble Elastic 
 
 ![ROC Curves](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_ROC_curves.jpg)<br>
 
+<h4>Which variable are most important?</h4>
+
+[Variable Importance](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_variable_importance.jpg)
+
 ![Duration](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_duration_barchart.jpg)<br>
 
 <h2>Step 5: Strongest evidence based recommendations to fight credit card fraud based on the data set</h2>
