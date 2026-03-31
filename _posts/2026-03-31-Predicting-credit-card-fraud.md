@@ -210,7 +210,7 @@ One regular model (XGBoost) and three ensembles (Ensemble C50, Ensemble Elastic 
 
 <h4>Which variable are most important?</h4>
 
-[Variable importance table](Big_Credit_Card_Fraud_Variable_Importance_Report.jpg)
+[Variable importance table](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_Credit_Card_Fraud_Variable_Importance_Report.jpg)
 
 [Variable Importance](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_variable_importance.jpg)
 
