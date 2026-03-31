@@ -24,4 +24,4 @@ The report from the European Central Bank breaks down the numbers as follows:
 >"For 2024, the overall losses for credit transfers were €2.200 billion (a year-on-year increase of 16%), and for card payments with cards issued in the EU/EEA they were €1.329 billion (a year-on-year increase of 29%). For credit transfers, payment service users bore approximately 85% of total fraud losses in 2024, mainly as a result of scams that tricked users into initiating fraudulent transactions."
 
 <h4>Step 1: Looking at the data</h4>
-(InfiniteCuriosity.github.io/_posts/boxplots.jpg)
+![boxplots](images/boxplots.jpg)
