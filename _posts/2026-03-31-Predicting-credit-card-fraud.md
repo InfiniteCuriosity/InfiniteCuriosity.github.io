@@ -4,7 +4,7 @@
 Credit card fraud is a huge problem in the retail sector, with total losses in the billions of dollars each year. This blog post will highlight how you can understand the process of fighting credit card fraud with data science.
 
 <h4>The data set (it's enormous!)</h4>
-One of the largest credit card fraud data sets was posted at [https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
+One of the largest credit card fraud data sets was posted at (https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
 
 The data:<br>
 • Reports transactions "made by credit cards in September 2013 by European cardholders."<br>
