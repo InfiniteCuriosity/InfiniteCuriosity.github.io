@@ -203,7 +203,7 @@ The process is timed.<br>
 |Gradient Boosted               |           0.5067|                             0.0145|                             1.0000|                               0.0000|                                0.9855|                                  0.3000|                    0.9985|   0.0277|   5.6235|      0.6494|
 
 Comments:
-One regular model (XGBoost) and three ensembles (Ensemble C50, Ensemble Elastic and Ensemble XGBoost) had 100% accuracy as measured by the AUC score on the holdout data. This can be viewed by looking at the curves for the data:
+One regular model (XGBoost) and three ensembles (Ensemble C50, Ensemble Elastic and Ensemble XGBoost) had 100% accuracy as measured by the AUC score on the holdout data. This can be viewed by looking at the ROC (Receiver Operating Curves) for the data, with the Area Under the Curve (AUC) noted for each graph:
 
 ![ROC Curves](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_ROC_curves.jpg)<br>
 
