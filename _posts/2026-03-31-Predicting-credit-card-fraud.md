@@ -177,6 +177,7 @@ warnings()
 Comments:
 
 The data is stored on my local computer, since it is 150 MB in size.
+The seed was set at 12345.
 The models are only resampled twice, because the seed is set, so the results will be identical for all runs.
 All the plots and models are saved to be used in writing reports and summaries.
 Both data and ensemble correlations > 0.99 are removed, thus removing the possibility of perfectly correlated features.
