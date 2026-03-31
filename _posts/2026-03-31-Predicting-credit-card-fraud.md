@@ -50,12 +50,24 @@ The Exploratory Data Analysis of the Credit Card data provides evidence that the
 
 <h4>What the Exploratory Data Analysis suggests</h4><br>
 
-• The value of an Exploratory Data Analysis is that it suggests methods to accurately model the data. Given the nature of the data:
-• The target, Class, is logistic (either fraud or not fraud)
-• Fraud is indicated in 492 out of the 284,807 rows, so AUC is a much more reliable measure than Accuracy.
-• A range of models is suggested, as this might provide a better result than a single modeling system, such as Generalized Linear Models.
-• We will use seven individual models and five ensembles of models in our analysis.
+The value of an Exploratory Data Analysis is that it suggests methods to accurately model the data. Given the nature of the data:<br>
+• The target, Class, is logistic (either fraud or not fraud)<br>
+• Fraud is indicated in 492 out of the 284,807 rows, so AUC is a much more reliable measure than Accuracy.<br>
+• A range of models is suggested, as this might provide a better result than a single modeling system, such as Generalized Linear Models.<br>
+• We will use seven individual models and five ensembles of models in our analysis.<br>
+• We will use a combination of regular learning and deep learning models<br>
+• We will use a combination of tuned models (in all possible situations) and untuned models (if it is not possible to tune the models)<br>
 
-It may be very instructive to add numerous charts, tables and graphs from our models to our result.
+It may be very instructive to add charts, tables and graphs from our models to our result to help us in our decision making.
 
 The LogisticEnsembles package hosted on CRAN can accomplish all of these requirements, and will be used for this data set.
+
+<h4>Step 2: Building the models</h4>
+
+<h4>Step 3: Model results</h4>
+
+<h4>Step 5: Strongest evidence based recommendations</h4>
+
+<h4>Step 6: Conclusions</h4>
+
+<h4>Step 7: References</h4>
