@@ -208,11 +208,19 @@ One regular model (XGBoost) and three ensembles (Ensemble C50, Ensemble Elastic 
 
 ![ROC Curves](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_ROC_curves.jpg)<br>
 
-<h4>Which variable are most important?</h4>
+<h4>Which variable are the strongest predictors?</h4>
+
+We begin by looking at a table of the importance of the predictors. Several points stand out:
+
+• Ten of the 12 largest predictors have a negative influence on the result
+• The ten most important variable account for 77.32% of the total, and more than 66.81% of the value is negative.
+• It is strongly recommended to look at variables V17, V14, V12, V10, V16, V7, and V3, as they are all negative, and constitute more than 63% of the total.
 
 ![Variable importance table](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_Credit_Card_Fraud_Variable_Importance_Report.jpg)<br>
 
 ![Variable Importance Barchart](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_variable_importance_barchart.jpg)<br>
+
+We can also see how much time each model took to run, and all of them ran in very little time:
 
 ![Duration](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_duration_barchart.jpg)<br>
 
