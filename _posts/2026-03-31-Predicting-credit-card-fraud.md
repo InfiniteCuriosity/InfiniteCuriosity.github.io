@@ -187,7 +187,7 @@ The process is timed.<br>
 
 <h2>Step 3: Summary results on the holdout data</h2>
 
-|Model                          | Area Under Curve| True Positive Rate (Sensitivity)| True Negative Rate (Specificity)| False Positive Rate (Type I Error)| False Negative Rate (Type II Error)| Positive Predictive Value (Precision)| Negative Predictive Value| F1 Score| Duration| Duration sd|
+|Model                          | Area Under The Curve| True Positive Rate (Sensitivity)| True Negative Rate (Specificity)| False Positive Rate (Type I Error)| False Negative Rate (Type II Error)| Positive Predictive Value (Precision)| Negative Predictive Value| F1 Score| Duration| Duration sd|
 |:------------------------------|----------------:|----------------------------------:|----------------------------------:|------------------------------------:|-------------------------------------:|---------------------------------------:|-------------------------:|--------:|--------:|-----------:|
 |XGBoost                        |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   0.7763|      0.0264|
 |Ensemble C50                   |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   1.0697|      0.0044|
@@ -201,6 +201,9 @@ The process is timed.<br>
 |Generalized Linear Models      |           0.7712|                             0.5325|                             0.9997|                               0.0003|                                0.4675|                                  0.7386|                    0.9993|   0.6188|   5.0943|      0.4767|
 |Neuralnet                      |           0.7543|                             0.9831|                             0.5265|                               0.4735|                                0.0169|                                  0.0033|                    0.9999|   0.0065|   2.1872|      0.0810|
 |Gradient Boosted               |           0.5067|                             0.0145|                             1.0000|                               0.0000|                                0.9855|                                  0.3000|                    0.9985|   0.0277|   5.6235|      0.6494|
+
+Comments:
+One regular model (XGBoost) and three ensembles (Ensemble C50, Ensemble Elastic and Ensemble XGBoost) had 100% accuracy as measured by the AUC score on the holdout data. This can be viewed by looking at the curves for the data:
 
 
 
