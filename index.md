@@ -1,5 +1,7 @@
-Here you can say lots of fun things about your site.
+Welcome to Data Science for The Rest of Us!
 
-Maybe say a some things about yourself.
+This is a fun, inviting and very interesting place for non-technical people to see how they can use the power of data science to improve their world! The blog posts will show how you can get real results to improve your organization.
 
-Or maybe what you plan to blog about.
+Plan to have fun, enjoy the blog posts, and learn a thing or two! I look forward to your comments, and sharing the journey with you!
+
+Russ Conte
