@@ -140,6 +140,9 @@ Logistic model summaries:<br>
 | XGBoost     | Yes | No  | No | Yes | Tuned  | Tuned   |
 | Ensemble C50 | No | Yes | Yes | No | Not tuned | Not tuned |
 | Ensemble Elastic | No | Yes | Yes | No | Yes | No |
+| Ensemble GLMNET | No | Yes | Yes | No | Yes | No |
+| Ensemble Neuralnet | No | Yes | No | Yes | Yes | No |
+| Ensemble XGBoost | No | Yes | No | Yes | | Yes | No |
 
 
 ```
