@@ -188,7 +188,7 @@ The process is timed.<br>
 
 <h4>Everything ran in 3.016171 minutes without any errors, warnings, or issues. The majority of the time was spent saving the image files and trained models. If the models and images are not saved, everything completed in 1.776362 mins, a substnatially shorter run time.</h4>
 
-<h2>Step 3: Summary results on the holdout data</h2>
+<h2>Step 3: Summary results on the holdout data, sorted by Area Under The Curve</h2>
 
 |Model                          | Area Under The Curve| True Positive Rate (Sensitivity)| True Negative Rate (Specificity)| False Positive Rate (Type I Error)| False Negative Rate (Type II Error)| Positive Predictive Value (Precision)| Negative Predictive Value| F1 Score| Duration| Duration sd|
 |:------------------------------|----------------:|----------------------------------:|----------------------------------:|------------------------------------:|-------------------------------------:|---------------------------------------:|-------------------------:|--------:|--------:|-----------:|
