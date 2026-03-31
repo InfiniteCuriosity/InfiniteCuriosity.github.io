@@ -211,7 +211,7 @@ One regular model (XGBoost) and three ensembles (Ensemble C50, Ensemble Elastic 
 
 ![ROC Curves](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_ROC_curves.jpg)<br>
 
-<h4>Which variable are the strongest predictors?</h4>
+<h4>Which variables are the strongest predictors, and how strong are they?</h4>
 
 We begin by looking at a table of the importance of the predictors. Several points stand out:
 
