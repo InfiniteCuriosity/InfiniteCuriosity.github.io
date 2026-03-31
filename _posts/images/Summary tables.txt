@@ -1,0 +1,73 @@
+
+$`Summary tables`
+$`Summary tables`$Elastic
+                        
+elastic_test_predictions      0      1
+                       0 284280    202
+                       1     80    244
+
+$`Summary tables`$`Fixture Discrmininant Analysis`
+                    
+fda_test_predictions      0      1
+                   0 284324    148
+                   1     36    298
+
+$`Summary tables`$`Generalized Additive Methods`
+                    
+gam_test_predictions      0      1
+                   0 272906     62
+                   1  11454    384
+
+$`Summary tables`$`Generalized Linear Models`
+                       
+glmnet_test_predictions      0      1
+                      0 284280    204
+                      1     80    242
+
+$`Summary tables`$`Gradient Boosted`
+                   
+gb_test_predictions      0      1
+                  0 284346    440
+                  1     14      6
+
+$`Summary tables`$Neuralnet
+                          
+neuralnet_test_predictions      0      1
+                         0 149704      8
+                         1 134656    438
+
+$`Summary tables`$XGBoost
+                    
+xgb_test_predictions      0      1
+                   0 284360      0
+                   1      0    446
+
+$`Summary tables`$`Ensemble C50`
+                      ensemble_y_test
+ensemble_C50_test_pred      0      1
+                     0 142214      0
+                     1      0    188
+
+$`Summary tables`$`Ensemble Elastic`
+                          ensemble_y_test
+ensemble_elastic_test_pred      0      1
+                         0 142214      0
+                         1      0    188
+
+$`Summary tables`$`Ensemble GLM`
+                         ensemble_y_test
+ensemble_glmnet_test_pred      0      1
+                        0 142208     84
+                        1      6    104
+
+$`Summary tables`$`Ensemble Neuralnet`
+                            ensemble_y_test
+ensemble_neuralnet_test_pred      0      1
+                           0 136344     26
+                           1   5870    162
+
+$`Summary tables`$`Ensemble XGBoost`
+                      ensemble_y_test
+ensemble_xgb_test_pred      0      1
+                     0 142214      0
+                     1      0    188
