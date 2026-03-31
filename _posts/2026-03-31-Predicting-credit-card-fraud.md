@@ -25,6 +25,7 @@ The report from the European Central Bank breaks down the numbers as follows:
 
 <h2>Step 1: Looking at the data</h2>
 We will begin by looking at boxplots of the data:<br>
+
 ![Boxplots](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_boxplots.jpg)
 What are boxplots, and what are they telling us about the credit card fraud data?
 
