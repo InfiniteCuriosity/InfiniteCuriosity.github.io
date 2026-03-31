@@ -23,7 +23,8 @@ The report from the European Central Bank breaks down the numbers as follows:
 
 >"For 2024, the overall losses for credit transfers were €2.200 billion (a year-on-year increase of 16%), and for card payments with cards issued in the EU/EEA they were €1.329 billion (a year-on-year increase of 29%). For credit transfers, payment service users bore approximately 85% of total fraud losses in 2024, mainly as a result of scams that tricked users into initiating fraudulent transactions."
 
-<h4>Step 1a: Looking at the data: Boxplots</h4>
+<h2>Step 1: Looking at the data</h2>
+We will begin by looking at boxplots of the data:<br>
 ![boxplots](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/boxplots.jpg)<br>
 What are boxplots, and what are they telling us about the credit card fraud data?
 
@@ -124,7 +125,7 @@ It may be very instructive to add charts, tables and graphs from our models to o
 
 The LogisticEnsembles package hosted on CRAN can accomplish all of these requirements, and will be used for this data set.
 
-<h4>Step 2: Building the models using the LogisticEnsembles package</h4>
+<h2>Step 2: Building the models using the LogisticEnsembles package</h2>
 ```
 library(LogisticEnsembles)
 
@@ -152,12 +153,12 @@ duration
 warnings()
 ```
 
-<h4>Step 3: Model results</h4>
+<h2>Step 3: Model results</h2>
 
-<h4>Step 5: Strongest evidence based recommendations to fight credit card fraud based on the data set</h4>
+<h2>Step 5: Strongest evidence based recommendations to fight credit card fraud based on the data set</h2>
 
-<h4>Step 6: Conclusions</h4>
+<h2>Step 6: Conclusions</h2>
 
-<h4>Step 7: References</h4>
+<h2>Step 7: References</h2>
 
 something to delete.
