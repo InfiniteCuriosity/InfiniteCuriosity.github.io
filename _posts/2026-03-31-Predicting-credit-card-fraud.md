@@ -3,7 +3,7 @@
 <h2>Table of Contents</h2>
 <a id="Introduction"></a>
 
-<h3>Introduction</h3>(#Introduction)
+<h3>Introduction</h3>[Introduction](#Introduction)
 Credit card fraud is a huge problem in the retail sector, with total losses in the billions of dollars each year. This blog post will highlight how you can understand the process of fighting credit card fraud with data science.
 
 <h4>The data set (it's enormous!)</h4>
