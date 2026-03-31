@@ -187,7 +187,7 @@ The process is timed.<br>
 
 <h2>Step 3: Summary results on the holdout data</h2>
 
-|Model                          | Area_Under_Curve| True_Positive_Rate_aka_Sensitivity| True_Negative_Rate_aka_Specificity| False_Positive_Rate_aka_Type_I_Error| False_Negative_Rate_aka_Type_II_Error| Positive_Predictive_Value_aka_Precision| Negative_Predictive_Value| F1_Score| Duration| Duration_sd|
+|Model                          | Area Under Curve| True Positive Rate (Sensitivity)| True Negative Rate (Specificity)| False Positive Rate (Type I Error)| False Negative Rate (Type II Error)| Positive Predictive Value (Precision)| Negative Predictive Value| F1 Score| Duration| Duration sd|
 |:------------------------------|----------------:|----------------------------------:|----------------------------------:|------------------------------------:|-------------------------------------:|---------------------------------------:|-------------------------:|--------:|--------:|-----------:|
 |XGBoost                        |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   0.7763|      0.0264|
 |Ensemble C50                   |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   1.0697|      0.0044|
