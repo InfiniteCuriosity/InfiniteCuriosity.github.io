@@ -146,7 +146,7 @@ Logistic model summaries:<br>
 | Ensemble Neuralnet | Ensemble | Deep Learning | Linout = True, Skip = True |
 | Ensemble XGBoost | Ensemble | Deep Learning | Validation |
 
-<h4>Running all the models automatically:</h4>
+<h4>How the LogisticEnsembles package makes this much faster and easier to solve, while maintaining a very high level of accuracy on the holdout data:</h4>
 
 ```
 library(LogisticEnsembles)
