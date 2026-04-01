@@ -16,7 +16,7 @@ In this blog post we will look at:<br>
 • Strongest evidence based recommendations<br>
 • Conclusion/summary<br>
 
-<h4>How big is the problem of credit card fraud?</h4>[How big is the problem]
+<h4>How big is the problem of credit card fraud?</h4>
 According to a paper from the European Central Bank on payment fraud dated 15 December, 2025, "In 2024 payment fraud rate in European Economic Area stable at around 0.002% of total value of transactions in a calendar year." (https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251215~e133d9d683.en.html) This amounted to a total of €4.2 billion in 2024, which is an increase from € 3.5 billion in 2023 and € 3.4 billion in 2022.<br>
 <br>
 The report from the European Central Bank breaks down the numbers as follows:
@@ -325,3 +325,5 @@ First principles to solve the problem:<br>
 The LogisticEnsembles package was able to complete the entire analysis in less than five minutes, providing results on the holdout data which meet the customer's requirements for predicting fraud in this data set with very high accuracy.
 
 #Rstats #DataScience #XGBoost #Fraud #Finance #FinancialFraud #CreditCard #Crime #FinancialCrime #FightingCrime #CrimeFighter #Dataviz #ggplot2 #tidyverse
+
+[How big is the problem]
