@@ -263,7 +263,7 @@ Neither the original data nor the ensemble had strongly correlated predictors:
 
 The correlation table for the ensemble:
 
-|                               | Elastic| Flexible_Discriminant_Analysis| Generalized_Additive_Models| Generalized_Linear_Models| Gradient_Boosted| Neuralnet|      y|
+|                               | Elastic| Flexible Discriminant Analysis| Generalized Additive Models| Generalized Linear Models| Gradient Boosted| Neuralnet|      y|
 |:------------------------------|-------:|------------------------------:|---------------------------:|-------------------------:|----------------:|---------:|------:|
 |Elastic                        |  1.0000|                         0.7049|                      0.1621|                    0.9845|           0.0246|    0.0355| 0.6414|
 |Flexible_Discriminant_Analysis |  0.7049|                         1.0000|                      0.1584|                    0.7010|           0.0242|    0.0361| 0.7718|
