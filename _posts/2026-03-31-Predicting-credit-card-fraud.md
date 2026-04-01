@@ -16,13 +16,10 @@ The data:<br>
 • The data set contains 284,807 rows, and 31 variables. It is 66.3 MB in size.<br>
 • The data is transformed by Principal Components Analysis, due to confidentiality of the original data.<br>
 
-<h4>Why is this so difficult to solve?</h4>
-Most examples of data have large results that are easy to see. However, fraud data typically only shows up in a small fraction of 1% of the transactions. In our case it's less than 2/10 of 1% of the transactions. We are looking for the proverbial needle in the haystack.
+<h4>Why is this type of problem so difficult to solve?</h4>
+Most examples of data have large results that are easy to see. However, fraud data typically only shows up in a small fraction of 1% of the transactions. In our case it's less than 2/10 of 1% of the transactions. We are looking for the proverbial needle in the haystack, that's why it is so difficult to solve.
 
-<h4>Previous investigations of this data set</h4>
-
-
-<h4>How big is the problem?</h4>
+<h4>How big is the problem of credit card fraud?</h4>
 According to a paper from the European Central Bank on payment fraud dated 15 December, 2025, "In 2024 payment fraud rate in European Economic Area stable at around 0.002% of total value of transactions in a calendar year." (https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251215~e133d9d683.en.html) This amounted to a total of €4.2 billion in 2024, which is an increase from € 3.5 billion in 2023 and € 3.4 billion in 2022.<br>
 <br>
 The report from the European Central Bank breaks down the numbers as follows:
@@ -290,10 +287,20 @@ We can also see how much time each model took to run (measured in seconds). All 
 
 ![Duration](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_duration_barchart.jpg)<br>
 
-<h2>Step 5: Strongest evidence based recommendations to fight credit card fraud based on the data set</h2>
+<h2>Step 5: Strongest evidence based recommendations to fight credit card fraud based on the credit card fraud data set</h2>
+
+First principles to solve the problem:
+• The Exploratory Data Analysis suggested the target is logistic
+• The LogisticEnsembles package was used to do the entire analysis
+• The Exploratory Data Analysis showed the data have very narrow interquartile ranges
+• The Correlation tables show that neithe the original data nor the ensemble are strongly correlated with the target
+• Four models had 100% predictive accuracy on the holdout data: XGBoost, Ensemble C50, Ensemble Elastic and Ensemble XGBoost
+• The same four models had excellent scores on Sensitivity, Specificity, Type I Error, Type II Error, Precision, Negative Predictive Value and F1 Score
+• An analysis of the strongest predictors showed that eight of the ten strongest predictors are negative.
+• Given these results, it is recommended that LogisticEnsembles be used with similar data sets about fraud.
 
 <h2>Step 6: Conclusions</h2>
 
-<h2>Step 7: References</h2>
+The LogisticEnsembles package was able to complete the entire analysis in less than five minutes, providing results on the holdout data which meet the customer's requirements for predicting fraud in this data set with very high accuracy.
 
-#Rstats #DataScience #XGBoost #Fraud #Finance #FinancialFraud #CreditCard #Crime #FinancialCrime #FightingCrime #CrimeFighter
+#Rstats #DataScience #XGBoost #Fraud #Finance #FinancialFraud #CreditCard #Crime #FinancialCrime #FightingCrime #CrimeFighter #Dataviz #ggplot2 #tidyverse
