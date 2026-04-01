@@ -9,7 +9,7 @@ Credit card fraud is a huge problem in the retail sector, with total losses in t
 <h4>You can get the same results with this data set. The methods, results and graphics are all fully reproducible, as described here.</h4>
 
 In this blog post we will look at:<br>
-• How big is the problem of credit card fraud?<br>[How big is the problem](#how-big-is-the-problem)
+• How big is the problem of credit card fraud?<br>[anchor]
 • Look at data summaries (box plots, histograms, head of the data, data summaries)<br>
 • Highest accuracy logistic model using the LogisticEnsembles package<br>
 • Strongest predictor using reports from the LogisticEnsembles package<br>
@@ -326,4 +326,5 @@ The LogisticEnsembles package was able to complete the entire analysis in less t
 
 #Rstats #DataScience #XGBoost #Fraud #Finance #FinancialFraud #CreditCard #Crime #FinancialCrime #FightingCrime #CrimeFighter #Dataviz #ggplot2 #tidyverse
 
-[How big is the problem]
+
+(#anchor)
