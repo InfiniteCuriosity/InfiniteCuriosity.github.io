@@ -40,7 +40,11 @@ Most examples of data have large results that are easy to see. However, fraud da
 
 In addition, Dal Pozzolo and colleagues cited additional causes that make this problem difficult to solve:<br>
 
->Detecting frauds in credit card transactions is perhaps one of the best testbeds for computational intelligence algorithms. In fact, this problem involves a number of relevant challenges, namely: concept drift (customers' habits evolve and fraudsters change their strategies over time), class imbalance (genuine transactions far outnumber frauds), and verification latency (only a small set of transactions are timely checked by investigators). However, the vast majority of learning algorithms that have been proposed for fraud detection rely on assumptions that hardly hold in a real-world fraud-detection system (FDS).[^Fraud]
+>Detecting frauds in credit card transactions is perhaps one of the best testbeds for computational intelligence algorithms. In fact, this problem involves a number of relevant challenges, namely: concept drift (customers' habits evolve and fraudsters change their strategies over time), class imbalance (genuine transactions far outnumber frauds), and verification latency (only a small set of transactions are timely checked by investigators). However, the vast majority of learning algorithms that have been proposed for fraud detection rely on assumptions that hardly hold in a real-world fraud-detection system (FDS).
+
+<a name="myfootnote1">1</a>: Footnote content goes here
+
+
 
 <h2>Step 1: Look at the data: box plots, histograms, head of the data, data summaries</h2>
 We will begin by looking at boxplots of the data:<br>
@@ -300,6 +304,11 @@ First principles to solve the problem:<br>
 
 The LogisticEnsembles package was able to complete the entire analysis in less than five minutes, providing results on the holdout data which meet the customer's requirements for predicting fraud in this data set with very high accuracy.
 
-[^Fraud]https://www.researchgate.net/publication/319867396_Credit_Card_Fraud_Detection_A_Realistic_Modeling_and_a_Novel_Learning_Strategy
+<!--
+Source - https://stackoverflow.com/a/29384216
+Posted by suryasankar, modified by community. See post 'Timeline' for change history
+Retrieved 2026-04-01, License - CC BY-SA 4.0
+-->
 
+<sup>[1](#myfootnote1)</sup>
 #Rstats #DataScience #XGBoost #Fraud #Finance #FinancialFraud #CreditCard #Crime #FinancialCrime #FightingCrime #CrimeFighter #Dataviz #ggplot2 #tidyverse
