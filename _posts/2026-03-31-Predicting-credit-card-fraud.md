@@ -6,6 +6,13 @@ Tuesday March 31, 2026<br>
 <h3>Introduction</h3>
 Credit card fraud is a huge problem in the retail sector, with total losses in the billions of dollars each year. This blog post will highlight how you can understand the process of fighting credit card fraud with data science.
 
+<h4>How big is the problem of credit card fraud?</h4>
+According to a paper from the European Central Bank on payment fraud dated 15 December, 2025, "In 2024 payment fraud rate in European Economic Area stable at around 0.002% of total value of transactions in a calendar year." (https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251215~e133d9d683.en.html) This amounted to a total of €4.2 billion in 2024, which is an increase from € 3.5 billion in 2023 and € 3.4 billion in 2022.<br>
+<br>
+The report from the European Central Bank breaks down the numbers as follows:
+
+>"For 2024, the overall losses for credit transfers were €2.200 billion (a year-on-year increase of 16%), and for card payments with cards issued in the EU/EEA they were €1.329 billion (a year-on-year increase of 29%). For credit transfers, payment service users bore approximately 85% of total fraud losses in 2024, mainly as a result of scams that tricked users into initiating fraudulent transactions."
+
 <h4>The data set (it's enormous!)</h4>
 One of the largest credit card fraud data sets was posted at https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud.
 
@@ -18,13 +25,6 @@ The data:<br>
 
 <h4>Why is this type of problem so difficult to solve?</h4>
 Most examples of data have large results that are easy to see. However, fraud data typically only shows up in a small fraction of 1% of the transactions. In our case it's less than 2/10 of 1% of the transactions. We are looking for the proverbial needle in the haystack, that's why it is so difficult to solve.
-
-<h4>How big is the problem of credit card fraud?</h4>
-According to a paper from the European Central Bank on payment fraud dated 15 December, 2025, "In 2024 payment fraud rate in European Economic Area stable at around 0.002% of total value of transactions in a calendar year." (https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251215~e133d9d683.en.html) This amounted to a total of €4.2 billion in 2024, which is an increase from € 3.5 billion in 2023 and € 3.4 billion in 2022.<br>
-<br>
-The report from the European Central Bank breaks down the numbers as follows:
-
->"For 2024, the overall losses for credit transfers were €2.200 billion (a year-on-year increase of 16%), and for card payments with cards issued in the EU/EEA they were €1.329 billion (a year-on-year increase of 29%). For credit transfers, payment service users bore approximately 85% of total fraud losses in 2024, mainly as a result of scams that tricked users into initiating fraudulent transactions."
 
 <h2>Step 1: Looking at the data (Boxplots, histograms, head of the data, summary of the data, correlation of each feature to the target) </h2>
 We will begin by looking at boxplots of the data:<br>
