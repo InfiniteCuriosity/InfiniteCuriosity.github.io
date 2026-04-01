@@ -273,7 +273,7 @@ Neither the original data nor the ensemble had strongly correlated predictors. F
 |Neuralnet                      |  0.0355|                         0.0361|                      0.2028|                    0.0354|           0.0088|    1.0000| 0.0403|
 |y                              |  0.6414|                         0.7718|                      0.1626|                    0.6381|           0.0632|    0.0403| 1.0000|
 
-We can also see how much time each model took to run (measured in seconds), and all of them ran in less than five seconds, half of them ran in less than one second:
+We can also see how much time each model took to run (measured in seconds). All of the models ran in less than five seconds, half of them ran in less than one second:
 
 ![Duration](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_duration_barchart.jpg)<br>
 
