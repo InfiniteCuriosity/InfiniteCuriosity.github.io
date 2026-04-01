@@ -139,9 +139,11 @@ LogisticEnsembles will do the following:<br>
 • Automatically make predictions and check accuracy on the holdout data (test and validation)<br>
 • Automatically make summary graphics for each of the measures<br>
 • Automatically make a summary table for the importance of each variable in the data set<br>
+• There are no API calls, no use of any coding assistants, no use of any AI systems.<br>
+• Neither the user's data nor activity is shared, stored, or tracked in any way. They do not help produce more accurate models.<br>
 
 <h2>How LogisticEnsembles builds a team of rival models requiring only one line of code from the user</h2>
-First LogisticEnsembles will build a set of logistic models. The models used by the LogisticEnsembles package are a team of rivals. Some of the models are individual, others are ensembles, some are regular learning, others are deep learning, some are tuned models, others are not tuned models.<br>
+First LogisticEnsembles will automatically build a set of logistic models. The models used by the LogisticEnsembles package are a team of rivals. Some of the models are individual, others are ensembles, some are regular learning, others are deep learning, some are tuned models, others are not tuned models.<br>
 
 Logistic model summaries:<br>
 | Model name  | Individual or Ensemble | Type of Learning  | Type of Tuning |
