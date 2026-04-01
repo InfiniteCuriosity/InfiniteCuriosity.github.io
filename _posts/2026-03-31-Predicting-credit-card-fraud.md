@@ -41,6 +41,7 @@ Most examples of data have large results that are easy to see. However, fraud da
 In addition, Dal Pozzolo and colleagues cited additional causes that make this problem difficult to solve:<br>
 
 >Detecting frauds in credit card transactions is perhaps one of the best testbeds for computational intelligence algorithms. In fact, this problem involves a number of relevant challenges, namely: concept drift (customers' habits evolve and fraudsters change their strategies over time), class imbalance (genuine transactions far outnumber frauds), and verification latency (only a small set of transactions are timely checked by investigators). However, the vast majority of learning algorithms that have been proposed for fraud detection rely on assumptions that hardly hold in a real-world fraud-detection system (FDS).
+Source: https://www.researchgate.net/publication/319867396_Credit_Card_Fraud_Detection_A_Realistic_Modeling_and_a_Novel_Learning_Strategy
 
 <h2>Step 1: Look at the data: box plots, histograms, head of the data, data summaries</h2>
 We will begin by looking at boxplots of the data:<br>
