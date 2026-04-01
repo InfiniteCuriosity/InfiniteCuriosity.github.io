@@ -180,7 +180,7 @@ duration
 warnings()
 ```
 
-Comments:
+Comments on LogisticEnsembles applied to the Credit Card Fraud data set:
 
 The data is stored on my local computer, since it is 150 MB in size.<br>
 The seed was set at 12345.<br>
@@ -209,7 +209,7 @@ The process is timed.<br>
 |Gradient Boosted               |           0.5067|                             0.0145|                             1.0000|                               0.0000|                                0.9855|                                  0.3000|                    0.9985|   0.0277|   5.6235|      0.6494|
 
 <br>
-Comments:
+Comments on the summary report:
 
 The LogisticEnsembles package automatically calculated all of the results, sorted by Area Under the Curve, and put them in a summary table:<br>
 • Area Under the Curve<br>
