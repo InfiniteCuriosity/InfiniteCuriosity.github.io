@@ -138,7 +138,7 @@ LogisticEnsembles will do the following:<br>
 • Automatically make summary graphics for each of the measures<br>
 • Automatically make a summary table for the importance of each variable in the data set<br>
 
-<h2>How LogisticEnsembles builds a team of rivals</h2>
+<h2>How LogisticEnsembles builds a team of rival models</h2>
 First LogisticEnsembles will build a set of logistic models. The models used by the LogisticEnsembles package are a team of rivals. Some of the models are individual, others are ensembles, some are regular learning, others are deep learning, some are tuned models, others are not tuned models.<br>
 
 Logistic model summaries:<br>
