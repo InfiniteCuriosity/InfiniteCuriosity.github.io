@@ -226,7 +226,7 @@ We begin by looking at a table of the importance of the predictors. Several poin
 
 ![Variable Importance Barchart](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_variable_importance_barchart.jpg)<br>
 
-Neither the original data nor the ensemble had strongly correlated predictors:
+Neither the original data nor the ensemble had strongly correlated predictors. First the correlation table of the original data:
 
 |     |    Time|      V1|      V2|      V3|      V4|      V5|      V6|      V7|      V8|      V9|     V10|     V11|     V12|     V13|     V14|     V15|     V16|     V17|     V18|    V19|     V20|    V21|    V22|     V23|     V24|     V25|     V26|     V27|     V28|       y|
 |:----|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|------:|-------:|------:|------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
@@ -273,7 +273,7 @@ Neither the original data nor the ensemble had strongly correlated predictors:
 |Neuralnet                      |  0.0355|                         0.0361|                      0.2028|                    0.0354|           0.0088|    1.0000| 0.0403|
 |y                              |  0.6414|                         0.7718|                      0.1626|                    0.6381|           0.0632|    0.0403| 1.0000|
 
-We can also see how much time each model took to run, and all of them ran in very little time:
+We can also see how much time each model took to run (measured in seconds), and all of them ran in very little time:
 
 ![Duration](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_duration_barchart.jpg)<br>
 
