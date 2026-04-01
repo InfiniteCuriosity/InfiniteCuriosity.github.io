@@ -140,7 +140,7 @@ LogisticEnsembles will do the following:<br>
 • Automatically make summary graphics for each of the measures<br>
 • Automatically make a summary table for the importance of each variable in the data set<br>
 
-<h2>How LogisticEnsembles builds a team of rival models</h2>
+<h2>How LogisticEnsembles builds a team of rival models requiring only one line of code from the user</h2>
 First LogisticEnsembles will build a set of logistic models. The models used by the LogisticEnsembles package are a team of rivals. Some of the models are individual, others are ensembles, some are regular learning, others are deep learning, some are tuned models, others are not tuned models.<br>
 
 Logistic model summaries:<br>
@@ -159,7 +159,7 @@ Logistic model summaries:<br>
 | Ensemble Neuralnet | Ensemble | Deep Learning | Linout = True, Skip = True |
 | Ensemble XGBoost | Ensemble | Deep Learning | Validation |
 
-<h4>How the LogisticEnsembles package makes this much faster and easier to solve, using only one line of code, while maintaining a very high level of accuracy on the holdout data:</h4>
+<h4>How the LogisticEnsembles package makes this much faster and easier to solve, using only one line of code, while maintaining a very high level of accuracy on the holdout data. **Here is the one line of code:**</h4>
 
 ```
 library(LogisticEnsembles)
