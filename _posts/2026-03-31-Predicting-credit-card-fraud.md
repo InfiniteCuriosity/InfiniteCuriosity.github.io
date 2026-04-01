@@ -130,6 +130,14 @@ The LogisticEnsembles package hosted on CRAN can accomplish all of these require
 
 <h2>Step 2: Building the models using the LogisticEnsembles package, as hosted on CRAN</h2>
 
+LogisticEnsembles will do the following:<br>
+• Automatically split the data into train/test/validation sets<br>
+• Automatically fit each of 7 logistic models and 5 ensembles of logistic models to the training data<br>
+• Automatically resample as many times as requested (two times for this example)<br>
+• Automatically make predictions and check accuracy on the holdout data (test and validation)<br>
+• Automatically make summary graphics for each of the measures<br>
+• Automatically make a summary table for the importance of each variable in the data set<br>
+
 Next we will build a set of logistic models. The models used by the LogisticEnsembles package are a team of rivals. Some of the models are individual, others are ensembles, some are regular learning, others are deep learning, some are tuned models, others are not tuned models.<br>
 
 Logistic model summaries:<br>
