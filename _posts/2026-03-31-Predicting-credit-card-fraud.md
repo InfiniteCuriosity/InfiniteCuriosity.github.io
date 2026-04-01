@@ -8,7 +8,15 @@ Credit card fraud is a huge problem in the retail sector, with total losses in t
 
 <h4>You can get the same results with this data set. The methods, results and graphics are all fully reproducible, as described here.</h4>
 
-<h4>How big is the problem of credit card fraud?</h4>
+In this blog post we will look at:<br>
+• How big is the problem of credit card fraud?<br>[How big is the problem](#how-big-is-the-problem)
+• Look at data summaries (box plots, histograms, head of the data, data summaries)<br>
+• Highest accuracy logistic model using the LogisticEnsembles package<br>
+• Strongest predictor using reports from the LogisticEnsembles package<br>
+• Strongest evidence based recommendations<br>
+• Conclusion/summary<br>
+
+<h4>How big is the problem of credit card fraud?</h4>[How big is the problem]
 According to a paper from the European Central Bank on payment fraud dated 15 December, 2025, "In 2024 payment fraud rate in European Economic Area stable at around 0.002% of total value of transactions in a calendar year." (https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251215~e133d9d683.en.html) This amounted to a total of €4.2 billion in 2024, which is an increase from € 3.5 billion in 2023 and € 3.4 billion in 2022.<br>
 <br>
 The report from the European Central Bank breaks down the numbers as follows:
@@ -201,7 +209,7 @@ The process is timed.<br>
 
 <h4>Everything ran in 3.016171 minutes without any errors, warnings, or issues. The majority of the time was spent saving the image files and trained models. If the models and images are not saved, everything completed in 1.776362 mins, a substantially shorter run time.</h4>
 
-<h2>Step 3: Summary results on the holdout data, sorted by Area Under The Curve</h2>
+<h2>Step 3: Highest Accuracy results on the holdout data, sorted by Area Under The Curve per model</h2>
 
 |Model                          | Area Under The Curve| True Positive Rate (Sensitivity)| True Negative Rate (Specificity)| False Positive Rate (Type I Error)| False Negative Rate (Type II Error)| Positive Predictive Value (Precision)| Negative Predictive Value| F1 Score| Duration| Duration sd|
 |:------------------------------|----------------:|----------------------------------:|----------------------------------:|------------------------------------:|-------------------------------------:|---------------------------------------:|-------------------------:|--------:|--------:|-----------:|
@@ -237,7 +245,7 @@ One regular model (XGBoost) and three ensembles (Ensemble C50, Ensemble Elastic 
 
 ![ROC Curves](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_ROC_curves.jpg)<br>
 
-<h4>Which variables are the strongest predictors, and how strong are they?</h4>
+<h4>Step 4: Strongest Predictors: Which variables are the strongest predictors, and how strong are they?</h4>
 
 We begin by looking at a table of the importance of the predictors. Several points stand out:<br>
 
