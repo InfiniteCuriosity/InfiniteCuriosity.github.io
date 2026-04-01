@@ -212,7 +212,7 @@ The process is timed.<br>
 Comments:
 
 The LogisticEnsembles package automatically calculated all of the results, sorted by Area Under the Curve, and put them in a summary table:<br>
-• Area under the curve<br>
+• Area Under the Curve<br>
 • True Positive Rate (Sensitivity)<br>
 • True Negative Rate (Specificity)<br>
 • False Positive Rate (Type I Error)<br>
@@ -221,7 +221,7 @@ The LogisticEnsembles package automatically calculated all of the results, sorte
 • Negative Predictive Value<br>
 • F1 Score<br>
 • Duration (in seconds)<br>
-• Standard Deviation of the mean time<br><br>
+• Standard Deviation of the mean duration<br><br>
 
 One regular model (XGBoost) and three ensembles (Ensemble C50, Ensemble Elastic and Ensemble XGBoost) had 100% accuracy as measured by the AUC score on the holdout data. This can be viewed by looking at the ROC (Receiver Operating Curves) for the data, with the Area Under the Curve (AUC) noted for each graph:<br><br>
 
