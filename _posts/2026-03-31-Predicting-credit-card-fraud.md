@@ -1,4 +1,4 @@
-<b><h1>How data science can help fight credit card fraud with only one line of code</h1></b>
+<b><h1>How data science can help fight credit card fraud with read fraud data</h1></b>
 
 Russ Conte<br>
 Tuesday March 31, 2026<br>
@@ -6,11 +6,13 @@ Tuesday March 31, 2026<br>
 <h3>Introduction</h3>
 Credit card fraud is a huge problem in the retail sector, with total losses in the billions of dollars each year. This blog post will highlight how you can understand the process of fighting credit card fraud with data science.
 
-<h4>You can get the same results with this data set. The methods, results and graphics are all fully reproducible, as described here.</h4>
+<h4>You can get the same results with this data set. The methods, results and graphics are all fully reproducible, as described in this blog post</h4>
 
 In this blog post we will look at:<br>
 • How big is the problem of credit card fraud?<br>
-• Look at data summaries (box plots, histograms, head of the data, data summaries)<br>
+• Why is this type of problem so difficult to solve?<br>
+• Look at the data: box plots, histograms, head of the data, data summaries<br>
+• What does the customer actually want?<br>
 • Highest accuracy logistic model using the LogisticEnsembles package<br>
 • Strongest predictor using reports from the LogisticEnsembles package<br>
 • Strongest evidence based recommendations<br>
@@ -34,9 +36,13 @@ The data:<br>
 • The data is transformed by Principal Components Analysis, due to confidentiality of the original data.<br>
 
 <h4>Why is this type of problem so difficult to solve?</h4>
-Most examples of data have large results that are easy to see. However, fraud data typically only shows up in a small fraction of 1% of the transactions. In our case it's less than 2/10 of 1% of the transactions. We are looking for the proverbial needle in the haystack, that's why it is so difficult to solve.
+Most examples of data have large results that are easy to see. However, fraud data typically only shows up in a small fraction of 1% of the transactions. In our case it's less than 2/10 of 1% of the transactions. We are looking for the proverbial needle in the haystack, that's part of why it is so difficult to solve.
 
-<h2>Step 1: Looking at the data (Boxplots, histograms, head of the data, summary of the data, correlation of each feature to the target) </h2>
+In addition, Dal Pozzolo and colleagues cited additional causes that make this problem difficult to solve:
+
+>Detecting frauds in credit card transactions is perhaps one of the best testbeds for computational intelligence algorithms. In fact, this problem involves a number of relevant challenges, namely: concept drift (customers' habits evolve and fraudsters change their strategies over time), class imbalance (genuine transactions far outnumber frauds), and verification latency (only a small set of transactions are timely checked by investigators). However, the vast majority of learning algorithms that have been proposed for fraud detection rely on assumptions that hardly hold in a real-world fraud-detection system (FDS).[^1]
+
+<h2>Step 1: Look at the data: box plots, histograms, head of the data, data summaries</h2>
 We will begin by looking at boxplots of the data:<br>
 
 ![Boxplots](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_boxplots.jpg)
@@ -137,6 +143,9 @@ The value of an Exploratory Data Analysis is that it suggests methods to accurat
 It may be very instructive to add charts, tables and graphs from our models to our result to help us in our decision making.
 
 The LogisticEnsembles package hosted on CRAN can accomplish all of these requirements, and will be used for this data set.
+
+<h2>What does the customer actually want?</h2>
+Given our data, our customer wants to predict credit card fraud. They also want results that are fully reproducible.
 
 <h2>Step 2: Building the models using the LogisticEnsembles package, as hosted on CRAN</h2>
 
@@ -290,5 +299,7 @@ First principles to solve the problem:<br>
 <h2>Step 6: Conclusions</h2>
 
 The LogisticEnsembles package was able to complete the entire analysis in less than five minutes, providing results on the holdout data which meet the customer's requirements for predicting fraud in this data set with very high accuracy.
+
+[^1]https://www.researchgate.net/publication/319867396_Credit_Card_Fraud_Detection_A_Realistic_Modeling_and_a_Novel_Learning_Strategy
 
 #Rstats #DataScience #XGBoost #Fraud #Finance #FinancialFraud #CreditCard #Crime #FinancialCrime #FightingCrime #CrimeFighter #Dataviz #ggplot2 #tidyverse
