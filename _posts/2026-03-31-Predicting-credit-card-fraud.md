@@ -289,15 +289,15 @@ We can also see how much time each model took to run (measured in seconds). All 
 
 <h2>Step 5: Strongest evidence based recommendations to fight credit card fraud based on the credit card fraud data set</h2>
 
-First principles to solve the problem:
-• The Exploratory Data Analysis suggested the target is logistic
-• The LogisticEnsembles package was used to do the entire analysis
-• The Exploratory Data Analysis showed the data have very narrow interquartile ranges
-• The Correlation tables show that neithe the original data nor the ensemble are strongly correlated with the target
-• Four models had 100% predictive accuracy on the holdout data: XGBoost, Ensemble C50, Ensemble Elastic and Ensemble XGBoost
-• The same four models had excellent scores on Sensitivity, Specificity, Type I Error, Type II Error, Precision, Negative Predictive Value and F1 Score
-• An analysis of the strongest predictors showed that eight of the ten strongest predictors are negative.
-• Given these results, it is recommended that LogisticEnsembles be used with similar data sets about fraud.
+First principles to solve the problem:<br>
+• The Exploratory Data Analysis suggested the target is logistic<br>
+• The LogisticEnsembles package was used to do the entire analysis<br>
+• The Exploratory Data Analysis showed the data have very narrow interquartile ranges<br>
+• The Correlation tables show that neithe the original data nor the ensemble are strongly correlated with the target<br>
+• Four models had 100% predictive accuracy on the holdout data: XGBoost, Ensemble C50, Ensemble Elastic and Ensemble XGBoost<br>
+• The same four models had excellent scores on Sensitivity, Specificity, Type I Error, Type II Error, Precision, Negative Predictive Value and F1 Score<br>
+• An analysis of the strongest predictors showed that eight of the ten strongest predictors are negative.<br>
+• Given these results, it is recommended that LogisticEnsembles be used with similar data sets about fraud.<br>
 
 <h2>Step 6: Conclusions</h2>
 
