@@ -6,6 +6,8 @@ Tuesday March 31, 2026<br>
 <h3>Introduction</h3>
 Credit card fraud is a huge problem in the retail sector, with total losses in the billions of dollars each year. This blog post will highlight how you can understand the process of fighting credit card fraud with data science.
 
+<h4>You can get the same results with this data set. The methods, results and graphics are all fully reproducible, as described here.</h4>
+
 <h4>How big is the problem of credit card fraud?</h4>
 According to a paper from the European Central Bank on payment fraud dated 15 December, 2025, "In 2024 payment fraud rate in European Economic Area stable at around 0.002% of total value of transactions in a calendar year." (https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251215~e133d9d683.en.html) This amounted to a total of €4.2 billion in 2024, which is an increase from € 3.5 billion in 2023 and € 3.4 billion in 2022.<br>
 <br>
