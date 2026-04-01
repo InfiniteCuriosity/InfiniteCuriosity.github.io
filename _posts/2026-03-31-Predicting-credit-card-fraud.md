@@ -189,7 +189,7 @@ All the plots and models are saved to be used in writing reports and summaries.<
 Both data and ensemble correlations > 0.99 are removed, thus removing the possibility of perfectly correlated features.<br>
 The process is timed.<br>
 
-<h4>Everything ran in 3.016171 minutes without any errors, warnings, or issues. The majority of the time was spent saving the image files and trained models. If the models and images are not saved, everything completed in 1.776362 mins, a substnatially shorter run time.</h4>
+<h4>Everything ran in 3.016171 minutes without any errors, warnings, or issues. The majority of the time was spent saving the image files and trained models. If the models and images are not saved, everything completed in 1.776362 mins, a substantially shorter run time.</h4>
 
 <h2>Step 3: Summary results on the holdout data, sorted by Area Under The Curve</h2>
 
