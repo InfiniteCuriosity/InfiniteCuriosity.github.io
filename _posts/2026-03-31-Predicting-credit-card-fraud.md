@@ -218,7 +218,7 @@ The LogisticEnsembles package automatically calculated all of the results, sorte
 • Negative Predictive Value<br>
 • F1 Score<br>
 • Duration (in seconds)<br>
-• Standard Deviation of the mean duration<br><br>
+• Standard Deviation of the mean duration<br>
 
 One regular model (XGBoost) and three ensembles (Ensemble C50, Ensemble Elastic and Ensemble XGBoost) had 100% accuracy as measured by the AUC score on the holdout data. This can be viewed by looking at the ROC (Receiver Operating Curves) for the data, with the Area Under the Curve (AUC) noted for each graph:<br><br>
 
