@@ -256,7 +256,33 @@ Three ensembles (Ensemble C50, Ensemble Elastic and Ensemble XGBoost) had 100% a
 
 <h3>Summary graphs on each of the measures for all of the models and resamples</h3>
 
+True positive rate:
 
+![True positive rate](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_true_positive_rate_free_scales.jpg)<br>
+
+True negative rate:
+
+![True negative rate](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_true_negative_rate_free_scales.jpg)<br>
+
+False positive rate:
+
+![False positive rate](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_false_positive_rate_free_scales.jpg)<br>
+
+False negative rate:
+
+![False negative rate](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_false_negative_rate_free_scales.jpg)<br>
+
+Positive predictive value:
+
+![Positive predictive value](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_positive_predictive_value_free_scales.jpg)<br>
+
+Negative predictive value:
+
+![Negative predictive value](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_negative_predictive_value_free_scales.jpg)<br>
+
+F1 score:
+
+![F1 score](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_F1_score_free_scales.jpg)<br>
 
 <h4>Step 4: Strongest Predictors: Which variables are the strongest predictors, and how strong are they?</h4>
 
