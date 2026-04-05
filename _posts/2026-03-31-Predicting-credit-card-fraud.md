@@ -219,7 +219,7 @@ The process is timed.<br>
 
 <h4>Everything ran in 3.016171 minutes without any errors, warnings, or issues. The majority of the time was spent saving the image files and trained models. If the models and images are not saved, everything completed in 1.776362 mins, a substantially shorter run time.</h4>
 
-<h2>Step 3: Highest Accuracy results on the holdout data, sorted by Area Under The Curve per model</h2>
+<h2>Step 3: Highest Accuracy results on the holdout data, resampled 25 times, sorted (decreasing) by Area Under The Curve per model</h2>
 
 |Model                          | Area Under the Curve| True Positive Rate (aka Sensitivity)| True Negative Rate (aka Specificity)| False Positive Rate aka (Type I Error)| False Negative Rate (aka Type II Error)| Positive Predictive Value (aka Precision)| Negative Predictive Value| F1 Score| Duration| Duration standard deviation|
 |:------------------------------|----------------:|----------------------------------:|----------------------------------:|------------------------------------:|-------------------------------------:|---------------------------------------:|-------------------------:|--------:|--------:|-----------:|
