@@ -3,6 +3,22 @@
 Russ Conte<br>
 Tuesday March 31, 2026<br>
 
+<details>
+
+<summary>Tips for collapsed sections</summary>
+
+### You can add a header
+
+You can add text within a collapsed section.
+
+You can add an image or a code block, too.
+
+```ruby
+   puts "Hello World"
+```
+
+</details>
+
 <h3>Introduction</h3>
 Credit card fraud is a huge problem in the retail sector, with total losses in the billions of dollars each year. This blog post will highlight how you can understand the process of fighting credit card fraud with data science.
 
@@ -297,7 +313,7 @@ We begin by looking at a table of the importance of the predictors. Several poin
 
 ![Variable Importance Barchart](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_variable_importance_barchart.jpg)<br>
 
-Neither the original data nor the ensemble had strongly correlated predictors. First the correlation table of the original data:
+Neither the original data nor the ensemble had strongly correlated predictors.
 
 <br>The correlation table for the ensemble:
 
@@ -321,7 +337,7 @@ First principles to solve the problem:<br>
 • The Exploratory Data Analysis suggested the target is logistic<br>
 • The LogisticEnsembles package was used to do the entire analysis<br>
 • The Exploratory Data Analysis showed the data have very narrow interquartile ranges<br>
-• The Correlation tables show that neithe the original data nor the ensemble are strongly correlated with the target<br>
+• The Correlation tables show that neither the original data nor the ensemble are strongly correlated with the target<br>
 • Four models had 100% predictive accuracy on the holdout data: XGBoost, Ensemble C50, Ensemble Elastic and Ensemble XGBoost<br>
 • The same four models had excellent scores on Sensitivity, Specificity, Type I Error, Type II Error, Precision, Negative Predictive Value and F1 Score<br>
 • An analysis of the strongest predictors showed that eight of the ten strongest predictors are negative.<br>
