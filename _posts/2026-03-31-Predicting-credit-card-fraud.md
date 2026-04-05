@@ -173,7 +173,7 @@ Logistic model summaries:<br>
 | Generalized Linear Models | Individual | Regular Learning | Cross-Validation |
 | Gradient Boosted | Individual | Deep Learning | Optimize trees = 100, depth = 1 |
 | Neuralnet | Individual | Deep Learning | Linout = True, Skip = True |
-| XGBoost  | Individual | Deep Learning | Validation |
+| Ridge  | Individual | Regular earning | Cross-Validation |
 | Ensemble C50 | Ensemble | Regular Learning | Not Tuned |
 | Ensemble Elastic | Ensemble | Regular Learning | Cross-Validation |
 | Ensemble GLMNET | Ensemble | Deep Learning | Cross-Validation |
@@ -188,12 +188,12 @@ library(LogisticEnsembles)
 start_time <- Sys.time()
 Logistic(data = read.csv('/Users/russellconte/creditcard.csv'),
          colnum = 31,
-         numresamples = 2,
+         numresamples = 25,
          positive_rate = 0.001727486,
          remove_VIF_greater_than <- 5.00,
          save_all_trained_models = "Y",
          save_all_plots = "Y",
-         set_seed = "Y",
+         set_seed = "N",
          how_to_handle_strings = 0,
          do_you_have_new_data = "N",
          stratified_column_number = 0,
@@ -212,31 +212,28 @@ warnings()
 Comments on LogisticEnsembles applied to the Credit Card Fraud data set:
 
 The data is stored on my local computer, since it is 150 MB in size.<br>
-The seed was set at 12345.<br>
-The models are only resampled twice, because the seed is set, so the results will be identical for all runs.<br>
+The models are resampled 25 times, and the mean of those results will be provided.<br>
 All the plots and models are saved to be used in writing reports and summaries.<br>
-Both data and ensemble correlations > 0.99 are removed, thus removing the possibility of perfectly correlated features.<br>
+Both data and ensemble correlations > 0.99 are removed, thus removing the possibility of perfectly correlated features in the original data and the ensembles.<br>
 The process is timed.<br>
 
 <h4>Everything ran in 3.016171 minutes without any errors, warnings, or issues. The majority of the time was spent saving the image files and trained models. If the models and images are not saved, everything completed in 1.776362 mins, a substantially shorter run time.</h4>
 
 <h2>Step 3: Highest Accuracy results on the holdout data, sorted by Area Under The Curve per model</h2>
-
-|Model                          | Area Under The Curve| True Positive Rate (Sensitivity)| True Negative Rate (Specificity)| False Positive Rate (Type I Error)| False Negative Rate (Type II Error)| Positive Predictive Value (Precision)| Negative Predictive Value| F1 Score| Duration| Duration sd|
+|Model                          | Area Under the Curve| True Positive Rate (aka Sensitivity)| True Negative Rate (aka Specificity)| False Positive Rate aka (Type I Error)| False Negative Rate (aka Type II Error)| Positive Predictive Value (aka Precision)| Negative Predictive Value| F1 Score| Duration| Duration standard deviation|
 |:------------------------------|----------------:|----------------------------------:|----------------------------------:|------------------------------------:|-------------------------------------:|---------------------------------------:|-------------------------:|--------:|--------:|-----------:|
-|XGBoost                        |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   0.7763|      0.0264|
-|Ensemble C50                   |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   1.0697|      0.0044|
-|Ensemble Elastic               |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   1.0019|      0.0601|
-|Ensemble XGBoost               |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   0.1817|      0.0087|
-|Generalized Additive Models    |           0.9104|                             0.8611|                             0.9597|                               0.0403|                                0.1389|                                  0.0325|                    0.9998|   0.0626|   1.1270|      0.1512|
-|Ensemble Neuralnet             |           0.9102|                             0.8501|                             0.9587|                               0.0413|                                0.1499|                                  0.0267|                    0.9998|   0.0517|   0.2246|      0.1515|
-|Flexible Discriminant Analysis |           0.8340|                             0.6526|                             0.9999|                               0.0001|                                0.3474|                                  0.9058|                    0.9995|   0.7515|   0.6751|      0.1948|
-|Ensemble GLM                   |           0.7766|                             0.5404|                             1.0000|                               0.0000|                                0.4596|                                  0.9286|                    0.9994|   0.6829|   0.6606|      0.0096|
-|Elastic                        |           0.7734|                             0.5393|                             0.5393|                               0.0000|                                0.4607|                                  0.7425|                    0.9993|   0.6248|   4.9798|      0.3573|
-|Generalized Linear Models      |           0.7712|                             0.5325|                             0.9997|                               0.0003|                                0.4675|                                  0.7386|                    0.9993|   0.6188|   5.0943|      0.4767|
-|Neuralnet                      |           0.7543|                             0.9831|                             0.5265|                               0.4735|                                0.0169|                                  0.0033|                    0.9999|   0.0065|   2.1872|      0.0810|
-|Gradient Boosted               |           0.5067|                             0.0145|                             1.0000|                               0.0000|                                0.9855|                                  0.3000|                    0.9985|   0.0277|   5.6235|      0.6494|
-
+|Ensemble C50                   |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   1.0742|      0.0214|
+|Ensemble Elastic               |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   1.1288|      0.3737|
+|Ensemble XGBoost               |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   0.2054|      0.0291|
+|Ensemble Neuralnet             |           0.9346|                             0.8986|                             0.9606|                               0.0394|                                0.1014|                                  0.0385|                    0.9998|   0.0738|   0.1442|      0.0226|
+|Generalized Additive Models    |           0.9268|                             0.9002|                             0.9605|                               0.0395|                                0.0998|                                  0.0390|                    0.9998|   0.0747|   0.9536|      0.0887|
+|Generalized Linear Models      |           0.9268|                             0.9002|                             0.9605|                               0.0395|                                0.0998|                                  0.0390|                    0.9998|   0.0747|   1.0113|      0.0622|
+|Flexible Discriminant Analysis |           0.8877|                             0.6950|                             0.9997|                               0.0003|                                0.3050|                                  0.7960|                    0.9995|   0.7417|   0.6158|      0.0816|
+|Neuralnet                      |           0.8601|                             0.9672|                             0.7624|                               0.2376|                                0.0328|                                  0.0071|                    0.9999|   0.0141|   2.2355|      0.1190|
+|Gradient Boosted               |           0.8386|                             0.4438|                             0.9997|                               0.0003|                                0.5562|                                  0.6668|                    0.9990|   0.4909|   5.2172|      0.0778|
+|Elastic                        |           0.8224|                             0.6099|                             0.6099|                               0.0000|                                0.3901|                                  0.8733|                    0.9993|   0.7174|   3.0656|      0.2167|
+|Ridge                          |           0.7979|                             0.5703|                             0.9999|                               0.0001|                                0.4297|                                  0.8838|                    0.9992|   0.6924|   3.4303|      0.1135|
+|Ensemble GLM                   |           0.7975|                             0.7101|                             0.9998|                               0.0002|                                0.2899|                                  0.8585|    
 <br>
 Comments on the summary report:
 
