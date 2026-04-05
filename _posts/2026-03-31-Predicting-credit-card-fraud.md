@@ -232,6 +232,8 @@ The process is timed.<br>
 |Generalized Additive Models | gam::gam(y ~ ., data = train, family = binomial(link = "logit"))|<br>
 |Gradient Boosted |gbm::gbm(train$y ~ ., data = train, distribution = "bernoulli")|<br>
 |Generalized Linear Models|stats::glm(y ~ ., data = train, family = "binomial")|<br>
+|Neuralnet| nnet::nnet(train$y ~ ., data = train, size = 0, linout = TRUE, skip = TRUE, family = binomial(link = "logit"))|<br>
+|Ridge| y <- train$y<br>x <- data.matrix(train %>% dplyr::select(-y))<br>ridge_model <- glmnet::glmnet(x, y, alpha = 0)<br>ridge_cv <- glmnet::cv.glmnet(x, y, alpha = 0)<br>best_ridge_lambda <- ridge_cv$lambda.min<br>best_ridge_model <- glmnet::glmnet(x, y, alpha = 0, family = "binomial")|<br>
 </details>
 
 <h2>Step 3: Highest Accuracy results on the holdout data, resampled 25 times, sorted (decreasing) by Area Under The Curve per model</h2>
