@@ -227,12 +227,7 @@ The process is timed.<br>
 
 |Model name | Model |
 |:----------:|:-----------:|
-|Elastic |  y <- train$y<br>
-  x <- data.matrix(train %>% dplyr::select(-y))<br>
-  elastic_model <- glmnet::glmnet(x, y, alpha = 0.5)<br>
-  elastic_cv <- glmnet::cv.glmnet(x, y, alpha = 0.5)<br>
-  best_elastic_lambda <- elastic_cv$lambda.min<br>
-  best_elastic_model <- glmnet::glmnet(x, y, alpha = 0.5, family = "binomial")<br>
+|Elastic |  y <- train$y<br>x <- data.matrix(train %>% dplyr::select(-y))<br>elastic_model <- glmnet::glmnet(x, y, alpha = 0.5)<br>elastic_cv <- glmnet::cv.glmnet(x, y, alpha = 0.5)<br>best_elastic_lambda <- elastic_cv$lambda.min<br>best_elastic_model <- glmnet::glmnet(x, y, alpha = 0.5, family = "binomial")<br>
 </details>
 
 <h2>Step 3: Highest Accuracy results on the holdout data, resampled 25 times, sorted (decreasing) by Area Under The Curve per model</h2>
