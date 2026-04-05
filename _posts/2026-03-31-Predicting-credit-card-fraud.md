@@ -288,6 +288,7 @@ F1 score:
 
 We begin by looking at a table of the importance of the predictors. Several points stand out:<br>
 
+• The list is in descending order (most important predictors on top, descending to least important predictors on the bottom)<br>
 • Ten of the 12 largest predictors have a negative influence on the result<br>
 • The ten most important variables account for 77.32% of the total, and more than 66.81% of the value is negative.<br>
 • It is strongly recommended to look at variables V17, V14, V12, V10, V16, V7, and V3, as they are all negative, and constitute more than 63% of the total.<br>
