@@ -250,7 +250,7 @@ The LogisticEnsembles package automatically calculated all of the results, sorte
 • Duration (in seconds)<br>
 • Standard Deviation of the mean duration<br>
 
-One regular model (XGBoost) and three ensembles (Ensemble C50, Ensemble Elastic and Ensemble XGBoost) had 100% accuracy as measured by the AUC score on the holdout data. This can be viewed by looking at the ROC (Receiver Operating Curves) for the data, with the Area Under the Curve (AUC) noted for each graph:<br><br>
+Three ensembles (Ensemble C50, Ensemble Elastic and Ensemble XGBoost) had 100% accuracy as measured by the AUC score on the holdout data. This can be viewed by looking at the ROC (Receiver Operating Curves) for the data, with the Area Under the Curve (AUC) noted for each graph:<br><br>
 
 ![ROC Curves](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_ROC_curves.jpg)<br>
 
@@ -270,15 +270,15 @@ Neither the original data nor the ensemble had strongly correlated predictors. F
 
 <br>The correlation table for the ensemble:
 
-|                               | Elastic| Flexible Discriminant Analysis| Generalized Additive Models| Generalized Linear Models| Gradient Boosted| Neuralnet|      y|
-|:------------------------------|-------:|------------------------------:|---------------------------:|-------------------------:|----------------:|---------:|------:|
-|Elastic                        |  1.0000|                         0.7049|                      0.1621|                    0.9845|           0.0246|    0.0355| 0.6414|
-|Flexible Discriminant Analysis |  0.7049|                         1.0000|                      0.1584|                    0.7010|           0.0242|    0.0361| 0.7718|
-|Generalized Additive Models    |  0.1621|                         0.1584|                      1.0000|                    0.1616|           0.0276|    0.2028| 0.1626|
-|Generalized Linear Models      |  0.9845|                         0.7010|                      0.1616|                    1.0000|           0.0247|    0.0354| 0.6381|
-|Gradient Boosted               |  0.0246|                         0.0242|                      0.0276|                    0.0247|           1.0000|    0.0088| 0.0632|
-|Neuralnet                      |  0.0355|                         0.0361|                      0.2028|                    0.0354|           0.0088|    1.0000| 0.0403|
-|y                              |  0.6414|                         0.7718|                      0.1626|                    0.6381|           0.0632|    0.0403| 1.0000|
+|                               | Elastic| Flexible Discriminant Analysis| Generalized Linear Models| Gradient Boosted| Neuralnet|  Ridge|      y|
+|:------------------------------|-------:|------------------------------:|-------------------------:|----------------:|---------:|------:|------:|
+|Elastic                        |  1.0000|                         0.8668|                    0.1543|           0.7578|    0.0615| 0.9451| 0.7563|
+|Flexible_Discriminant_Analysis |  0.8668|                         1.0000|                    0.1700|           0.8682|    0.0678| 0.8579| 0.8257|
+|Generalized_Linear_Models      |  0.1543|                         0.1700|                    1.0000|           0.1597|    0.3480| 0.1477| 0.1624|
+|Gradient_Boosted               |  0.7578|                         0.8682|                    0.1597|           1.0000|    0.0679| 0.7654| 0.7195|
+|Neuralnet                      |  0.0615|                         0.0678|                    0.3480|           0.0679|    1.0000| 0.0589| 0.0690|
+|Ridge                          |  0.9451|                         0.8579|                    0.1477|           0.7654|    0.0589| 1.0000| 0.7302|
+|y                              |  0.7563|                         0.8257|                    0.1624|           0.7195|    0.0690| 0.7302| 1.0000|
 
 We can also see how much time each model took to run (measured in seconds). All of the models ran in less than five seconds, half of them ran in less than one second:
 
