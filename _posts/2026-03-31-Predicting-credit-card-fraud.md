@@ -3,22 +3,6 @@
 Russ Conte<br>
 Tuesday March 31, 2026<br>
 
-<details>
-
-<summary>Tips for collapsed sections</summary>
-
-### You can add a header
-
-You can add text within a collapsed section.
-
-You can add an image or a code block, too.
-
-```ruby
-   puts "Hello World"
-```
-
-</details>
-
 <h3>Introduction</h3>
 Credit card fraud is a huge problem in the retail sector, with total losses in the billions of dollars each year. This blog post will highlight how you can understand the process of fighting credit card fraud with data science.
 
@@ -234,6 +218,22 @@ Both data and ensemble correlations > 0.99 are removed, thus removing the possib
 The process is timed.<br>
 
 <h4>Everything ran in 3.016171 minutes without any errors, warnings, or issues. The majority of the time was spent saving the image files and trained models. If the models and images are not saved, everything completed in 1.776362 mins, a substantially shorter run time.</h4>
+
+<details>
+
+<summary>The models (click to expand):</summary>
+
+### Individual models first, then ensembles
+
+|Model name | Model |
+|:----------:|:-----------:|
+|Elastic |  y <- train$y<br>
+  x <- data.matrix(train %>% dplyr::select(-y))<br>
+  elastic_model <- glmnet::glmnet(x, y, alpha = 0.5)<br>
+  elastic_cv <- glmnet::cv.glmnet(x, y, alpha = 0.5)<br>
+  best_elastic_lambda <- elastic_cv$lambda.min<br>
+  best_elastic_model <- glmnet::glmnet(x, y, alpha = 0.5, family = "binomial")<br>
+</details>
 
 <h2>Step 3: Highest Accuracy results on the holdout data, resampled 25 times, sorted (decreasing) by Area Under The Curve per model</h2>
 
