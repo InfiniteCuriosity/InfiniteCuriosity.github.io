@@ -254,6 +254,10 @@ Three ensembles (Ensemble C50, Ensemble Elastic and Ensemble XGBoost) had 100% a
 
 ![ROC Curves](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_data_ROC_curves.jpg)<br>
 
+<h3>Summary graphs on each of the measures for all of the models and resamples</h3>
+
+
+
 <h4>Step 4: Strongest Predictors: Which variables are the strongest predictors, and how strong are they?</h4>
 
 We begin by looking at a table of the importance of the predictors. Several points stand out:<br>
