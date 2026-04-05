@@ -282,7 +282,7 @@ Neither the original data nor the ensemble had strongly correlated predictors. F
 
 We can also see how much time each model took to run (measured in seconds). All of the models ran in less than five seconds, half of them ran in less than one second:
 
-![Duration](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_duration_barchart.jpg)<br>
+![Duration](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_fraud_duration_barchart.jpg)<br>
 
 <h2>Step 5: Strongest evidence based recommendations to fight credit card fraud based on the credit card fraud data set</h2>
 
