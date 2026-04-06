@@ -1,7 +1,7 @@
 <b><h1>How data science can help fight credit card fraud using real fraud data</h1></b>
 
 Russ Conte<br>
-Tuesday March 31, 2026<br>
+Monday April 06, 2026<br>
 
 <h3>Introduction</h3>
 Credit card fraud is a huge problem in the retail sector, with total losses in the billions of dollars each year. This blog post will highlight how you can understand the process of fighting credit card fraud with data science.
