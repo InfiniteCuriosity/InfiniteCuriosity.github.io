@@ -307,7 +307,7 @@ F1 score:
 
 ![F1 score](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_F1_score_free_scales.jpg)<br>
 
-<h4>Step 4: Strongest Predictors: Which variables are the strongest predictors, and how strong are they?</h4>
+<h2>Step 4: Strongest Predictors: Which variables are the strongest predictors, and how strong are they?</h2>
 
 We begin by looking at a table of the importance of the predictors. Several points stand out:<br>
 
