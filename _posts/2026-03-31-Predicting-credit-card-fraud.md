@@ -338,7 +338,7 @@ We can also see how much time each model took to run (measured in seconds):
 
 ![Duration](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_fraud_duration_barchart.jpg)<br>
 
-<h2>Step 5: Strongest evidence based recommendations to fight credit card fraud based on the cdata and analysis</h2>
+<h2>Step 5: Strongest evidence based recommendations to fight credit card fraud based on the data and analysis</h2>
 
 First principles to solve the problem:<br>
 • The Exploratory Data Analysis suggested the target is logistic<br>
