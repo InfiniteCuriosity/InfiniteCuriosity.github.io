@@ -1,1 +1,1 @@
-Blog posts where I show what the NumericEnsembles, ClassificationEnsembles, LogisticEnsembles, ForecastingEnsembles and SurvivalEnsembles packages that I've created and posted on CRAN can do.
+Blog posts where I show what the NumericEnsembles, ClassificationEnsembles, LogisticEnsembles, ForecastingEnsembles and SurvivalEnsembles packages that I've created and posted on CRAN can do. Each of the packages can be installed in a very short period of time, and can be used to get the results that will be shown on this blog!
