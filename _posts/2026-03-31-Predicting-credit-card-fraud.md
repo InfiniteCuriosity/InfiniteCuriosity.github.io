@@ -151,7 +151,7 @@ Given our data, our customer wants to predict credit card fraud. They also want 
 
 <h2>Step 2: Building the models using the LogisticEnsembles package, as hosted on CRAN</h2>
 
-LogisticEnsembles will do the following:<br>
+LogisticEnsembles will do all of the following:<br>
 • Automatically split the data into train/test/validation sets<br>
 • Automatically fit each of 7 logistic models and 5 ensembles of logistic models to the training data<br>
 • Automatically resample as many times as requested (two times for this example)<br>
