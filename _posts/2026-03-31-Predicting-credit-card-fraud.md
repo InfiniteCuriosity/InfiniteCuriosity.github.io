@@ -334,7 +334,7 @@ Neither the original data nor the ensemble had strongly correlated predictors.
 |Ridge                          |  0.9451|                         0.8579|                    0.1477|           0.7654|    0.0589| 1.0000| 0.7302|
 |y                              |  0.7563|                         0.8257|                    0.1624|           0.7195|    0.0690| 0.7302| 1.0000|
 
-We can also see how much time each model took to run (measured in seconds). All of the models ran in less than five seconds, half of them ran in less than one second:
+We can also see how much time each model took to run (measured in seconds). All of the models ran in less than six seconds, half of them ran in less than one second:
 
 ![Duration](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_fraud_duration_barchart.jpg)<br>
 
