@@ -345,10 +345,10 @@ First principles to solve the problem:<br>
 • The LogisticEnsembles package was used to do the entire analysis<br>
 • The Exploratory Data Analysis showed the data have very narrow interquartile ranges<br>
 • The Correlation tables show that neither the original data nor the ensemble are strongly correlated with the target<br>
-• Four models had 100% predictive accuracy on the holdout data: XGBoost, Ensemble C50, Ensemble Elastic and Ensemble XGBoost<br>
-• The same four models had excellent scores on Sensitivity, Specificity, Type I Error, Type II Error, Precision, Negative Predictive Value and F1 Score<br>
+• Three models had 100% predictive accuracy on the holdout data: Ensemble C50, Ensemble Elastic and Ensemble XGBoost<br>
+• The same three models had excellent scores on Sensitivity, Specificity, Type I Error, Type II Error, Precision, Negative Predictive Value and F1 Score<br>
 • An analysis of the strongest predictors showed that eight of the ten strongest predictors are negative.<br>
-• Given these results, it is recommended that LogisticEnsembles be used with similar data sets about fraud.<br>
+• Given these results, it is recommended that LogisticEnsembles be used with similar data sets about credit card fraud.<br>
 
 <h2>Step 6: Conclusions</h2>
 
