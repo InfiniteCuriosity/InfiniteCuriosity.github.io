@@ -13,10 +13,9 @@ Monday April 13, 2026<br>
 7. Highest Accuracy<br>
 8. Strongest Predictor<br>
 9. Strongest Evidence Based Recommendations<br>
-10. Comparison to other results<br>
+10. Comparison to Other Results<br>
 11. Notes<br>
 12. References<br>
-
 
 <h4>1. Introduction and Statement of the Problem</h4>
 
