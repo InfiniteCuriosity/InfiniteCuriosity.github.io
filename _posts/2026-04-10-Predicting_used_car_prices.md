@@ -129,6 +129,8 @@ Head of the data.<br>
 |<b>engineSize</b>   |  0.2908422| -0.0263365|    0.0357695| -0.0025398| -0.0491125|  0.4296163| -0.3998435|  1.0000000|  0.4601962|
 |<b>y (price)</b>            |  0.4632516|  0.6237561|    0.2123343| -0.6053968|  0.1068889|  0.2634838| -0.2048823|  0.4601962|  1.0000000|
 
+Outliers list<br>
+
 
 <h4>Summary of the Exploratory Data Analysis</h4>
 
@@ -270,6 +272,12 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 ![Overfitting_free_scales](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_overfitting_plot_free_scales.jpg)<br>
 
 ![Total_plot_free_scales](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_total_plot_free_scales.jpg)<br>
+
+Variance Inflation Factor
+
+Ensemble Correlation
+
+
 
 Neither the original data nor the ensemble had strongly correlated predictors.
 
