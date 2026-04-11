@@ -257,7 +257,7 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 
 <h2>Summary charts and reports</h2>
 
-<h4>Accuracy barchart</h4>
+<h4>Accuracy barchart, including one standard deviation error bars</h4>
 
 ![Accuracy_barchart](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_accuracy_barchart.jpg)<br>
 
