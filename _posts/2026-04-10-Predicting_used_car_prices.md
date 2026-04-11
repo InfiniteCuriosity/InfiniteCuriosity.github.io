@@ -3,10 +3,7 @@
 Russ Conte<br>
 Monday April 13, 2026<br>
 
-<h3>Introduction and Statement of the Problem</h3>
-
-
-<h4>You can get the same results with this data set. The methods, results and graphics are all fully reproducible, as described in this blog post</h4>
+<h4>Introduction and Statement of the Problem</h4>
 
 In this blog post we will look at:<br>
 • How big is the problem of used car prices?<br>
@@ -31,7 +28,7 @@ The data set was originally posted at https://www.kaggle.com/datasets/nalisha/bm
 
 > This dataset contains detailed information about BMW cars, including technical specifications, usage metrics, and pricing. It is suitable for data analysis, visualization, and machine learning regression tasks.
 
-Columns description:
+Columns description (as reported on kaggle.com):
 
 |Column.name  |Description                                        |
 |:------------|:--------------------------------------------------|
