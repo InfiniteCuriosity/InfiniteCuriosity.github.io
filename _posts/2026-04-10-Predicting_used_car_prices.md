@@ -9,11 +9,11 @@ Monday April 13, 2026<br>
 3. How Big is the Problem?<br>
 4. The Data Set<br>
 5. Model Building<br>
-6. Model summaries: tables and plots<br>
+6. Model summaries: Tables and Plots<br>
 7. Highest Accuracy<br>
 8. Strongest Predictor<br>
 9. Strongest Evidence Based Recommendations<br>
-10. Comparison to Other Results<br>
+10. Comparison to Other Results for this Data Set<br>
 11. Notes<br>
 12. References<br>
 
