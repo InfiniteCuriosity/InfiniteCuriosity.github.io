@@ -42,7 +42,7 @@ The data set was originally posted at https://www.kaggle.com/datasets/nalisha/bm
 
 Columns description (as reported on kaggle.com):
 
-|Column.name  |Description                                        |
+|Column Name  |Description                                        |
 |:------------|:--------------------------------------------------|
 |model        |BMW car model name (e.g., 3 Series, X5, 5 Series)  |
 |year         |Manufacturing year of the vehicle                  |
