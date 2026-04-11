@@ -82,7 +82,7 @@ In addition, the Interquartile Range provides:IQR = Q3 - Q1<br>
 
 <h4>Step 1b: Looking at the data: Histograms of the data</h4>
 
-![Histograms](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_histograms.jpg)<br>
+![Histograms](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_histograms.jpeg)<br>
 
 The histograms confirm what the boxplots showed: The majority of the values for each feature are narrowly spread out. Only the time feature has data which is widely spread out.
 
