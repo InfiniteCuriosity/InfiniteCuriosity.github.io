@@ -62,7 +62,7 @@ George Akerloff, Joseph Stiglitz and Michael Spence won the 2001 Nobel Memorial 
 
 Several laws have been passed since the publication of the paper. The Magnuson–Moss Warranty Act (P.L. 93-637) is a federal law that protects consumers by requiring if a product has a warranty, the warranty must comply with the act.
 
-<h4>Boxplots</h4><br>
+<h4>4a. Boxplots</h4><br>
 
 ![Boxplots](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_boxplots.jpg)<br>
 
@@ -80,15 +80,15 @@ In addition, the Interquartile Range provides:IQR = Q3 - Q1<br>
 
 
 
-<h4>Step 1b: Looking at the data: Histograms of the numeric data</h4>
+<h4>4b: Looking at the data: Histograms of the numeric data</h4>
 
 ![Histograms](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_histograms.jpeg)<br>
 
-<h4>Price vs each feature</h4>
+<h4>4c. Price vs each feature</h4>
 
 ![Histograms](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_predictor_vs_target.jpg)<br>
 
-<h4>Step 1c: Head of the data</h4>
+<h4>4d: Head of the data (the first ten rows)</h4>
 Head of the data.<br>
 
 |model    | year| price|transmission | mileage|fuelType | tax|  mpg| engineSize|
@@ -105,7 +105,7 @@ Head of the data.<br>
 |5 Series | 2016| 14250|Automatic    |   36099|Diesel   |  20| 68.9|        2.0|
 
 
-<h4>Step 1d: Data summary</h4>
+<h4>4e: Data summary</h4>
 
 |   |      model    |     year    |    price      |   transmission |   mileage     |    fuelType  |     tax      |     mpg      |  engineSize  |
 |:--|:--------------|:------------|:--------------|:---------------|:--------------|:-------------|:-------------|:-------------|:-------------|
@@ -117,7 +117,7 @@ Head of the data.<br>
 | <b>Max<b>|X1      : 804  |2020 |123456 |NA              |214000 |NA            |580.0 |470.8 |6.600 |
 | <b>Other</b> |(Other)  :2285 |NA           |NA             |NA              |NA             |NA            |NA            |NA            |NA            |
 
-<h4>Data correlation table</h4>
+<h4>4f: Data correlation table</h4>
 
 |             |      model|       year| transmission|    mileage|   fuelType|        tax|        mpg| engineSize|          y|
 |:------------|----------:|----------:|------------:|----------:|----------:|----------:|----------:|----------:|----------:|
