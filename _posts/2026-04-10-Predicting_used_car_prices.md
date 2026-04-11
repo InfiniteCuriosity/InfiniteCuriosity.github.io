@@ -257,6 +257,8 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 
 <h2>Summary charts and reports</h2>
 
+Summary results table
+
 <h4>Accuracy barchart, including one standard deviation error bars</h4>
 
 ![Accuracy_barchart](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_accuracy_barchart.jpg)<br>
@@ -265,9 +267,15 @@ Accuracy plot by each of the 32 models and each resample:
 
 ![Accuracy_plot](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_accuracy_plot_free_scales.jpg)<br>
 
+Bias of each of the trained models
+
 ![Bias_barchart](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_bias_barchart.jpg)<br>
 
+Kolomogrov-Smirnov test (measures how likely the predicted distribution is to be similar to the training set distribution).
+
 ![K_S_test](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_k_s_test_barchart.jpg)<br>
+
+Overfitting barcharts (three charts)
 
 ![K_S_test](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_overfitting_barchart.jpg)<br>
 
@@ -285,7 +293,7 @@ Neither the original data nor the ensemble had strongly correlated predictors.
 
 <br>The correlation table for the ensemble:
 
-We can also see how much time each model took to run (measured in seconds):
+We can also see how much time each model took to run (mean time, measured in seconds):
 
 ![Duration](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_fraud_duration_barchart.jpg)<br>
 
