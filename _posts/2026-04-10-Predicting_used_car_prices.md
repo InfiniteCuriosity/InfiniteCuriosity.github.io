@@ -65,6 +65,7 @@ Several laws have been passed since the publication of the paper. The Magnusonâ€
 <h4>Boxplots</h4><br>
 
 ![Boxplots](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_boxplots.jpg)
+
 What are boxplots, and what are they telling us about the credit card fraud data?
 
 Boxplots provide a five number summary of each variable. The five values are:
