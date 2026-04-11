@@ -143,27 +143,42 @@ First NumericEnsembles will automatically build a set of numeric models. Some of
 
 <h2>6. Model summaries: Tables and Plots</h2>
 
-The 32 numeric model summaries:<br>
+The 32 numeric model summaries (18 individual models and 14 ensembles of models):<br>
 | Model name  | Individual or Ensemble | Type of Learning  | Type of Tuning |
 |:-----:|:----------:|:----------:|:---------:|
-| Bagging | Individual | Regular | Not tuned |
-| BayesGLM | Individual | Regular | Not tuned |
-| BayesRNN | Individual | Regular | Not tuned |
-| Cubist | Individual | Regular | Not tuned |
-| Earth | Individual | Regular | Not tuned |
-| Elastic | Individual | Regular | Cross-Validation |
-| Generalized Additive Models | Individual | Regular | Smoothing Splines |
-| Gradient Boosted | Individual | Deep Learning | Trees, Shrinkage, Interaction Depth |
-| Lasso | Individual | Regular | Cross-Validation |
-| Linear | Indvidual | Regular | Tuned (e1071) |
-| Neuralnet | Individual | Deep Learning | Size and linout |
-| Partial Least Squares | Individual | Regular | Not tuned |
-| Principal Components Analysis | Individual | Regular | Not tuned |
-| Ridge | Individual | Regular | Cross-Validation |
-| RPart | Individual | Regular | Not tuned |
-| Support Vector Machines | Individual | Regular | Tuned (e1071)|
-| Trees| Individual | Regular | Cross-Validation |
-| XGBoost | Individual | Deep Learning | xgb.params, nrounds = 70 |
+| 1. Bagging | Individual | Regular | Not tuned |
+| 2. BayesGLM | Individual | Regular | Not tuned |
+| 3. BayesRNN | Individual | Regular | Not tuned |
+| 4. Cubist | Individual | Regular | Not tuned |
+| 5. Earth | Individual | Regular | Not tuned |
+| 6. Elastic | Individual | Regular | Cross-Validation |
+| 7. Generalized Additive Models | Individual | Regular | Smoothing Splines |
+| 8. Gradient Boosted | Individual | Deep Learning | Trees, Shrinkage, Interaction Depth |
+| 9. Lasso | Individual | Regular | Cross-Validation |
+| 10. Linear | Indvidual | Regular | Tuned (e1071) |
+| 11. Neuralnet | Individual | Deep Learning | Size and linout |
+| 12. Partial Least Squares | Individual | Regular | Not tuned |
+| 13. Principal Components Analysis | Individual | Regular | Not tuned |
+| 14. Ridge | Individual | Regular | Cross-Validation |
+| 15. RPart | Individual | Regular | Not tuned |
+| 16. Support Vector Machines | Individual | Regular | Tuned (e1071)|
+| 17. Trees| Individual | Regular | Cross-Validation |
+| 18. XGBoost | Individual | Deep Learning | xgb.params, nrounds = 70 |
+| 19. Ensemble Bagging | Ensemble | Regular | Not tuned |
+| 20. Ensemble BayesGLM | Ensemble | Regular | Not tuned |
+| 21. Ensemble BayesRNN | Ensemble | Regular | Not tuned |
+| 22. Ensemble Cubinst | Ensemble | Regular | Not tuned |
+| 23. Ensemble Earth | Ensemble | Regular | Not tuned |
+| 24. Ensemble Elastic | Ensemble | Regular | Cross-Validation |
+| 25. Ensemble Gradient Boosted | Ensemble | Deep Learning | Trees, Shrinkage, Interaction Depth |
+| 26. Ensemble Lasso | Ensemble | Regular | Cross-Validation |
+| 27. Ensemble Linear | Ensemble | Regular | Tuned (e1071) |
+| 28. Neuralnet | Ensemble | Deep Learning | Size and linout |
+| 29. Ensemble Ridge | Ensemble | Regular Learning | Cross-Validation |
+| 30. Ensemble RPart | Ensemble | Regular Learning | Not tuned |
+| 31. Ensemble Support Vector Machines | Ensemble | Regular Learning | Tuned (e1071) |
+| 32. Ensemble Trees | Ensemble | Regular Learning | Cross-Validation |
+
 
 <h4>How the NumericEnsembles package makes this much faster and easier to solve, using only one line of code, while maintaining a very high level of accuracy on the holdout data. Here is the one line of code (plus a couple of lines to time the analysis and check for errors):</h4>
 
