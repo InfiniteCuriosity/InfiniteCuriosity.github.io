@@ -22,7 +22,7 @@ Monday April 13, 2026<br>
 <h4>2. Statement regarding No Use of AI</h4>
 No Artificial Intelligence systems (AI) were used in any part of the process. This analysis excludes all commercial AI systems, large language models, coding assistants, generative AI models or any other AI systems. The entire process is fully reproducible without any use of AI. Therefore this analysis does not have any of the possible errors, liabilities, or risks of AI systems.
 <br><br>
-Therefore any errors are entirely my responsibility.<br>
+Therefore any errors are entirely my responsibility alone.<br>
 
 <h4>3. Literature Review</h4>
 We will look at two anayses of the same data set.
@@ -89,11 +89,33 @@ In addition, the Interquartile Range provides:IQR = Q3 - Q1<br>
 ![Histograms](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_predictor_vs_target.jpg)<br>
 
 <h4>Step 1c: Head of the data</h4>
-Head of the data. 
+Head of the data.<br>
+
+|model    | year| price|transmission | mileage|fuelType | tax|  mpg| engineSize|
+|:--------|----:|-----:|:------------|-------:|:--------|---:|----:|----------:|
+|5 Series | 2014| 11200|Automatic    |   67068|Diesel   | 125| 57.6|        2.0|
+|6 Series | 2018| 27000|Automatic    |   14827|Petrol   | 145| 42.8|        2.0|
+|5 Series | 2016| 16000|Automatic    |   62794|Diesel   | 160| 51.4|        3.0|
+|1 Series | 2017| 12750|Automatic    |   26676|Diesel   | 145| 72.4|        1.5|
+|7 Series | 2014| 14500|Automatic    |   39554|Diesel   | 160| 50.4|        3.0|
+|5 Series | 2016| 14900|Automatic    |   35309|Diesel   | 125| 60.1|        2.0|
+|5 Series | 2017| 16000|Automatic    |   38538|Diesel   | 125| 60.1|        2.0|
+|2 Series | 2018| 16250|Manual       |   10401|Petrol   | 145| 52.3|        1.5|
+|4 Series | 2017| 14250|Manual       |   42668|Diesel   |  30| 62.8|        2.0|
+|5 Series | 2016| 14250|Automatic    |   36099|Diesel   |  20| 68.9|        2.0|
 
 
 <h4>Step 1d: Data summary</h4>
 
+|   |      model    |     year    |    price      |   transmission |   mileage     |    fuelType  |     tax      |     mpg      |  engineSize  |
+|:--|:--------------|:------------|:--------------|:---------------|:--------------|:-------------|:-------------|:-------------|:-------------|
+| Min    |3 Series:2443  |Min.   :1996 |Min.   :  1200 |Automatic:3588  |Min.   :     1 |Diesel  :7027 |Min.   :  0.0 |Min.   :  5.5 |Min.   :0.000 |
+| 1st Qu   |1 Series:1969  |1st Qu.:2016 |1st Qu.: 14950 |Manual   :2527  |1st Qu.:  5529 |Electric:   3 |1st Qu.:135.0 |1st Qu.: 45.6 |1st Qu.:2.000 |
+| Median   |2 Series:1229  |Median :2017 |Median : 20462 |Semi-Auto:4666  |Median : 18347 |Hybrid  : 298 |Median :145.0 |Median : 53.3 |Median :2.000 |
+| Mean   |5 Series:1056  |Mean   :2017 |Mean   : 22733 |NA              |Mean   : 25497 |Other   :  36 |Mean   :131.7 |Mean   : 56.4 |Mean   :2.168 |
+| 3rd Qu   |4 Series: 995  |3rd Qu.:2019 |3rd Qu.: 27940 |NA              |3rd Qu.: 38206 |Petrol  :3417 |3rd Qu.:145.0 |3rd Qu.: 62.8 |3rd Qu.:2.000 |
+| Max  |X1      : 804  |Max.   :2020 |Max.   :123456 |NA              |Max.   :214000 |NA            |Max.   :580.0 |Max.   :470.8 |Max.   :6.600 |
+|   |(Other)  :2285 |NA           |NA             |NA              |NA             |NA            |NA            |NA            |NA            |
 
 
 <h4>Summary of the Exploratory Data Analysis</h4>
