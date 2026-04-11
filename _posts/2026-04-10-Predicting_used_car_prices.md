@@ -146,18 +146,24 @@ First NumericEnsembles will automatically build a set of numeric models. Some of
 The 32 numeric model summaries:<br>
 | Model name  | Individual or Ensemble | Type of Learning  | Type of Tuning |
 |:-----:|:----------:|:----------:|:---------:|
-| Elastic| Individual | Regular Learning | Cross-Validation |
-| Flexible Discriminant Analysis | Individual | Regular Learning | Not Tuned |
-| Generalized Additve Models | Individual | Regular Learning | Not Tuned |
-| Generalized Linear Models | Individual | Regular Learning | Cross-Validation |
-| Gradient Boosted | Individual | Deep Learning | Optimize trees = 100, depth = 1 |
-| Neuralnet | Individual | Deep Learning | Linout = True, Skip = True |
-| Ridge  | Individual | Regular earning | Cross-Validation |
-| Ensemble C50 | Ensemble | Regular Learning | Not Tuned |
-| Ensemble Elastic | Ensemble | Regular Learning | Cross-Validation |
-| Ensemble GLMNET | Ensemble | Deep Learning | Cross-Validation |
-| Ensemble Neuralnet | Ensemble | Deep Learning | Linout = True, Skip = True |
-| Ensemble XGBoost | Ensemble | Deep Learning | Validation |
+| Bagging | Individual | Regular | Not tuned |
+| BayesGLM | Individual | Regular | Not tuned |
+| BayesRNN | Individual | Regular | Not tuned |
+| Cubist | Individual | Regular | Not tuned |
+| Earth | Individual | Regular | Not tuned |
+| Elastic | Individual | Regular | Cross-Validation |
+| Generalized Additive Models | Individual | Regular | Smoothing Splines |
+| Gradient Boosted | Individual | Deep Learning | Trees, Shrinkage, Interaction Depth |
+| Lasso | Individual | Regular | Cross-Validation |
+| Linear | Indvidual | Regular | Tuned (e1071) |
+| Neuralnet | Individual | Deep Learning | Size and linout |
+| Partial Least Squares | Individual | Regular | Not tuned |
+| Principal Components Analysis | Individual | Regular | Not tuned |
+| Ridge | Individual | Regular | Cross-Validation |
+| RPart | Individual | Regular | Not tuned |
+| Support Vector Machines | Individual | Regular | Tuned (e1071)|
+| Trees| Individual | Regular | Cross-Validation |
+| XGBoost | Individual | Deep Learning | xgb.params, nrounds = 70 |
 
 <h4>How the NumericEnsembles package makes this much faster and easier to solve, using only one line of code, while maintaining a very high level of accuracy on the holdout data. Here is the one line of code (plus a couple of lines to time the analysis and check for errors):</h4>
 
