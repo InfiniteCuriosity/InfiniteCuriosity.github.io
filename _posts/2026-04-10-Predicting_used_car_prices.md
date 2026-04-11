@@ -249,77 +249,14 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 |Ensemble XGBoost |ensemble_train_x = data.matrix(ensemble_train[, 1 : ncol(ensemble_train)])<br>ensemble_train_y = ensemble_train[,ncol(ensemble_train) : ncol(ensemble_train)]<br><br>#define predictor and response variables in ensemble_test set<br>ensemble_test_x = data.matrix(ensemble_test[, 1 : ncol(ensemble_test)])<br>ensemble_test_y = ensemble_test[, ncol(ensemble_test) : ncol(ensemble_test)]<br><br>#define predictor and response variables in ensemble_validation set<br>ensemble_validation_x = data.matrix(ensemble_validation[, 1 : ncol(ensemble_validation)])<br>ensemble_validation_y = ensemble_validation[, ncol(ensemble_validation): ncol(ensemble_validation)]<br><br>#define final ensemble_train, ensemble_test and ensemble_validation sets<br> ensemble_xgb_train <-  xgboost::xgb.DMatrix(data = ensemble_train_x, label = as.matrix(ensemble_train_y))<br>ensemble_xgb_test <- xgboost::xgb.DMatrix(data = ensemble_test_x, label = as.matrix(ensemble_test_y))<br>ensemble_xgb_validation <-  xgboost::xgb.DMatrix(data = ensemble_validation_x, label = as.matrix(ensemble_validation_y))<br><br>#define watchlist<br>watchlist = list(ensemble_train = ensemble_xgb_train, ensemble_validation=ensemble_xgb_validation)<br>watchlist_ensemble_test <- list(ensemble_train = ensemble_xgb_train, ensemble_test = ensemble_xgb_test)<br>watchlist_ensemble_validation <- list(ensemble_train = ensemble_xgb_train, ensemble_validation = ensemble_xgb_validation)<br><br>#Definte XGB Model<br>ensemble_xgb_model <- xgboost::xgb.train(data = ensemble_xgb_train, evals = watchlist_ensemble_test, nrounds = 70)<br>|
 
 
-<h2>7. Highest Accuracy</h2>
+<h2>7. Highest Accuracy (Summary report sorted by root mean squared error, smallest error on the top of the report)</h2>
 
-|Model                          | Area Under the Curve| True Positive Rate (aka Sensitivity)| True Negative Rate (aka Specificity)| False Positive Rate aka (Type I Error)| False Negative Rate (aka Type II Error)| Positive Predictive Value (aka Precision)| Negative Predictive Value| F1 Score| Duration| Duration standard deviation|
-|:------------------------------|----------------:|----------------------------------:|----------------------------------:|------------------------------------:|-------------------------------------:|---------------------------------------:|-------------------------:|--------:|--------:|-----------:|
-|Ensemble C50                   |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   1.0742|      0.0214|
-|Ensemble Elastic               |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   1.1288|      0.3737|
-|Ensemble XGBoost               |           1.0000|                             1.0000|                             1.0000|                               0.0000|                                0.0000|                                  1.0000|                    1.0000|   1.0000|   0.2054|      0.0291|
-|Ensemble Neuralnet             |           0.9346|                             0.8986|                             0.9606|                               0.0394|                                0.1014|                                  0.0385|                    0.9998|   0.0738|   0.1442|      0.0226|
-|Generalized Additive Models    |           0.9268|                             0.9002|                             0.9605|                               0.0395|                                0.0998|                                  0.0390|                    0.9998|   0.0747|   0.9536|      0.0887|
-|Generalized Linear Models      |           0.9268|                             0.9002|                             0.9605|                               0.0395|                                0.0998|                                  0.0390|                    0.9998|   0.0747|   1.0113|      0.0622|
-|Flexible Discriminant Analysis |           0.8877|                             0.6950|                             0.9997|                               0.0003|                                0.3050|                                  0.7960|                    0.9995|   0.7417|   0.6158|      0.0816|
-|Neuralnet                      |           0.8601|                             0.9672|                             0.7624|                               0.2376|                                0.0328|                                  0.0071|                    0.9999|   0.0141|   2.2355|      0.1190|
-|Gradient Boosted               |           0.8386|                             0.4438|                             0.9997|                               0.0003|                                0.5562|                                  0.6668|                    0.9990|   0.4909|   5.2172|      0.0778|
-|Elastic                        |           0.8224|                             0.6099|                             0.6099|                               0.0000|                                0.3901|                                  0.8733|                    0.9993|   0.7174|   3.0656|      0.2167|
-|Ridge                          |           0.7979|                             0.5703|                             0.9999|                               0.0001|                                0.4297|                                  0.8838|                    0.9992|   0.6924|   3.4303|      0.1135|
-|Ensemble GLM                   |           0.7975|                             0.7101|                             0.9998|                               0.0002|                                0.2899|                                  0.8585|    
 <br>
-Comments on the summary report:
 
-The LogisticEnsembles package automatically calculated all of the results, sorted by Area Under the Curve, and put them in a summary table:<br>
-• Area Under the Curve<br>
-• True Positive Rate (Sensitivity)<br>
-• True Negative Rate (Specificity)<br>
-• False Positive Rate (Type I Error)<br>
-• False Negative Rate (Type II Error)<br>
-• Positive Predictive Value (Precision)<br>
-• Negative Predictive Value<br>
-• F1 Score<br>
-• Duration (in seconds)<br>
-• Standard Deviation of the mean duration<br>
+<h2>Summary charts and reports</h2>
 
-Three ensembles (Ensemble C50, Ensemble Elastic and Ensemble XGBoost) had 100% accuracy as measured by the AUC score on the holdout data. This can be viewed by looking at the ROC (Receiver Operating Curves) for the data, with the Area Under the Curve (AUC) noted for each graph:<br><br>
-
-![ROC Curves](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_data_ROC_curves.jpg)<br>
-
-<h3>Summary graphs on each of the measures for all of the models and resamples</h3>
-
-True positive rate:
-
-![True positive rate](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_true_positive_rate_free_scales.jpg)<br>
-
-True negative rate:
-
-![True negative rate](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_true_negative_rate_free_scales.jpg)<br>
-
-False positive rate:
-
-![False positive rate](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_false_positive_rate_free_scales.jpg)<br>
-
-False negative rate:
-
-![False negative rate](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_false_negative_rate_free_scales.jpg)<br>
-
-Positive predictive value:
-
-![Positive predictive value](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_positive_predictive_value_free_scales.jpg)<br>
-
-Negative predictive value:
-
-![Negative predictive value](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_negative_predictive_value_free_scales.jpg)<br>
-
-F1 score:
-
-![F1 score](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_F1_score_free_scales.jpg)<br>
-
-<h2>8. Strongest Predictor</h2><br>
-
-
-![Variable importance table](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_Credit_Card_Fraud_Variable_Importance_Report.jpg)<br>
-
-![Variable Importance Barchart](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_variable_importance_barchart.jpg)<br>
+<h4>Accuracy barchart</h4>
+![Accuracy barchart](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_accuracy_barchart.jpg)<br>
 
 Neither the original data nor the ensemble had strongly correlated predictors.
 
