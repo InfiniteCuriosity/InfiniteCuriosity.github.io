@@ -64,7 +64,7 @@ Several laws have been passed since the publication of the paper. The Magnusonâ€
 
 <h4>Boxplots</h4><br>
 
-![Boxplots](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_boxplots.jpg)
+![Boxplots](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_boxplots.jpg)<br>
 
 What are boxplots, and what are they telling us about the credit card fraud data?
 
@@ -78,11 +78,11 @@ Boxplots provide a five number summary of each variable. The five values are:
 <br>
 In addition, the Interquartile Range provides:IQR = Q3 - Q1<br>
 
-The boxplots for the Credit Card Fraud data set clearly show the values for V1 through v28 have a very small interquartile range, and number of values above and below that range for virtually all features.The values for each feature vary across the data set. For example, the Boxplots show that V10 has values between approximately -24 and 24, but V24 has values between approximately -3 and 5.The boxplot for y (the target) only has values of 0 and 1, without any interquartile range.
+
 
 <h4>Step 1b: Looking at the data: Histograms of the data</h4>
 
-![Histograms](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_histograms.jpg)<br>
+![Histograms](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_histograms.jpg)<br>
 
 The histograms confirm what the boxplots showed: The majority of the values for each feature are narrowly spread out. Only the time feature has data which is widely spread out.
 
