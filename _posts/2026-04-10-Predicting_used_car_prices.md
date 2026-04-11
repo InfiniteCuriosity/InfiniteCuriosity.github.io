@@ -6,10 +6,10 @@ Monday April 13, 2026<br>
 <h4>Outline</h4>
 1. Introduction and Statement of the Problem<br>
 2. Statement Regarding No Use of AI<br>
-3. How Big is the Problem?
-4. The Data Set
-5. Model Building
-6. Model summaries: tables and plots
+3. How Big is the Problem?<br>
+4. The Data Set<br>
+5. Model Building<br>
+6. Model summaries: tables and plots<br>
 7. Highest Accuracy<br>
 8. Strongest Predictor<br>
 9. Strongest Evidence Based Recommendations<br>
