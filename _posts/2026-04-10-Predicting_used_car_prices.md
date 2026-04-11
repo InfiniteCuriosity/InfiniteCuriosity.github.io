@@ -259,6 +259,8 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 
 ![Accuracy_barchart](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_accuracy_barchart.jpg)<br>
 
+![Accuracy_plot](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_accuracy_plot_free_scales.jpg)<br>
+
 Neither the original data nor the ensemble had strongly correlated predictors.
 
 <br>The correlation table for the ensemble:
