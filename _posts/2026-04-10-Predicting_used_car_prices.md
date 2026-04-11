@@ -3,6 +3,25 @@
 Russ Conte<br>
 Monday April 13, 2026<br>
 
+<h4>Outline</h4>
+1. Introduction and Statement of the Problem<br>
+2. Statement Regarding No Use of AI<br>
+3. The Data Set<br>
+º Boxplots
+º Histograms
+º Head of the data
+º Data Summary
+º Plot of Predictor vs each Target
+º Separators
+4. Model Building
+5. Model Results (table)
+6. Model Results (plots)
+7. Highest Accuracy
+8. Strongest Predictor
+9. Strongest Evidence Based Recommendations
+10. Summary
+
+
 <h4>Introduction and Statement of the Problem</h4>
 
 In this blog post we will look at:<br>
@@ -43,13 +62,7 @@ Columns description (as reported on kaggle.com):
 |engineSize   |Engine size in liters                              |
 
 <h4>Why is this type of problem so difficult to solve?</h4>
-Most examples of data have large results that are easy to see. However, fraud data typically only shows up in a small fraction of 1% of the transactions. In our case it's less than 2/10 of 1% of the transactions. We are looking for the proverbial needle in the haystack, that's part of why it is so difficult to solve.<br>
 
-In addition, Dal Pozzolo and colleagues cited additional causes that make this problem difficult to solve:<br>
-
->Detecting frauds in credit card transactions is perhaps one of the best testbeds for computational intelligence algorithms. In fact, this problem involves a number of relevant challenges, namely: concept drift (customers' habits evolve and fraudsters change their strategies over time), class imbalance (genuine transactions far outnumber frauds), and verification latency (only a small set of transactions are timely checked by investigators). However, the vast majority of learning algorithms that have been proposed for fraud detection rely on assumptions that hardly hold in a real-world fraud-detection system (FDS).<br>
-
-Source: https://www.researchgate.net/publication/319867396_Credit_Card_Fraud_Detection_A_Realistic_Modeling_and_a_Novel_Learning_Strategy
 
 <h2>Step 1: Look at the data: box plots, histograms, head of the data, data summaries</h2>
 We will begin by looking at boxplots of the data:<br>
