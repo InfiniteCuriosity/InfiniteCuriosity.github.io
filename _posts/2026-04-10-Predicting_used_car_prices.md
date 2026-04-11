@@ -62,10 +62,9 @@ George Akerloff, Joseph Stiglitz and Michael Spence won the 2001 Nobel Memorial 
 
 Several laws have been passed since the publication of the paper. The Magnuson–Moss Warranty Act (P.L. 93-637) is a federal law that protects consumers by requiring if a product has a warranty, the warranty must comply with the act.
 
-<h2>Step 1: Look at the data: box plots, histograms, head of the data, data summaries</h2>
-We will begin by looking at boxplots of the data:<br>
+<h4>Boxplots</h4><br>
 
-![Boxplots](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_boxplots.jpg)
+![Boxplots](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_boxplots.jpg)
 What are boxplots, and what are they telling us about the credit card fraud data?
 
 Boxplots provide a five number summary of each variable. The five values are:
