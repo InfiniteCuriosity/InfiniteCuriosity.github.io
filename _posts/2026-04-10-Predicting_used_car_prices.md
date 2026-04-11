@@ -109,12 +109,12 @@ Head of the data.<br>
 
 |   |      model    |     year    |    price      |   transmission |   mileage     |    fuelType  |     tax      |     mpg      |  engineSize  |
 |:--|:--------------|:------------|:--------------|:---------------|:--------------|:-------------|:-------------|:-------------|:-------------|
-| Min    |3 Series:2443  |Min.   :1996 |Min.   :  1200 |Automatic:3588  |Min.   :     1 |Diesel  :7027 |Min.   :  0.0 |Min.   :  5.5 |Min.   :0.000 |
-| 1st Qu   |1 Series:1969  |1st Qu.:2016 |1st Qu.: 14950 |Manual   :2527  |1st Qu.:  5529 |Electric:   3 |1st Qu.:135.0 |1st Qu.: 45.6 |1st Qu.:2.000 |
-| Median   |2 Series:1229  |Median :2017 |Median : 20462 |Semi-Auto:4666  |Median : 18347 |Hybrid  : 298 |Median :145.0 |Median : 53.3 |Median :2.000 |
-| Mean   |5 Series:1056  |Mean   :2017 |Mean   : 22733 |NA              |Mean   : 25497 |Other   :  36 |Mean   :131.7 |Mean   : 56.4 |Mean   :2.168 |
-| 3rd Qu   |4 Series: 995  |3rd Qu.:2019 |3rd Qu.: 27940 |NA              |3rd Qu.: 38206 |Petrol  :3417 |3rd Qu.:145.0 |3rd Qu.: 62.8 |3rd Qu.:2.000 |
-| Max  |X1      : 804  |Max.   :2020 |Max.   :123456 |NA              |Max.   :214000 |NA            |Max.   :580.0 |Max.   :470.8 |Max.   :6.600 |
+| Min|3 Series:2443  |1996 |1200 |3588  |1 |7027 |0.0 |5.5 |0.000 |
+| 1st Qu|1 Series:1969  |2016 |14950 |Manual   :2527  |5529 |Electric:   3 |135.0 |45.6 |2.000 |
+| Median|2 Series:1229  |2017 |20462 |Semi-Auto:4666  |18347 |Hybrid  : 298 |145.0 |53.3 |2.000 |
+| Mean|5 Series:1056  |2017 |22733 |NA              |25497 |Other   :  36 |131.7 |56.4 |2.168 |
+| 3rd Qu|4 Series: 995  |2019 |27940 |NA              |38206 |Petrol  :3417 |145.0 |62.8 |2.000 |
+| Max|X1      : 804  |2020 |123456 |NA              |214000 |NA            |580.0 |470.8 |6.600 |
 |   |(Other)  :2285 |NA           |NA             |NA              |NA             |NA            |NA            |NA            |NA            |
 
 
