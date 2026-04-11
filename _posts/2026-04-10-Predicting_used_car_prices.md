@@ -33,7 +33,17 @@ The data set was originally posted at https://www.kaggle.com/datasets/nalisha/bm
 
 Columns description:
 
-
+|Column.name  |Description                                        |
+|:------------|:--------------------------------------------------|
+|model        |BMW car model name (e.g., 3 Series, X5, 5 Series)  |
+|year         |Manufacturing year of the vehicle                  |
+|price        |Selling price of the car                           |
+|transmission |Transmission type (Manual / Automatic / Semi-Auto) |
+|mileage      |Total distance driven (in miles or km)             |
+|fuelType     |Fuel type (Petrol, Diesel, Hybrid, Electric)       |
+|tax          |Annual road tax                                    |
+|mpg          |Miles per gallon (fuel efficiency)                 |
+|engineSize   |Engine size in liters                              |
 
 <h4>Why is this type of problem so difficult to solve?</h4>
 Most examples of data have large results that are easy to see. However, fraud data typically only shows up in a small fraction of 1% of the transactions. In our case it's less than 2/10 of 1% of the transactions. We are looking for the proverbial needle in the haystack, that's part of why it is so difficult to solve.<br>
