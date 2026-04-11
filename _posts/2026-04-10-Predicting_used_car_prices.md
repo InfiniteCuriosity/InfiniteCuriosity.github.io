@@ -78,8 +78,6 @@ Boxplots provide a five number summary of each variable. The five values are:
 <br>
 In addition, the Interquartile Range provides:IQR = Q3 - Q1<br>
 
-
-
 <h4>4b: Looking at the data: Histograms of the numeric data</h4>
 
 ![Histograms](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_histograms.jpeg)<br>
