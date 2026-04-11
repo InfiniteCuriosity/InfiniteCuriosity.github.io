@@ -17,7 +17,7 @@ In this blog post we will look at:<br>
 
 <h4>Statement regarding no use of AI</h4>
 No Artificial Intelligence systems (AI) were used in any part of the process. This analysis excludes all commercial AI systems, large language models, coding assistants, generative AI models or any other AI systems. The entire process is fully reproducible without any use of AI. Therefore this analysis does not have any of the possible errors, liabilities, or risks of AI systems.
-<br>
+<br><br>
 Therefore any errors are entirely my responsibility.<br>
 
 <h4>How big is the problem of determining used car prices?</h4>
