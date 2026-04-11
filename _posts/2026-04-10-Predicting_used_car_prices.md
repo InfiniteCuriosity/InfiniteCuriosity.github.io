@@ -7,19 +7,15 @@ Monday April 13, 2026<br>
 1. Introduction and Statement of the Problem<br>
 2. Statement Regarding No Use of AI<br>
 3. The Data Set<br>
-º Boxplots
-º Histograms
-º Head of the data
-º Data Summary
-º Plot of Predictor vs each Target
-º Separators
-4. Model Building
-5. Model Results (table)
-6. Model Results (plots)
-7. Highest Accuracy
-8. Strongest Predictor
-9. Strongest Evidence Based Recommendations
-10. Summary
+4. Model Building<br>
+5. Model Results (tables)<br>
+6. Model Results (plots)<br>
+7. Highest Accuracy<br>
+8. Strongest Predictor<br>
+9. Strongest Evidence Based Recommendations<br>
+10. Summary<br>
+11. Notes<br>
+12. References<br>
 
 
 <h4>Introduction and Statement of the Problem</h4>
