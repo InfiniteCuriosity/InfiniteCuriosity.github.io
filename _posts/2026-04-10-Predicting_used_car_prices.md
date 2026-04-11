@@ -18,7 +18,7 @@ Monday April 13, 2026<br>
 12. References<br>
 
 
-<h4># 1. Introduction and Statement of the Problem</h4>
+<h4>## 1. Introduction and Statement of the Problem</h4>
 
 In this blog post we will look at:<br>
 • How big is the problem of used car prices?<br>
