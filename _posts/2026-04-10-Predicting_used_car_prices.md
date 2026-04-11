@@ -4,11 +4,11 @@ Russ Conte<br>
 Monday April 13, 2026<br>
 
 <h4>Outline</h4>
-1. Introduction and Statement of the Problem<br>
+1. Introduction and Statement of the Problem (What Does the Customer Actually Want?)<br>
 2. Statement Regarding No Use of AI<br>
 3. How Big is the Problem?<br>
 4. The Data Set<br>
-5. Model Building<br>
+5. Model Building (18 individual models, 14 ensembles of models)<br>
 6. Model summaries: Tables and Plots<br>
 7. Highest Accuracy<br>
 8. Strongest Predictor<br>
@@ -34,10 +34,10 @@ No Artificial Intelligence systems (AI) were used in any part of the process. Th
 <br><br>
 Therefore any errors are entirely my responsibility.<br>
 
-<h4>How big is the problem of determining used car prices?</h4>
+<h4>3. How big is the problem?</h4>
 
 
-<h4>3. The data set</h4>
+<h4>4. The data set</h4>
 The data set was originally posted at https://www.kaggle.com/datasets/nalisha/bmw-car-sales-and-price-dataset. The description of the data set states:
 
 > This dataset contains detailed information about BMW cars, including technical specifications, usage metrics, and pricing. It is suitable for data analysis, visualization, and machine learning regression tasks.
@@ -109,16 +109,13 @@ It may be very instructive to add charts, tables and graphs from our models to o
 
 The LogisticEnsembles package hosted on CRAN can accomplish all of these requirements, and will be used for this data set.
 
-<h2>What does the customer actually want?</h2>
-Given our data, our customer wants to predict credit card fraud. They also want results that are fully reproducible.
+<h2>5. Building the models using the NumericEnsembles package, as hosted on CRAN</h2>
 
-<h2>Step 2: Building the models using the LogisticEnsembles package, as hosted on CRAN</h2>
-
-LogisticEnsembles will do all of the following:<br>
+NumericEnsembles will do all of the following:<br>
 • Automatically split the data into train/test/validation sets<br>
-• Automatically fit each of 7 logistic models and 5 ensembles of logistic models to the training data<br>
-• Automatically resample as many times as requested (two times for this example)<br>
-• Automatically make predictions and check accuracy on the holdout data (test and validation)<br>
+• Automatically fit each of 18 individual models and 14 ensembles of numeric models to the training data<br>
+• Automatically resample as many times as requested (25 times for this example)<br>
+• Automatically make predictions and measure accuracy on the holdout data (test and validation)<br>
 • Automatically make summary graphics for each of the measures<br>
 • Automatically make a summary table for the importance of each variable in the data set<br>
 • There are no API calls, no use of any coding assistants, no use of any AI systems.<br>
