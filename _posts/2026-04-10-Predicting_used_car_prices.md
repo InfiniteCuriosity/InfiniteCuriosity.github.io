@@ -24,8 +24,16 @@ No Artificial Intelligence systems (AI) were used in any part of the process. Th
 <br><br>
 Therefore any errors are entirely my responsibility.<br>
 
-<h4>3. Literature Review (How Big is the Problem?)</h4>
+<h4>3. Literature Review</h4>
+We will look at two anayses of the same data set.
 
+https://www.kaggle.com/code/faisalamir/analysis-modelling-and-business-insight
+The mean RMSE is approximately $2,338.90.
+
+https://www.kaggle.com/code/hakimshaikhh/bmwcar-price-prediction
+The mean RMSE is approximately $2,300.08
+
+The results from this present analysis for non-ensemble models will approximately match the values in those reports. However, the RMSE using ensembles will be much lower (and lower RMSE is better). The present analysis also uses more models than both of those anayses combined, and that is part of why the present analysis has results with a lower RMSE.
 
 <h4>4. The Data Set</h4>
 The data set was originally posted at https://www.kaggle.com/datasets/nalisha/bmw-car-sales-and-price-dataset. The description of the data set states:<br><br>
@@ -46,7 +54,11 @@ Columns description (as reported on kaggle.com):
 |mpg          |Miles per gallon (fuel efficiency)                 |
 |engineSize   |Engine size in liters                              |
 
+The data has 10,781 rows and nine variables. All the variables are numeric.<br>
+
 <h4>Why is this type of problem so difficult to solve?</h4>
+
+
 
 
 <h2>Step 1: Look at the data: box plots, histograms, head of the data, data summaries</h2>
