@@ -115,7 +115,7 @@ Head of the data.<br>
 | Mean|5 Series:1056  |2017 |22733 |NA              |25497 |Other   :  36 |131.7 |56.4 |2.168 |
 | 3rd Qu|4 Series: 995  |2019 |27940 |NA              |38206 |Petrol  :3417 |145.0 |62.8 |2.000 |
 | Max|X1      : 804  |2020 |123456 |NA              |214000 |NA            |580.0 |470.8 |6.600 |
-|   |(Other)  :2285 |NA           |NA             |NA              |NA             |NA            |NA            |NA            |NA            |
+| Other |(Other)  :2285 |NA           |NA             |NA              |NA             |NA            |NA            |NA            |NA            |
 
 
 <h4>Summary of the Exploratory Data Analysis</h4>
