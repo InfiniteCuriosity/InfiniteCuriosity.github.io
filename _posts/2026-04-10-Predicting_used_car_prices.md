@@ -19,25 +19,15 @@ Monday April 13, 2026<br>
 
 <h4>1. Introduction and Statement of the Problem</h4>
 
-In this blog post we will look at:<br>
-• How big is the problem of used car prices?<br>
-• Why is this type of problem so difficult to solve?<br>
-• Look at the data: box plots, histograms, head of the data, data summaries<br>
-• What does the customer actually want?<br>
-• Highest accuracy numeric model using the NumericEnsembles package<br>
-• Strongest predictor using reports from the NumericEnsembles package<br>
-• Strongest evidence based recommendations<br>
-• Conclusion/summary<br>
-
 <h4>2. Statement regarding No Use of AI</h4>
 No Artificial Intelligence systems (AI) were used in any part of the process. This analysis excludes all commercial AI systems, large language models, coding assistants, generative AI models or any other AI systems. The entire process is fully reproducible without any use of AI. Therefore this analysis does not have any of the possible errors, liabilities, or risks of AI systems.
 <br><br>
 Therefore any errors are entirely my responsibility.<br>
 
-<h4>3. How big is the problem?</h4>
+<h4>3. Literature Review (How Big is the Problem?)</h4>
 
 
-<h4>4. The data set</h4>
+<h4>4. The Data Set</h4>
 The data set was originally posted at https://www.kaggle.com/datasets/nalisha/bmw-car-sales-and-price-dataset. The description of the data set states:<br><br>
 
 > This dataset contains detailed information about BMW cars, including technical specifications, usage metrics, and pricing. It is suitable for data analysis, visualization, and machine learning regression tasks.
@@ -102,7 +92,7 @@ It may be very instructive to add charts, tables and graphs from our models to o
 
 The NumericEnsembles package hosted on CRAN can accomplish all of these requirements, and will be used for this data set.
 
-<h2>5. Building the models using the NumericEnsembles package, as hosted on CRAN</h2>
+<h2>5. Model Building (18 individual models, 14 ensembles of models)</h2>
 
 NumericEnsembles will do all of the following:<br>
 • Automatically split the data into train/test/validation sets<br>
@@ -116,6 +106,8 @@ NumericEnsembles will do all of the following:<br>
 
 <h2>How NumericEnsembles builds a team of rival models requiring only one line of code from the user</h2>
 First NumericEnsembles will automatically build a set of numeric models. Some of the models are individual, others are ensembles, some are regular learning, others are deep learning, some are tuned models, others are not tuned models.<br>
+
+<h2>6. Model summaries: Tables and Plots</h2>
 
 The 32 numeric model summaries:<br>
 | Model name  | Individual or Ensemble | Type of Learning  | Type of Tuning |
@@ -190,9 +182,7 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 |Ensemble XGBoost |ensemble_train_x = data.matrix(ensemble_train[, 1 : ncol(ensemble_train)])<br>ensemble_train_y = ensemble_train[,ncol(ensemble_train) : ncol(ensemble_train)]<br><br>#define predictor and response variables in ensemble_test set<br>ensemble_test_x = data.matrix(ensemble_test[, 1 : ncol(ensemble_test)])<br>ensemble_test_y = ensemble_test[, ncol(ensemble_test) : ncol(ensemble_test)]<br><br>#define predictor and response variables in ensemble_validation set<br>ensemble_validation_x = data.matrix(ensemble_validation[, 1 : ncol(ensemble_validation)])<br>ensemble_validation_y = ensemble_validation[, ncol(ensemble_validation): ncol(ensemble_validation)]<br><br>#define final ensemble_train, ensemble_test and ensemble_validation sets<br> ensemble_xgb_train <-  xgboost::xgb.DMatrix(data = ensemble_train_x, label = as.matrix(ensemble_train_y))<br>ensemble_xgb_test <- xgboost::xgb.DMatrix(data = ensemble_test_x, label = as.matrix(ensemble_test_y))<br>ensemble_xgb_validation <-  xgboost::xgb.DMatrix(data = ensemble_validation_x, label = as.matrix(ensemble_validation_y))<br><br>#define watchlist<br>watchlist = list(ensemble_train = ensemble_xgb_train, ensemble_validation=ensemble_xgb_validation)<br>watchlist_ensemble_test <- list(ensemble_train = ensemble_xgb_train, ensemble_test = ensemble_xgb_test)<br>watchlist_ensemble_validation <- list(ensemble_train = ensemble_xgb_train, ensemble_validation = ensemble_xgb_validation)<br><br>#Definte XGB Model<br>ensemble_xgb_model <- xgboost::xgb.train(data = ensemble_xgb_train, evals = watchlist_ensemble_test, nrounds = 70)<br>|
 
 
-
-
-<h2>Step 3: Highest Accuracy results on the holdout data, resampled 25 times, sorted (decreasing) by Area Under The Curve per model</h2>
+<h2>7. Highest Accuracy</h2>
 
 |Model                          | Area Under the Curve| True Positive Rate (aka Sensitivity)| True Negative Rate (aka Specificity)| False Positive Rate aka (Type I Error)| False Negative Rate (aka Type II Error)| Positive Predictive Value (aka Precision)| Negative Predictive Value| F1 Score| Duration| Duration standard deviation|
 |:------------------------------|----------------:|----------------------------------:|----------------------------------:|------------------------------------:|-------------------------------------:|---------------------------------------:|-------------------------:|--------:|--------:|-----------:|
@@ -257,14 +247,8 @@ F1 score:
 
 ![F1 score](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/big_credit_card_fraud_F1_score_free_scales.jpg)<br>
 
-<h2>Step 4: Strongest Predictors: Which variables are the strongest predictors, and how strong are they?</h2>
+<h2>8. Strongest Predictor</h2><br>
 
-We begin by looking at a table of the importance of the predictors. Several points stand out:<br>
-
-• The list is in descending order (most important predictors on top, descending to least important predictors on the bottom)<br>
-• Ten of the 12 largest predictors have a negative influence on the result<br>
-• The ten most important variables account for 77.32% of the total, and more than 66.81% of the value is negative.<br>
-• It is strongly recommended to look at variables V17, V14, V12, V10, V16, V7, and V3, as they are all negative, and constitute more than 63% of the total.<br>
 
 ![Variable importance table](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_Credit_Card_Fraud_Variable_Importance_Report.jpg)<br>
 
@@ -274,21 +258,13 @@ Neither the original data nor the ensemble had strongly correlated predictors.
 
 <br>The correlation table for the ensemble:
 
-|                               | Elastic| Flexible Discriminant Analysis| Generalized Linear Models| Gradient Boosted| Neuralnet|  Ridge|      y|
-|:------------------------------|-------:|------------------------------:|-------------------------:|----------------:|---------:|------:|------:|
-|Elastic                        |  1.0000|                         0.8668|                    0.1543|           0.7578|    0.0615| 0.9451| 0.7563|
-|Flexible_Discriminant_Analysis |  0.8668|                         1.0000|                    0.1700|           0.8682|    0.0678| 0.8579| 0.8257|
-|Generalized_Linear_Models      |  0.1543|                         0.1700|                    1.0000|           0.1597|    0.3480| 0.1477| 0.1624|
-|Gradient_Boosted               |  0.7578|                         0.8682|                    0.1597|           1.0000|    0.0679| 0.7654| 0.7195|
-|Neuralnet                      |  0.0615|                         0.0678|                    0.3480|           0.0679|    1.0000| 0.0589| 0.0690|
-|Ridge                          |  0.9451|                         0.8579|                    0.1477|           0.7654|    0.0589| 1.0000| 0.7302|
-|y                              |  0.7563|                         0.8257|                    0.1624|           0.7195|    0.0690| 0.7302| 1.0000|
-
 We can also see how much time each model took to run (measured in seconds):
 
 ![Duration](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Big_credit_card_fraud_duration_barchart.jpg)<br>
 
-<h2>Step 5: Strongest evidence based recommendations to fight credit card fraud based on the data and analysis</h2>
+<br>
+
+<h2>9. Strongest Evidence Based Recommendations</h2>
 
 First principles to solve the problem:<br>
 • The Exploratory Data Analysis suggested the target is logistic<br>
@@ -300,8 +276,13 @@ First principles to solve the problem:<br>
 • An analysis of the strongest predictors showed that eight of the ten strongest predictors are negative.<br>
 • Given these results, it is recommended that LogisticEnsembles be used with similar data sets about credit card fraud.<br>
 
-<h2>Step 6: Conclusions</h2>
+10. Comparison to Other Results for this Data Set<br>
+
+
+<h2>11: Conclusions</h2>
 
 The LogisticEnsembles package was able to complete the entire analysis in less than five minutes, providing results on the holdout data which meet the customer's requirements for predicting fraud in this data set with very high accuracy.
+
+<h2>References</h2>
 
 #Rstats #DataScience #XGBoost #Fraud #Finance #FinancialFraud #CreditCard #Crime #FinancialCrime #FightingCrime #CrimeFighter #Dataviz #ggplot2 #tidyverse
