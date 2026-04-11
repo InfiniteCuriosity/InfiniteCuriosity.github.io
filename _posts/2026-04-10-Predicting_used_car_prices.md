@@ -84,7 +84,7 @@ In addition, the Interquartile Range provides:IQR = Q3 - Q1<br>
 
 <h4>4c. Price vs each feature</h4>
 
-![Histograms](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_predictor_vs_target.jpg)<br>
+![Price vs each feature](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_predictor_vs_target.jpg)<br>
 
 <h4>4d: Head of the data (the first ten rows)</h4>
 Head of the data.<br>
