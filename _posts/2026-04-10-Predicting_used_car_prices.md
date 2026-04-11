@@ -7,7 +7,7 @@ Monday April 13, 2026<br>
 1. Introduction and Statement of the Problem (What Does the Customer Actually Want?)<br>
 2. Statement Regarding No Use of AI<br>
 3. Literature Review (How Big is the Problem?)<br>
-4. The Data Set<br>
+4. The Data Set (including exploratory data analysis)<br>
 5. Model Building (18 individual models, 14 ensembles of models)<br>
 6. Model summaries: Tables and Plots<br>
 7. Highest Accuracy<br>
@@ -58,8 +58,9 @@ The data has 10,781 rows and nine variables. All the variables are numeric.<br>
 
 <h4>Why is this type of problem so difficult to solve?</h4>
 
+George Akerloff, Joseph Stiglitz and Michael Spence won the 2001 Nobel Memorial Prize in Economic Sciences based on their paper, "The Market for 'Lemons': Quality Uncertainty and the Market Mechanism", published in the Quarterly Journal of Economics. The problem of finding a fair price for a used car as modeled as a game of assymetric information that the seller will win in a majority of cases. It is the assymetry of information about the used car that makes this such a difficult problem to solve.
 
-
+Several laws have been passed since the publication of the paper. The Magnuson–Moss Warranty Act (P.L. 93-637) is a federal law that protects consumers by requiring if a product has a warranty, the warranty must comply with the act.
 
 <h2>Step 1: Look at the data: box plots, histograms, head of the data, data summaries</h2>
 We will begin by looking at boxplots of the data:<br>
