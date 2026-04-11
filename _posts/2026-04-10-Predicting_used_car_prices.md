@@ -269,6 +269,8 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 
 ![Overfitting_free_scales](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_overfitting_plot_free_scales.jpg)<br>
 
+![Total_plot_free_scales](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_total_plot_free_scales.jpg)<br>
+
 Neither the original data nor the ensemble had strongly correlated predictors.
 
 <br>The correlation table for the ensemble:
