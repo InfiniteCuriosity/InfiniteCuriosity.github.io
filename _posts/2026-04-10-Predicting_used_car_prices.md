@@ -6,7 +6,7 @@ Monday April 13, 2026<br>
 <h4>Outline</h4>
 1. Introduction and Statement of the Problem (What Does the Customer Actually Want?)<br>
 2. Statement Regarding No Use of AI<br>
-3. How Big is the Problem?<br>
+3. Literature Review (How Big is the Problem?)<br>
 4. The Data Set<br>
 5. Model Building (18 individual models, 14 ensembles of models)<br>
 6. Model summaries: Tables and Plots<br>
@@ -97,17 +97,10 @@ The Exploratory Data Analysis of the Credit Card data provides evidence that the
 
 <h4>What the Exploratory Data Analysis suggests</h4>
 
-The value of an Exploratory Data Analysis is that it suggests methods to accurately model the data. Given the nature of the data:<br>
-• The target, Class, is logistic (either fraud or not fraud)<br>
-• Fraud is indicated in 492 out of the 284,807 rows, so AUC is a much more reliable measure than Accuracy.<br>
-• A range of models is suggested, as this might provide a better result than a single modeling system, such as Generalized Linear Models.<br>
-• We will use seven individual models and five ensembles of models in our analysis.<br>
-• We will use a combination of regular learning and deep learning models<br>
-• We will use a combination of tuned models (in all possible situations) and untuned models (if it is not possible to tune the models)<br>
 
 It may be very instructive to add charts, tables and graphs from our models to our result to help us in our decision making.
 
-The LogisticEnsembles package hosted on CRAN can accomplish all of these requirements, and will be used for this data set.
+The NumericEnsembles package hosted on CRAN can accomplish all of these requirements, and will be used for this data set.
 
 <h2>5. Building the models using the NumericEnsembles package, as hosted on CRAN</h2>
 
@@ -121,10 +114,10 @@ NumericEnsembles will do all of the following:<br>
 • There are no API calls, no use of any coding assistants, no use of any AI systems.<br>
 • Neither the user's data nor activity is shared, stored, or tracked in any way. They do not help produce more accurate models.<br>
 
-<h2>How LogisticEnsembles builds a team of rival models requiring only one line of code from the user</h2>
-First LogisticEnsembles will automatically build a set of logistic models. The models used by the LogisticEnsembles package are a team of rivals. Some of the models are individual, others are ensembles, some are regular learning, others are deep learning, some are tuned models, others are not tuned models.<br>
+<h2>How NumericEnsembles builds a team of rival models requiring only one line of code from the user</h2>
+First NumericEnsembles will automatically build a set of numeric models. Some of the models are individual, others are ensembles, some are regular learning, others are deep learning, some are tuned models, others are not tuned models.<br>
 
-Logistic model summaries:<br>
+The 32 numeric model summaries:<br>
 | Model name  | Individual or Ensemble | Type of Learning  | Type of Tuning |
 |:-----:|:----------:|:----------:|:---------:|
 | Elastic| Individual | Regular Learning | Cross-Validation |
@@ -140,42 +133,39 @@ Logistic model summaries:<br>
 | Ensemble Neuralnet | Ensemble | Deep Learning | Linout = True, Skip = True |
 | Ensemble XGBoost | Ensemble | Deep Learning | Validation |
 
-<h4>How the LogisticEnsembles package makes this much faster and easier to solve, using only one line of code, while maintaining a very high level of accuracy on the holdout data. Here is the one line of code (plus a couple of lines to time the analysis and check for errors):</h4>
+<h4>How the NumericEnsembles package makes this much faster and easier to solve, using only one line of code, while maintaining a very high level of accuracy on the holdout data. Here is the one line of code (plus a couple of lines to time the analysis and check for errors):</h4>
 
 ```
-library(LogisticEnsembles)
-
 start_time <- Sys.time()
-Logistic(data = read.csv('/Users/russellconte/creditcard.csv'),
-         colnum = 31,
-         numresamples = 25,
-         positive_rate = 0.001727486,
-         remove_VIF_greater_than <- 5.00,
-         save_all_trained_models = "Y",
-         save_all_plots = "Y",
-         set_seed = "N",
-         how_to_handle_strings = 0,
-         do_you_have_new_data = "N",
-         stratified_column_number = 0,
-         remove_data_correlations_greater_than = 0.99,
-         remove_ensemble_correlations_greater_than = 0.99,
-         use_parallel = "Y",
-         train_amount = 0.50,
-         test_amount = 0.25,
-         validation_amount = 0.25)
-end_time <- Sys.time()
-duration <- end_time - start_time
-duration
-warnings()
+
+library(NumericEnsembles)
+Numeric(data = read.csv('https://raw.githubusercontent.com/InfiniteCuriosity/EnsemblesData/refs/heads/main/bmw.csv', stringsAsFactors = TRUE),
+  colnum = 3,
+  numresamples = 25,
+  remove_VIF_above = 5.00,
+  remove_data_correlations_greater_than = 0.99,
+  remove_ensemble_correlations_greater_than = 1.00,
+  scale_all_predictors_in_data = "N",
+  data_reduction_method = 0,
+  ensemble_reduction_method = 0,
+  how_to_handle_strings = 1,
+  predict_on_new_data = "N",
+  save_all_trained_models = "Y",
+  stratified_random_column = 0,
+  set_seed = "N",
+  save_all_plots = "Y",
+  use_parallel = "Y",
+  train_amount = 0.60,
+  test_amount = 0.20,
+  validation_amount = 0.20)
+  
+  end_time <- Sys.time()
+  duration <- end_time - start_time
+  duration
+  warnings()
 ```
 
-Comments on LogisticEnsembles applied to the Credit Card Fraud data set:
-
-The data is stored on my local computer, since it is 150 MB in size.<br>
-The models are resampled 25 times, and the mean of those results will be provided.<br>
-All the plots and models are saved to be used in writing reports and summaries.<br>
-Both data and ensemble correlations > 0.99 are removed, thus removing the possibility of perfectly correlated features in the original data and the ensembles.<br>
-The process is timed.<br>
+Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 
 <h4>Everything ran in 3.016171 minutes without any errors, warnings, or issues. The majority of the time was spent saving the image files and trained models. If the models and images are not saved, everything completed in 1.776362 mins, a substantially shorter run time.</h4>
 
