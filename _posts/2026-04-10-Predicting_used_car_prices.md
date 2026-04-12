@@ -241,7 +241,9 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 |BayesRNN | ```bayesrnn_train_fit <- brnn::brnn(x = as.matrix(train), y = train$y)```|
 |Cubist | ```cubist_train_fit <- Cubist::cubist(x = train[, 1:ncol(train) - 1], y = train$y)```|
 |Earth |```earth_train_fit <- earth::earth(x = train[, 1:ncol(train) - 1], y = train$y)```|
-|Elastic |``` y <- train$y x <- data.matrix(train %>% dplyr::select(-y))<br>elastic_model <- glmnet::glmnet(x, y, alpha = 0.5)<br>elastic_cv <- glmnet::cv.glmnet(x, y, alpha = 0.5)<br>best_elastic_lambda <- elastic_cv$lambda.min<br>best_elastic_model <- glmnet::glmnet(x, y, alpha = 0, lambda = best_elastic_lambda)```|
+|Elastic |``` y <- train$y
+
+x <- data.matrix(train %>% dplyr::select(-y))<br>elastic_model <- glmnet::glmnet(x, y, alpha = 0.5)<br>elastic_cv <- glmnet::cv.glmnet(x, y, alpha = 0.5)<br>best_elastic_lambda <- elastic_cv$lambda.min<br>best_elastic_model <- glmnet::glmnet(x, y, alpha = 0, lambda = best_elastic_lambda)```|
 |GAM (Generalized Additive Models) with Smoothing Splines |``` n_unique_vals <- purrr::map_dbl(df, dplyr::n_distinct)<br># Names of columns with >= 4 unique vals<br>keep <- names(n_unique_vals)[n_unique_vals >= 4]<br><br>gam_data <- df %>%
 dplyr::select(dplyr::all_of(keep))<br># Model data<br>train1 <- train %>%dplyr::select(dplyr::all_of(keep))<br>test1 <- test %>% dplyr::select(dplyr::all_of(keep))<br>validation1 <- validation %>%dplyr::select(dplyr::all_of(keep))<br>
 names_df <- names(gam_data[, 1:ncol(gam_data) - 1])<br>f2 <- stats::as.formula(paste0("y ~", paste0("gam::s(", names_df, ")", collapse = "+")))<br>
