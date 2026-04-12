@@ -13,7 +13,7 @@ Monday April 13, 2026<br>
 7. Highest Accuracy<br>
 8. Strongest Predictor<br>
 9. Strongest Evidence Based Recommendations<br>
-10. Comparison to Other Results for this Data Set<br>
+10. Summary: The Story in this Data Set<br>
 11. Notes<br>
 12. References<br>
 
@@ -311,7 +311,7 @@ First principles to solve the problem:<br>
 • An analysis of the strongest predictors showed that eight of the ten strongest predictors are negative.<br>
 • Given these results, it is recommended that LogisticEnsembles be used with similar data sets about credit card fraud.<br>
 
-10. Comparison to Other Results for this Data Set<br>
+10. Summary: The Story in this Data Set<br>
 
 
 <h2>11: Conclusions</h2>
