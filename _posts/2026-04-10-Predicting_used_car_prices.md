@@ -406,14 +406,9 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 
 <h2>Summary charts and reports</h2>
 
-<h4>Summary plots of the three models with the lowest root mean squared error</h4>
+<h4>Summary plots of the model with the lowest root mean squared error (Ensemble Earth)</h4>
 
 ![Ensemble Earth summary](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_ensemble_earth_summary.jpg)<br>
-
-![Ensemble BayesGLM summary](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_ensemble_bayesglm_summary.jpg)<br>
-
-![Ensemble Neuralnet summary](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/Predicting_car_prices_ensemble_neuralnet_summary.jpg)<br>
-
 
 Summary results table
 
