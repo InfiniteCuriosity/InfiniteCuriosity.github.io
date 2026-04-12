@@ -274,9 +274,9 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 
 
 
-<h2>7. Highest Accuracy (Summary report sorted by root mean squared error, smallest error on the top of the report)</h2>
+<h2>7. Highest Accuracy (Summary report sorted by root mean squared error)</h2>
 
-|Model                     | Mean_holdout_RMSE| RMSE_Lower_95_Conf_Int| RMSE_Upper_95_Conf_Int| RMSE_Std_Dev|
+|Model                     | Mean holdout RMSE| RMSE Lower 95 Conf Int| RMSE Upper 95 Conf Int| RMSE Std Dev|
 |:-------------------------|-----------------:|----------------------:|----------------------:|------------:|
 |Actual data               |            0.0000|                 0.0000|                 0.0000|       0.0000|
 |Ensemble Earth            |           63.0734|                61.1806|                64.9662|       0.7095|
