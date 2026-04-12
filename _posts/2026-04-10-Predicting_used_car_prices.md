@@ -31,9 +31,8 @@ A complete exploratory data analysis was done and will be presented.
 This body of tests and results will allow us to make evidence based recommendations, 
 
 <h4>2. Statement regarding No Use of AI</h4>
-No Artificial Intelligence systems (AI) were used in any part of the process. This analysis excludes all commercial AI systems, large language models, coding assistants, generative AI models or any other AI systems. The entire process is fully reproducible without any use of AI. Therefore this analysis does not have any of the possible errors, liabilities, or risks of AI systems.
-<br><br>
-Therefore any errors are entirely my responsibility alone.<br>
+No Artificial Intelligence systems (AI) were used in any part of the process. This analysis excludes all commercial AI systems, large language models, coding assistants, generative AI models or any other AI systems. The entire process is fully reproducible without any use of AI. There is no possibility of any AI hallucination, lack of transparency, lack of reproducibility, errors due to training on the wrong type of data, violations of privacy, shared without consent, lack of human oversight, or any other errors which might be introduced by large AI systems. All of those are prevented since large AI systems were never used.
+<br>
 
 <h4>All the processes and results are fully transparent and reproducible</h4>
 
