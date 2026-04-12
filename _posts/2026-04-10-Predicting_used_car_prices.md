@@ -253,34 +253,7 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 |RPart|```rpart_train_fit <- rpart::rpart(train$y ~ ., data = train)```|
 |Support Vector Machines|```svm_train_fit <- e1071::tune.svm(x = train, y = train$y, data = train)```|
 |Trees|``` tree_train_fit <- tree::tree(train$y ~ ., data = train)```|
-|XGBoost|``` train_x <- data.matrix(train[, -ncol(train)])
-  train_y <- train[, ncol(train)]
-
-  # define predictor and response variables in test set
-  test_x <- data.matrix(test[, -ncol(test)])
-  test_y <- test[, ncol(test)]
-
-  # define predictor and response variables in validation set
-  validation_x <- data.matrix(validation[, -ncol(validation)])
-  validation_y <- validation[, ncol(validation)]
-
-  # define final train, test and validation sets
-  xgb_train <- xgboost::xgb.DMatrix(data = train_x, label = train_y)
-  xgb_test <- xgboost::xgb.DMatrix(data = test_x, label = test_y)
-  xgb_validation <- xgboost::xgb.DMatrix(data = validation_x, label = validation_y)
-
-  # define watchlist
-  watchlist <- list(train = xgb_train, validation = xgb_validation)
-  watchlist_test <- list(train = xgb_train, test = xgb_test)
-  watchlist_validation <- list(train = xgb_train, validation = xgb_validation)
-
-  # fit XGBoost model and display training and validation data at each round
-
-  if(set_seed == "Y"){
-    set.seed(seed = seed)
-    xgb_model <- xgboost::xgb.train(data = xgb_train, params = xgboost::xgb.params(max_depth = 3), nrounds = 70)
-    xgb_model_validation <- xgboost::xgb.train(data = xgb_train, params = xgboost::xgb.params(max_depth = 3), nrounds = 70)
-  }```|
+|XGBoost|```train_x <- data.matrix(train[, -ncol(train)])```<br>```train_y <- train[, ncol(train)]```<br># define predictor and response variables in test set<br>```test_x <- data.matrix(test[, -ncol(test)])```<br>```test_y <- test[, ncol(test)]```# <br>define predictor and response variables in validation set<br>```validation_x <- data.matrix(validation[, -ncol(validation)])```<br>```validation_y <- validation[, ncol(validation)]```<br># define final train, test and validation sets<br>```xgb_train <- xgboost::xgb.DMatrix(data = train_x, label = train_y)```<br>```xgb_test <- xgboost::xgb.DMatrix(data = test_x, label = test_y)```<br>```xgb_validation <- xgboost::xgb.DMatrix(data = validation_x, label = validation_y)<br>```# define watchlist<br>```watchlist <- list(train = xgb_train, validation = xgb_validation)```<br>```watchlist_test <- list(train = xgb_train, test = xgb_test)```<br>```watchlist_validation <- list(train = xgb_train, validation = xgb_validation)```<br># fit XGBoost model and display training and validation data at each round<br>```nxgb_model <- xgboost::xgb.train(data = xgb_train, params = xgboost::xgb.params(max_depth = 3), nrounds = 70)```<br>```xgb_model_validation <- xgboost::xgb.train(data = xgb_train, params = xgboost::xgb.params(max_depth = 3), nrounds = 70)```|
 
 
 
