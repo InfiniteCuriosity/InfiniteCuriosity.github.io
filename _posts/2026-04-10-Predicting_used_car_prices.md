@@ -241,8 +241,7 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 |BayesRNN | ```bayesrnn_train_fit <- brnn::brnn(x = as.matrix(train), y = train$y)```|
 |Cubist | ```cubist_train_fit <- Cubist::cubist(x = train[, 1:ncol(train) - 1], y = train$y)```|
 |Earth |```earth_train_fit <- earth::earth(x = train[, 1:ncol(train) - 1], y = train$y)```|
-|Elastic |``` y <- train$y
-x <- data.matrix(train %>% dplyr::select(-y))
+|Elastic |``` y <- train$y<br>x <- data.matrix(train %>% dplyr::select(-y))
 elastic_model <- glmnet::glmnet(x, y, alpha = 0.5)
 elastic_cv <- glmnet::cv.glmnet(x, y, alpha = 0.5)
 best_elastic_lambda <- elastic_cv$lambda.min
