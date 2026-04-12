@@ -372,7 +372,7 @@ First principles to solve the problem:<br>
 • An analysis of the strongest predictors showed that eight of the ten strongest predictors are negative.<br>
 • Given these results, it is recommended that LogisticEnsembles be used with similar data sets about credit card fraud.<br>
 
-10. Summary: The Story in this Data Set<br>
+<h2>10. Summary: The Story in this Data Set</h2><br>
 
 
 <h2>11: Conclusions</h2>
