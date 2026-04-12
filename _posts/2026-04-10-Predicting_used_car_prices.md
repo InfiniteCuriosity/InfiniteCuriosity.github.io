@@ -236,7 +236,7 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 
 |Model name | Model |
 |:----------|:-----------|
-|Bagging |  bagging_train_fit <- ipred::bagging(formula = y ~ ., data = train)|
+|Bagging | ```bagging_train_fit <- ipred::bagging(formula = y ~ ., data = train)```|
 
 
 <h2>7. Highest Accuracy (Summary report sorted by root mean squared error, smallest error on the top of the report)</h2>
