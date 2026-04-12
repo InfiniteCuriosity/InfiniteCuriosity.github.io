@@ -4,7 +4,7 @@ Russ Conte<br>
 Monday April 13, 2026<br>
 
 <h4>Outline</h4>
-1. Introduction and Statement of the Problem (What Does the Customer Actually Want?)<br>
+1. Abstract<br>
 2. Statement Regarding No Use of AI<br>
 3. Literature Review (How Big is the Problem?)<br>
 4. The Data Set (including exploratory data analysis)<br>
@@ -17,7 +17,7 @@ Monday April 13, 2026<br>
 11. Notes<br>
 12. References<br>
 
-<h4>1. Introduction and Statement of the Problem</h4>
+<h4>1. Abstract</h4>
 
 <h4>2. Statement regarding No Use of AI</h4>
 No Artificial Intelligence systems (AI) were used in any part of the process. This analysis excludes all commercial AI systems, large language models, coding assistants, generative AI models or any other AI systems. The entire process is fully reproducible without any use of AI. Therefore this analysis does not have any of the possible errors, liabilities, or risks of AI systems.
