@@ -243,6 +243,9 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 |Earth |```earth_train_fit <- earth::earth(x = train[, 1:ncol(train) - 1], y = train$y)```|
 |Elastic |```y <- train$y```<br>```x <- data.matrix(train %>% dplyr::select(-y))```</br>```elastic_model <- glmnet::glmnet(x, y, alpha = 0.5)```<br>```elastic_cv <- glmnet::cv.glmnet(x, y, alpha = 0.5)```<br>```best_elastic_lambda <- elastic_cv$lambda.min```<br>```best_elastic_model <- glmnet::glmnet(x, y, alpha = 0, lambda = best_elastic_lambda)```|
 |GAM (Generalized Additive Models) with Smoothing Splines | ```n_unique_vals <- purrr::map_dbl(df, dplyr::n_distinct)```<br># Names of columns with >= 4 unique vals<br>```keep <- names(n_unique_vals)[n_unique_vals >= 4]```<br>```gam_data <- df %>%dplyr::select(dplyr::all_of(keep))``` ```# Model data``` ```train1 <- train %>%dplyr::select(dplyr::all_of(keep))``` ```test1 <- test %>%dplyr::select(dplyr::all_of(keep))<br>```validation1 <- validation %>%dplyr::select(dplyr::all_of(keep))```names_df <- names(gam_data[, 1:ncol(gam_data) - 1])```<br>```f2 <- stats::as.formula(paste0("y ~", paste0("gam::s(", names_df, ")", collapse = "+")))```<br>``` gam_train_fit <- gam(f2, data = train1)```|
+|Gradient Boosted |```gb_train_fit <- gbm::gbm(train$y ~ ., data = train, distribution = "gaussian", n.trees = 100, shrinkage = 0.1, interaction.depth = 10)```|
+|Lasso |```y <- train$y```<br>```x <- data.matrix(train %>% dplyr::select(-y))```</br>```lasso_model <- glmnet::glmnet(x, y, alpha = 1)```<br>```lasso_cv <- glmnet::cv.glmnet(x, y, alpha = 1)```<br>```best_lasso_lambda <- lasso_cv$lambda.min```<br>```best_lasso_model <- glmnet::glmnet(x, y, alpha = 1, lambda = best_lasso_lambda)```|
+
 
 
 
