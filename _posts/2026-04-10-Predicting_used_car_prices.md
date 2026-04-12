@@ -441,21 +441,14 @@ We can also see how much time each model took to run (mean time, measured in sec
 <h2>9. Strongest Evidence Based Recommendations</h2>
 
 First principles to solve the problem:<br>
-• The Exploratory Data Analysis suggested the target is logistic<br>
-• The LogisticEnsembles package was used to do the entire analysis<br>
-• The Exploratory Data Analysis showed the data have very narrow interquartile ranges<br>
-• The Correlation tables show that neither the original data nor the ensemble are strongly correlated with the target<br>
-• Three models had 100% predictive accuracy on the holdout data: Ensemble C50, Ensemble Elastic and Ensemble XGBoost<br>
-• The same three models had excellent scores on Sensitivity, Specificity, Type I Error, Type II Error, Precision, Negative Predictive Value and F1 Score<br>
-• An analysis of the strongest predictors showed that eight of the ten strongest predictors are negative.<br>
-• Given these results, it is recommended that LogisticEnsembles be used with similar data sets about credit card fraud.<br>
+• 
 
 <h2>10. Summary: The Story in this Data Set</h2><br>
 
 
 <h2>11: Conclusions</h2>
 
-The LogisticEnsembles package was able to complete the entire analysis in less than five minutes, providing results on the holdout data which meet the customer's requirements for predicting fraud in this data set with very high accuracy.
+The NumericEnsembles package was able to complete the entire analysis in less than five minutes, providing results on the holdout data which meet the customer's requirements for predicting fraud in this data set with very high accuracy.
 
 <h2>12. References</h2>
 
