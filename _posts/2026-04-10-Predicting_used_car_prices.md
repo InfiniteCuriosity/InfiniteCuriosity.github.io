@@ -1,4 +1,4 @@
-<b><h1>Predicting Used Car Prices With Data Science</h1></b>
+<b><h1>Predicting Used Car Prices With Data Science, resampled 1,000 times, fully reproducible results.</h1></b>
 
 Russ Conte<br>
 Monday April 13, 2026<br>
@@ -18,6 +18,15 @@ Monday April 13, 2026<br>
 12. References<br>
 
 <h4>1. Abstract</h4>
+Kaggle.com posted a data set the sale prices of used BMW automobiles. The data containt 10,781 observations and nine variables. The data set was analyzed using the NumericEnsembles package which automatically builds 18 individual models and 14 ensembles of models. The data set was randomly resampled 1,000 times. The three models with the lowest root mean squared error were: EnsembleEarth (mean rmse = 63.0734, 95% CI: [61.1806, 64.9662]), EnsembleBayesGLM (mean rmse = 65.8068, 95% CI: [63.8320, 67.7816], and EnsembleNeuralnet (mean rmse = 65.8165, 95% CI:[63.8413, 67.7916]. Nine of the ten lowest rmse results were from ensembles of models.
+
+All models were also measured for overfitting. The overfitting value was measured as (rmse of the holdout data/rmse of the training data) across each of the 1000 resamples. The three models with the lowest rmse results for overfitting had very similar scores for overfitting: EnsembleEarth: Overfitting mean = 1.1347 (95% CI: [1.1006, 1.1687], EnsembleBayesGLM: Overfitting mean = 1.1348 (95% CI[1.1008, 1.1689], and EnsembleNeuralnet: Overfitting mean = 1.1348 (95% CI:[1.1008, 1.1689].
+
+Each of the predictions was tested against the training data set using the Kolmogorov-Smirnov test, which determines if the two samples (predicted and actual) are from the same population. The test shows that 13 are likely from the same distribution, and 19 are not from the same distribution, and thus should not be considered in deployment.
+
+A complete exploratory data analysis was done and will be presented.
+
+This body of tests and results will allow us to make evidence based recommendations, 
 
 <h4>2. Statement regarding No Use of AI</h4>
 No Artificial Intelligence systems (AI) were used in any part of the process. This analysis excludes all commercial AI systems, large language models, coding assistants, generative AI models or any other AI systems. The entire process is fully reproducible without any use of AI. Therefore this analysis does not have any of the possible errors, liabilities, or risks of AI systems.
