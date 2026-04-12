@@ -241,7 +241,7 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 |BayesRNN | ```bayesrnn_train_fit <- brnn::brnn(x = as.matrix(train), y = train$y)```|
 |Cubist | ```cubist_train_fit <- Cubist::cubist(x = train[, 1:ncol(train) - 1], y = train$y)```|
 |Earth |```earth_train_fit <- earth::earth(x = train[, 1:ncol(train) - 1], y = train$y)```|
-|Elastic |```y <- train$y```<br>```x <- data.matrix(train %>% dplyr::select(-y))```</br>```elastic_model <- glmnet::glmnet(x, y, alpha = 0.5)<br>elastic_cv <- glmnet::cv.glmnet(x, y, alpha = 0.5)<br>best_elastic_lambda <- elastic_cv$lambda.min<br>best_elastic_model <- glmnet::glmnet(x, y, alpha = 0, lambda = best_elastic_lambda)```|
+|Elastic |```y <- train$y```<br>```x <- data.matrix(train %>% dplyr::select(-y))```</br>```elastic_model <- glmnet::glmnet(x, y, alpha = 0.5)```<br>```elastic_cv <- glmnet::cv.glmnet(x, y, alpha = 0.5)```<br>```best_elastic_lambda <- elastic_cv$lambda.min<br>best_elastic_model <- glmnet::glmnet(x, y, alpha = 0, lambda = best_elastic_lambda)```|
 
 
 
