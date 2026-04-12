@@ -166,9 +166,20 @@ Head of the data.<br>
 |XGBoost    | 0.9387888| 0.8895110| 0.9635337| 0.9842273| 0.9678374| 0.8895171| 0.8893088| 0.9959464| 0.8895060| 0.9284692| 0.8895110| 0.6342975| 0.6342978| 0.8892268| 0.9284692| 0.9763671| 0.9284692| 1.0000000|  0.9627919|
 |y_ensemble | 0.8940201| 0.8516140| 0.9999787| 0.9602267| 0.9328655| 0.8516296| 0.8512843| 0.9616119| 0.8516394| 0.8834559| 0.8516141| 0.6066749| 0.6066753| 0.8515238| 0.8834559| 0.9874054| 0.8834559| 0.9627919|  1.0000000|
 
-Outliers list<br>
+<h4>Remove VIF above 5.00</h4>
 
+All Variance Inflation Factor (VIF) values above 5.00 were removed before modeling, these are the variables which remained, and their VIF values:
 
+|Measure      |      VIF|
+|:------------|--------:|
+|model        | 1.154003|
+|year         | 2.599847|
+|transmission | 1.114998|
+|mileage      | 2.768726|
+|fuelType     | 1.234514|
+|tax          | 1.528820|
+|mpg          | 1.298360|
+|engineSize   | 1.471790|
 
 <h4>Summary of the Exploratory Data Analysis</h4>
 
@@ -268,18 +279,7 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 
 <h4>Everything ran in 3.016171 minutes without any errors, warnings, or issues. The majority of the time was spent saving the image files and trained models. If the models and images are not saved, everything completed in 1.776362 mins, a substantially shorter run time.</h4>
 
-VIF: All values above 5.00 were removed, these are the variables which remained:
 
-|Measure      |      VIF|
-|:------------|--------:|
-|model        | 1.154003|
-|year         | 2.599847|
-|transmission | 1.114998|
-|mileage      | 2.768726|
-|fuelType     | 1.234514|
-|tax          | 1.528820|
-|mpg          | 1.298360|
-|engineSize   | 1.471790|
 
 <h3>The models:</h3>
 
