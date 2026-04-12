@@ -24,6 +24,8 @@ No Artificial Intelligence systems (AI) were used in any part of the process. Th
 <br><br>
 Therefore any errors are entirely my responsibility alone.<br>
 
+<h4>All the processes and results are fully transparent and reproducible</h4>
+
 <h4>3. Literature Review</h4>
 We will look at two anayses of the same data set.
 
