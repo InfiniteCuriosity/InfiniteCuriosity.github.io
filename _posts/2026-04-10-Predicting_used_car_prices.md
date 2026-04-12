@@ -260,7 +260,15 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 |Ensemble BayesRNN|```ensemble_bayesrnn_train_fit <- brnn::brnn(x = as.matrix(ensemble_train), y = ensemble_train$y_ensemble)```|
 |Ensemble Cubist| ```ensemble_cubist_train_fit <- Cubist::cubist(x = ensemble_train[, 1:ncol(ensemble_train) - 1], y = ensemble_train$y_ensemble)```|
 |Ensemble Earth|```ensemble_earth_train_fit <- earth::earth(x = ensemble_train[, 1:ncol(ensemble_train) - 1], y = ensemble_train$y_ensemble)```|
-
+|Ensemble Elastic|```ensemble_y <- ensemble_train$y_ensemble```<br>```ensemble_x <- data.matrix(ensemble_train %>% dplyr::select(-y_ensemble))```<br>```ensemble_elastic_model <- glmnet(ensemble_x, ensemble_y, alpha = 0.5)```<br>```ensemble_elastic_cv <- glmnet::cv.glmnet(ensemble_x, ensemble_y, alpha = 0.5)```<br>```ensemble_best_elastic_lambda <- ensemble_elastic_cv$lambda.min```<br>```ensemble_best_elastic_model <- glmnet(ensemble_x, ensemble_y, alpha = 0, lambda = ensemble_best_elastic_lambda)```|
+|Ensemble Gradient Boosted|```ensemble_gb_train_fit <- gbm::gbm(ensemble_train$y_ensemble ~ .,```<br>```data = ensemble_train, distribution = "gaussian", n.trees = 100, shrinkage = 0.1, interaction.depth = 10```|
+|Ensemble Lasso|```ensemble_y <- ensemble_train$y_ensemble```<br>```ensemble_x <- data.matrix(ensemble_train %>% dplyr::select(-y_ensemble))```<br>```ensemble_lasso_model <- glmnet(ensemble_x, ensemble_y, alpha = 1)```<br>```ensemble_lasso_cv <- glmnet::cv.glmnet(ensemble_x, ensemble_y, alpha = 1)```<br>```ensemble_best_lasso_lambda <- ensemble_lasso_cv$lambda.min```<br>```ensemble_best_lasso_model <- glmnet(ensemble_x, ensemble_y, alpha = 0, lambda = ensemble_best_lasso_lambda)```|
+|Ensemble Linear|```ensemble_linear_train_fit <- e1071::tune.rpart(formula = y_ensemble ~ ., data = ensemble_train)```|
+|Ensemble Neuralnet|```ensemble_neuralnet_train_fit <- nnet::nnet(ensemble_train$y_ensemble ~ ., data = ensemble_train, size = 0, linout = TRUE, skip = TRUE)```|
+|Ensemble Ridge|```ensemble_y <- ensemble_train$y_ensemble```<br>```ensemble_x <- data.matrix(ensemble_train %>% dplyr::select(-y_ensemble))```<br>```ensemble_ridge_model <- glmnet(ensemble_x, ensemble_y, alpha = 1)```<br>```ensemble_ridge_cv <- glmnet::cv.glmnet(ensemble_x, ensemble_y, alpha = 0)```<br>```ensemble_best_ridge_lambda <- ensemble_ridge_cv$lambda.min```<br>```ensemble_best_ridge_model <- glmnet(ensemble_x, ensemble_y, alpha = 0, lambda = ensemble_best_ridge_lambda)```|
+|Ensemble RPart|```ensemble_rpart_train_fit <- rpart::rpart(ensemble_train$y_ensemble ~ ., data = ensemble_train)```|
+|Ensemble Support Vector Machines|```ensemble_svm_train_fit <- e1071::tune.svm(x = ensemble_train, y = ensemble_train$y_ensemble, data = ensemble_train)```|
+|Trees|```ensemble_tree_train_fit <- tree::tree(ensemble_train$y_ensemble ~ ., data = ensemble_train)```|
 
 
 
