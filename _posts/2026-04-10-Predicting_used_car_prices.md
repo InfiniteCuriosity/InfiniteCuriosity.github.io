@@ -241,10 +241,46 @@ Comments on NumericEnsembles applied to the BMW Used Car Price data set:
 |BayesRNN | ```bayesrnn_train_fit <- brnn::brnn(x = as.matrix(train), y = train$y)```|
 |Cubist | ```cubist_train_fit <- Cubist::cubist(x = train[, 1:ncol(train) - 1], y = train$y)```|
 |Earth |```earth_train_fit <- earth::earth(x = train[, 1:ncol(train) - 1], y = train$y)```|
-|Elastic |```y <- train$y```<br>```x <- data.matrix(train %>% dplyr::select(-y))```</br>```elastic_model <- glmnet::glmnet(x, y, alpha = 0.5)```<br>```elastic_cv <- glmnet::cv.glmnet(x, y, alpha = 0.5)```<br>```best_elastic_lambda <- elastic_cv$lambda.min```<br>```best_elastic_model <- glmnet::glmnet(x, y, alpha = 0, lambda = best_elastic_lambda)```|
+|Elastic |```y <- train$y```<br>```x <- data.matrix(train %>% dplyr::select(-y))```</br>```elastic_model <- glmnet::glmnet(x, y, alpha = 0.5)```<br>```elastic_cv <- glmnet::cv.glmnet(x, y, alpha = 0.5)```<br>```best_elastic_lambda <- elastic_cv$lambda.min```<br>```best_elastic_model <- glmnet::glmnet(x, y, alpha = 0.5, lambda = best_elastic_lambda)```|
 |GAM (Generalized Additive Models) with Smoothing Splines | ```n_unique_vals <- purrr::map_dbl(df, dplyr::n_distinct)```<br># Names of columns with >= 4 unique vals<br>```keep <- names(n_unique_vals)[n_unique_vals >= 4]```<br>```gam_data <- df %>%dplyr::select(dplyr::all_of(keep))``` ```# Model data``` ```train1 <- train %>%dplyr::select(dplyr::all_of(keep))``` ```test1 <- test %>%dplyr::select(dplyr::all_of(keep))<br>```validation1 <- validation %>%dplyr::select(dplyr::all_of(keep))```names_df <- names(gam_data[, 1:ncol(gam_data) - 1])```<br>```f2 <- stats::as.formula(paste0("y ~", paste0("gam::s(", names_df, ")", collapse = "+")))```<br>``` gam_train_fit <- gam(f2, data = train1)```|
 |Gradient Boosted |```gb_train_fit <- gbm::gbm(train$y ~ ., data = train, distribution = "gaussian", n.trees = 100, shrinkage = 0.1, interaction.depth = 10)```|
 |Lasso |```y <- train$y```<br>```x <- data.matrix(train %>% dplyr::select(-y))```</br>```lasso_model <- glmnet::glmnet(x, y, alpha = 1)```<br>```lasso_cv <- glmnet::cv.glmnet(x, y, alpha = 1)```<br>```best_lasso_lambda <- lasso_cv$lambda.min```<br>```best_lasso_model <- glmnet::glmnet(x, y, alpha = 1, lambda = best_lasso_lambda)```|
+|Linear |```linear_train_fit <- e1071::tune.rpart(formula = y ~ ., data = train)```|
+|Neuralnet |```neuralnet_train_fit <- nnet::nnet(train$y ~ ., data = train, size = 0, linout = TRUE, skip = TRUE)```|
+|Partial Least Squares|```pls_train_fit <- pls::plsr(train$y ~ ., data = train)```|
+|Principal Components Analysis|```pcr_train_fit <- pls::pcr(train$y ~ ., data = train)```|
+|Ridge |```y <- train$y```<br>```x <- data.matrix(train %>% dplyr::select(-y))```</br>```ridge_model <- glmnet::glmnet(x, y, alpha = 0)```<br>```ridge_cv <- glmnet::cv.glmnet(x, y, alpha = 0)```<br>```best_ridge_lambda <- ridge_cv$lambda.min```<br>```best_ridge_model <- glmnet::glmnet(x, y, alpha = 0, lambda = best_ridge_lambda)```|
+|RPart|```rpart_train_fit <- rpart::rpart(train$y ~ ., data = train)```|
+|Support Vector Machines|```svm_train_fit <- e1071::tune.svm(x = train, y = train$y, data = train)```|
+|Trees|``` tree_train_fit <- tree::tree(train$y ~ ., data = train)```|
+|XGBoost|``` train_x <- data.matrix(train[, -ncol(train)])
+  train_y <- train[, ncol(train)]
+
+  # define predictor and response variables in test set
+  test_x <- data.matrix(test[, -ncol(test)])
+  test_y <- test[, ncol(test)]
+
+  # define predictor and response variables in validation set
+  validation_x <- data.matrix(validation[, -ncol(validation)])
+  validation_y <- validation[, ncol(validation)]
+
+  # define final train, test and validation sets
+  xgb_train <- xgboost::xgb.DMatrix(data = train_x, label = train_y)
+  xgb_test <- xgboost::xgb.DMatrix(data = test_x, label = test_y)
+  xgb_validation <- xgboost::xgb.DMatrix(data = validation_x, label = validation_y)
+
+  # define watchlist
+  watchlist <- list(train = xgb_train, validation = xgb_validation)
+  watchlist_test <- list(train = xgb_train, test = xgb_test)
+  watchlist_validation <- list(train = xgb_train, validation = xgb_validation)
+
+  # fit XGBoost model and display training and validation data at each round
+
+  if(set_seed == "Y"){
+    set.seed(seed = seed)
+    xgb_model <- xgboost::xgb.train(data = xgb_train, params = xgboost::xgb.params(max_depth = 3), nrounds = 70)
+    xgb_model_validation <- xgboost::xgb.train(data = xgb_train, params = xgboost::xgb.params(max_depth = 3), nrounds = 70)
+  }```|
 
 
 
