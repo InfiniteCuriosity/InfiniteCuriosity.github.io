@@ -9,7 +9,7 @@ Monday April 13, 2026<br>
 3. Literature Review (How Big is the Problem?)<br>
 4. The Data Set (including exploratory data analysis)<br>
 5. Model Building (18 individual models, 14 ensembles of models)<br>
-6. Model summaries: Tables and Plots<br>
+6. Model summaries: What can be predicted from the data? What degree of accuracy? What is the relationship between the features and the target?<br>
 7. Highest Accuracy<br>
 8. Strongest Predictor<br>
 9. Strongest Evidence Based Recommendations<br>
