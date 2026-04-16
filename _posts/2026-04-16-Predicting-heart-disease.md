@@ -50,9 +50,9 @@ Data summary:
 
 |   |     Age      |  Sex    |Chest pain type |Resting blood pressure | Cholesteral  |Fasting blood sugar |Max heart rate |Exercise induced angina |   Old peak   | Slope   |Sick or buff | Class     |
 |:--|:-------------|:--------|:---------------|:----------------------|:-------------|:-------------------|:--------------|:-----------------------|:-------------|:--------|:------------|:------|
-| Min |29.00 |female:96 |abnang: 50      |94.0          |126.0 |false:258            |71.0  |false:203                |0.000 |down:20 |buff:164     |H:164 |
-|1st Qu|47.25 |male:206 |angina: 22      |120.0          |211.0 |true:44            |133.2  |true:99                |0.000 |flat:140 |sick:138     |S1:54 |
-|Median|55.00 |NA       |asympt:143      |130.0          |240.5 |NA                  |153.0  |NA                      |0.800 |up  :142 |NA           |S2:36 |
+| Min |29.00 |female: 96 |abnang: 50      |94.0          |126.0 |false:258            |71.0  |false:203                |0.000 |down: 20 |buff:164     |H:164 |
+|1st Qu|47.25 |male: 206 |angina: 22      |120.0          |211.0 |true:44            |133.2  |true:99                |0.000 |flat: 140 |sick:138     |S1:54 |
+|Median|55.00 |NA       |asympt:143      |130.0          |240.5 |NA                  |153.0  |NA                      |0.800 |up: 142 |NA           |S2:36 |
 |Mean|54.34 |NA       |notang: 87      |131.6          |246.3 |NA                  |149.6  |NA                      |1.035 |NA       |NA           |S3:35 |
 |3rd Qu|61.00 |NA       |NA              |140.0          |274.8 |NA                  |166.0  |NA                      |1.600 |NA       |NA           |S4:13 |
 |Max|77.00 |NA       |NA              |200.0          |564.0 |NA                  |202.0  |NA                      |6.200 |NA       |NA           |NA     |
