@@ -157,7 +157,7 @@ warnings()
 Comments on ClassificationEnsembles applied to the Cleveland Heart data set:
 
 
-<h4>Everything ran in 3.016171 minutes without any errors, warnings, or issues. The majority of the time was spent saving the image files and trained models. If the models and images are not saved, everything completed in 1.776362 mins, a substantially shorter run time.</h4>
+<h4>Everything ran in 15.32808 seconds without any errors, warnings, or issues on a 2023 Mac Mini with an M2 Procssor and no accelartion (no external GPU, hard drive, etc.).</h4>
 
 <h3>The models:</h3>
 
