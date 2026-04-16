@@ -35,6 +35,17 @@ Heart disease is costly. The cost of health care services and medications from h
 
 Source: https://www.kaggle.com/datasets/aavigan/cleveland-clinic-heart-disease-dataset<br>
 
+Head of the data set:
+
+| Row | Age|Sex  |Chest_pain_type | Resting_blood_pressure| Cholesteral|Fasting_blood_sugar | Max_heart_rate|Exercise_induced_angina | Old_peak|Slope |Sick_or_buff |y  |
+|:---|---:|:----|:---------------|----------------------:|-----------:|:-------------------|--------------:|:-----------------------|--------:|:-----|:------------|:--|
+|287 |  44|fem  |notang          |                    118|         242|fal                 |            149|fal                     |      0.3|flat  |buff         |H  |
+|241 |  39|fem  |notang          |                    138|         220|fal                 |            152|fal                     |      0.0|flat  |buff         |H  |
+|47  |  44|male |asympt          |                    112|         290|fal                 |            153|fal                     |      0.0|up    |sick         |S2 |
+|128 |  45|male |abnang          |                    128|         308|fal                 |            170|fal                     |      0.0|up    |buff         |H  |
+|261 |  57|fem  |abnang          |                    130|         236|fal                 |            174|fal                     |      0.0|flat  |sick         |S1 |
+|191 |  64|fem  |asympt          |                    130|         303|fal                 |            122|fal                     |      2.0|flat  |buff         |H  |
+
 
 <h4>Why is this type of problem so difficult to solve?</h4>
 
