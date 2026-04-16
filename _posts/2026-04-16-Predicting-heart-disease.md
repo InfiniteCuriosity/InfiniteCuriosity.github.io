@@ -160,4 +160,4 @@ The ClassificationEnsembles package was able to complete the entire analysis in 
 
 Footnotes:
 
-[^1]:National Center for Health Statistics. Multiple Cause of Death 2018–2023 on CDC WONDER Database. Accessed February 1, 2025. https://wonder.cdc.gov/mcd.html
+[^1]:National Center for Health Statistics. Multiple Cause of Death 2018–2023 on CDC WONDER Database. Accessed February 1, 2025. [https://wonder.cdc.gov/mcd.html](https://www.cdc.gov/heart-disease/data-research/facts-stats/index.html)
