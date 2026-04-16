@@ -33,7 +33,7 @@ Heart disease is costly. The cost of health care services and medications from h
 
 302 observations, 12 columns
 
-![Heart disease data](https://www.kaggle.com/datasets/aavigan/cleveland-clinic-heart-disease-dataset)<br>
+Source: (https://www.kaggle.com/datasets/aavigan/cleveland-clinic-heart-disease-dataset)<br>
 
 
 <h4>Why is this type of problem so difficult to solve?</h4>
