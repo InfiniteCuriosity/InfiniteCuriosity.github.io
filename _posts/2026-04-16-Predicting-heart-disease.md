@@ -48,7 +48,7 @@ Head of the data set:
 
 Data summary:
 
-|   |     Age      |  Sex    |Chest_pain_type |Resting_blood_pressure | Cholesteral  |Fasting_blood_sugar |Max_heart_rate |Exercise_induced_angina |   Old_peak   | Slope   |Sick_or_buff | y     |
+|   |     Age      |  Sex    |Chest pain type |Resting blood pressure | Cholesteral  |Fasting blood sugar |Max heart rate |Exercise induced angina |   Old peak   | Slope   |Sick or buff | Class     |
 |:--|:-------------|:--------|:---------------|:----------------------|:-------------|:-------------------|:--------------|:-----------------------|:-------------|:--------|:------------|:------|
 | Min |29.00 |fem : 96 |abnang: 50      |94.0          |126.0 |fal :258            |71.0  |fal :203                |0.000 |down: 20 |buff:164     |H :164 |
 |1st Qu   |47.25 |male:206 |angina: 22      |120.0          |211.0 |true: 44            |133.2  |true: 99                |0.000 |flat:140 |sick:138     |S1: 54 |
