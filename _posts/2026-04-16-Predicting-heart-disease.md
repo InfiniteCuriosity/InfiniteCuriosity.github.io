@@ -33,13 +33,13 @@ Twelve classification models were run on the data, and the data was randomly res
 
 The target column, Class, has five options:
 
-|Var1 | Freq|
-|:----|----:|
-|H    |  164|
-|S1   |   54|
-|S2   |   36|
-|S3   |   35|
-|S4   |   13|
+|Var1 | Freq| Rate |
+|:----|----:|----:|
+|H    |  164| 0.5430|
+|S1   |   54|0.1788 |
+|S2   |   36|0.1192 |
+|S3   |   35|0.1159 |
+|S4   |   13|0.0430 |
 
 The NumericEnsembles package also measured:<br>
 • Mean Classification Error<br>
