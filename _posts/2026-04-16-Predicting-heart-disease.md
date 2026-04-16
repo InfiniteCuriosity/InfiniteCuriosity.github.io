@@ -31,6 +31,16 @@ Ten Rows from The data:
 <h4>Methods:</h4>
 Twelve classification models were run on the data, and the data was randomly resampled 25 times. Six of the classification models are individual models, and six are ensembles of models. The model with the highest accuracy score was Ensemble C50, which had a 100% accurate score all 25 resamples on the holdout data. The four models with the highest mean accuracy scores across the 25 resamples were all ensembles: Ensemble C50 (100%), Ensemble Bagged Random Forest (98.96%), Ensemble Naive Bayes (90.90%), and Ensemble Random Forest (84.72%).<br><br>
 
+The target column, Class, has five options:
+
+|Var1 | Freq|
+|:----|----:|
+|H    |  164|
+|S1   |   54|
+|S2   |   36|
+|S3   |   35|
+|S4   |   13|
+
 The NumericEnsembles package also measured:<br>
 • Mean Classification Error<br>
 • Mean True Positive Rate<br>
