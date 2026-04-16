@@ -16,21 +16,21 @@ Heart disease is costly. The cost of health care services and medications from h
 <h4>Methods:</h4>
 Twelve classification models were run on the data, and the data was randomly resampled 25 times. Six of the classification models are individual models, and six are ensembles of models. The most accurate model was Ensemble C50, which had a 100% accurate score all 25 resamples on the holdout data. The four models with the highest mean accuracy scores across the 25 resamples were all ensembles: Ensemble C50 (100%), Ensemble Bagged Random Forest (98.96%), Ensemble Naive Bayes (90.90%), and Ensemble Random Forest (84.72%).
 
-The NumericEnsembles package also measured:
-• Mean Classification Error
-• Mean True Positive Rate
-• Mean True Negative Rate
-• Mean False Positive Rate
-• Mean False Negative Rate
-• Mean Positive Predictive Value
-• Mean Negative Predictive Value
-• Mean Prevalence
-• Mean Detection Rate
-• Mean F1 Score
-• Mean Accuracy on the Training data set (0.50)
-• Mean Accuracy on the Testing data set (0.25)
-• Mean Accuracy on the Validation data set (0.25)
-• Mean Holdout Accuracy vs Train Accuracy (a way to double check for overfitting)
+The NumericEnsembles package also measured:<br>
+• Mean Classification Error<br>
+• Mean True Positive Rate<br>
+• Mean True Negative Rate<br>
+• Mean False Positive Rate<br>
+• Mean False Negative Rate<br>
+• Mean Positive Predictive Value<br>
+• Mean Negative Predictive Value<br>
+• Mean Prevalence<br>
+• Mean Detection Rate<br>
+• Mean F1 Score<br>
+• Mean Accuracy on the Training data set (0.50)<br>
+• Mean Accuracy on the Testing data set (0.25)<br>
+• Mean Accuracy on the Validation data set (0.25)<br>
+• Mean Holdout Accuracy vs Train Accuracy (a way to double check for overfitting)<br>
 
 <h4>Outline</h4>
 In this blog post we will look at:<br>
