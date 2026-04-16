@@ -27,6 +27,8 @@ One person dies every 34 seconds from cardiovascular disease.[^1]<br>
 In 2023, 919,032 people died from cardiovascular disease. That's the equivalent of 1 in every 3 deaths.[^1]<br>
 Heart disease is costly. The cost of health care services and medications from heart disease amounted to more than $168 billion between 2021 and 20222.<br>
 
+<a name="myfootnote1">1</a>: Footnote content goes here
+
 
 <h4>The data set</h4>
 
