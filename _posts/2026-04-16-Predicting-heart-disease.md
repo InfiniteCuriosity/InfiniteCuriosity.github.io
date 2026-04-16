@@ -79,16 +79,6 @@ Correlation of the numeric data:
 
 ![Barcharts](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/heart_disease/barchart_percentage.jpg)<br>
 
-<h4>Step 1b: Looking at the data: Histograms of the data</h4>
-
-<h4>Step 1c: Head of the data</h4>
-
-
-<h4>Step 1d: Data summary</h4>
-
-
-<h4>Correlation of the target (Class) to each variable (closer to 1.00 is better)</h4>
-
 <h4>Summary of the Exploratory Data Analysis</h4>
 
 <h4>What the Exploratory Data Analysis suggests</h4>
