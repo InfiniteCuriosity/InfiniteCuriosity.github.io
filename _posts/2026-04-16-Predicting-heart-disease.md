@@ -5,12 +5,32 @@ April 16, 2026
 
 <h3>Abstract</h3>
 
-Heart disease is a large problem in the United States. Coronary Heart Disease is a condition that results in reduction of blood flow to the heart muscle due to build-up of plaque in the arteries of the heart.[^1]
+Heart disease is a large problem in the United States. Coronary Heart Disease is a condition that results in reduction of blood flow to the heart muscle due to build-up of plaque in the arteries of the heart.[^1]. This paper presents a totally non-invasive method to dignose Coronary Heart Disease, using data science. The data set is 302 observations and 12 columns, and is completed in less than 20 seconds using the ClassificationEnsembles package.
 
+According to the United States Centers for Disease Control and Prevention:
+> Heart disease is the leading cause of death for men, women, and people of most racial and ethnic groups.[^2]<br>
+One person dies every 34 seconds from cardiovascular disease.[^2]<br>
+In 2023, 919,032 people died from cardiovascular disease. That's the equivalent of 1 in every 3 deaths.[^2]<br>
+Heart disease is costly. The cost of health care services and medications from heart disease amounted to more than $168 billion between 2021 and 20222.<br>
 
+Methods:
+Twelve classification models were run on the data, and the data was randomly resampled 25 times. Six of the classification models are individual models, and six are ensembles of models. The most accurate model was Ensemble C50, which had a 100% accurate score all 25 resamples on the holdout data. The four models with the highest mean accuracy scores across the 25 resamples were all ensembles: Ensemble C50 (100%), Ensemble Bagged Random Forest (98.96%), Ensemble Naive Bayes (90.90%), and Ensemble Random Forest (84.72%).
 
-<h4>Reproducibility of the results</h4>
-You can get the same results with this data set. The methods, results and graphics are all fully reproducible, as described in this blog post
+The NumericEnsembles package also measured:
+• Mean Classification Error
+• Mean True Positive Rate
+• Mean True Negative Rate
+• Mean False Positive Rate
+• Mean False Negative Rate
+• Mean Positive Predictive Value
+• Mean Negative Predictive Value
+• Mean Prevalence
+• Mean Detection Rate
+• Mean F1 Score
+• Mean Accuracy on the Training data set (0.50)
+• Mean Accuracy on the Testing data set (0.25)
+• Mean Accuracy on the Validation data set (0.25)
+• Mean Holdout Accuracy vs Train Accuracy (a way to double check for overfitting)
 
 <h4>Outline</h4>
 In this blog post we will look at:<br>
@@ -26,10 +46,7 @@ In this blog post we will look at:<br>
 <h4>How big is the problem?</h4>
 The issue of heart disease in the United States is huge. According to the Centers for Disease Control and Prevention:
 
-> Heart disease is the leading cause of death for men, women, and people of most racial and ethnic groups.[^2]<br>
-One person dies every 34 seconds from cardiovascular disease.[^2]<br>
-In 2023, 919,032 people died from cardiovascular disease. That's the equivalent of 1 in every 3 deaths.[^2]<br>
-Heart disease is costly. The cost of health care services and medications from heart disease amounted to more than $168 billion between 2021 and 20222.<br>
+
 
 
 
