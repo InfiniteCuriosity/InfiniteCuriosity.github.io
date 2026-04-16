@@ -207,6 +207,21 @@ Comments on ClassificationEnsembles applied to the Cleveland Heart data set:
 
 <h2>Step 3: Highest Accuracy results on the holdout data, resampled 25 times, sorted (decreasing) by accuracy on the holdout data</h2>
 
+|Model                           | Mean_Holdout_Accuracy|
+|:-------------------------------|---------------------:|
+|Ensemble C50                    |                1.0000|
+|Ensemble Bagged Random Forest   |                0.9896|
+|Ensemble Naive Bayes            |                0.9090|
+|Ensemble Random Forest          |                0.8472|
+|Linear                          |                0.7125|
+|C50                             |                0.7046|
+|Penalized Discriminant Analysis |                0.7038|
+|Trees                           |                0.6963|
+|RPart                           |                0.6947|
+|Partial Least Squares           |                0.5463|
+|Ensemble Bagged Cart            |                0.4593|
+|Ensemble Trees                  |                0.4408|
+
 <br>
 
 Comments on the summary report:
