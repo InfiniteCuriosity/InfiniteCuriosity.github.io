@@ -73,6 +73,9 @@ Correlation of the numeric data:
 
 <h2>Step 1: Look at the data: box plots, histograms, head of the data, data summaries</h2>
 
+![Histograms of the data](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/heart_disease/boxplots.jpg)<br>
+
+
 
 <h4>Step 1b: Looking at the data: Histograms of the data</h4>
 
