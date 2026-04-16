@@ -37,7 +37,7 @@ Source: https://www.kaggle.com/datasets/aavigan/cleveland-clinic-heart-disease-d
 
 Head of the data set:
 
-| Row | Age|Sex  |Chest_pain_type | Resting_blood_pressure| Cholesteral|Fasting_blood_sugar | Max_heart_rate|Exercise_induced_angina | Old_peak|Slope |Sick_or_buff |y  |
+| Row # | Age|Sex  |Chest_pain_type | Resting_blood_pressure| Cholesteral|Fasting_blood_sugar | Max_heart_rate|Exercise_induced_angina | Old_peak|Slope |Sick_or_buff |y  |
 |:---|---:|:----|:---------------|----------------------:|-----------:|:-------------------|--------------:|:-----------------------|--------:|:-----|:------------|:--|
 |287 |  44|fem  |notang          |                    118|         242|fal                 |            149|fal                     |      0.3|flat  |buff         |H  |
 |241 |  39|fem  |notang          |                    138|         220|fal                 |            152|fal                     |      0.0|flat  |buff         |H  |
@@ -45,6 +45,17 @@ Head of the data set:
 |128 |  45|male |abnang          |                    128|         308|fal                 |            170|fal                     |      0.0|up    |buff         |H  |
 |261 |  57|fem  |abnang          |                    130|         236|fal                 |            174|fal                     |      0.0|flat  |sick         |S1 |
 |191 |  64|fem  |asympt          |                    130|         303|fal                 |            122|fal                     |      2.0|flat  |buff         |H  |
+
+Data summary:
+
+|   |     Age      |  Sex    |Chest_pain_type |Resting_blood_pressure | Cholesteral  |Fasting_blood_sugar |Max_heart_rate |Exercise_induced_angina |   Old_peak   | Slope   |Sick_or_buff | y     |
+|:--|:-------------|:--------|:---------------|:----------------------|:-------------|:-------------------|:--------------|:-----------------------|:-------------|:--------|:------------|:------|
+| Min |29.00 |fem : 96 |abnang: 50      |94.0          |126.0 |fal :258            |71.0  |fal :203                |0.000 |down: 20 |buff:164     |H :164 |
+|1st Qu   |47.25 |male:206 |angina: 22      |120.0          |211.0 |true: 44            |133.2  |true: 99                |0.000 |flat:140 |sick:138     |S1: 54 |
+|Median|55.00 |NA       |asympt:143      |130.0          |240.5 |NA                  |153.0  |NA                      |0.800 |up  :142 |NA           |S2: 36 |
+|Mean|54.34 |NA       |notang: 87      |131.6          |246.3 |NA                  |149.6  |NA                      |1.035 |NA       |NA           |S3: 35 |
+|3rd Qu|61.00 |NA       |NA              |140.0          |274.8 |NA                  |166.0  |NA                      |1.600 |NA       |NA           |S4: 13 |
+|Max|77.00 |NA       |NA              |200.0          |564.0 |NA                  |202.0  |NA                      |6.200 |NA       |NA           |NA     |
 
 
 <h4>Why is this type of problem so difficult to solve?</h4>
