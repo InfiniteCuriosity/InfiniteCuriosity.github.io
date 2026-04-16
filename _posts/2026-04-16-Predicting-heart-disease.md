@@ -37,7 +37,7 @@ Source: https://www.kaggle.com/datasets/aavigan/cleveland-clinic-heart-disease-d
 
 Head of the randomized data set:
 
-| Row # | Age|Sex  |Chest pain type | Resting blood pressure| Cholesteral|Fasting blood sugar | Max heart rate|Exercise induced angina | Old peak|Slope |Sick or buff |Class  |
+| Row # | Age|Sex  |Chest pain type | Resting blood pressure| Cholesteral|Fasting blood sugar > 120 | Max heart rate|Exercise induced angina | Old peak|Slope |Sick or buff |Class  |
 |:---|---:|:----|:---------------|----------------------:|-----------:|:-------------------|--------------:|:-----------------------|--------:|:-----|:------------|:--|
 |287 |  44|fem  |notang          |                    118|         242|fal                 |            149|fal                     |      0.3|flat  |buff         |H  |
 |241 |  39|fem  |notang          |                    138|         220|fal                 |            152|fal                     |      0.0|flat  |buff         |H  |
