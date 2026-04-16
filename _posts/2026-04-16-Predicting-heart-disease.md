@@ -39,12 +39,12 @@ Head of the randomized data set:
 
 | Row # | Age|Sex  |Chest pain type | Resting blood pressure| Cholesteral|Fasting blood sugar>120 | Max heart rate|Exercise induced angina | Old peak|Slope |Sick or buff |Class  |
 |:---|---:|:----|:---------------|----------------------:|-----------:|:-------------------|--------------:|:-----------------------|--------:|:-----|:------------|:--|
-|287 |  44|fem  |notang          |                    118|         242|fal                 |            149|fal                     |      0.3|flat  |buff         |H  |
-|241 |  39|fem  |notang          |                    138|         220|fal                 |            152|fal                     |      0.0|flat  |buff         |H  |
-|47  |  44|male |asympt          |                    112|         290|fal                 |            153|fal                     |      0.0|up    |sick         |S2 |
-|128 |  45|male |abnang          |                    128|         308|fal                 |            170|fal                     |      0.0|up    |buff         |H  |
-|261 |  57|fem  |abnang          |                    130|         236|fal                 |            174|fal                     |      0.0|flat  |sick         |S1 |
-|191 |  64|fem  |asympt          |                    130|         303|fal                 |            122|fal                     |      2.0|flat  |buff         |H  |
+|287 |  44|fem  |notang          |                    118|         242|false                 |            149|false                     |      0.3|flat  |buff         |H  |
+|241 |  39|fem  |notang          |                    138|         220|false                 |            152|false                     |      0.0|flat  |buff         |H  |
+|47  |  44|male |asympt          |                    112|         290|false                 |            153|false                     |      0.0|up    |sick         |S2 |
+|128 |  45|male |abnang          |                    128|         308|false                 |            170|false                     |      0.0|up    |buff         |H  |
+|261 |  57|fem  |abnang          |                    130|         236|false                 |            174|false                     |      0.0|flat  |sick         |S1 |
+|191 |  64|fem  |asympt          |                    130|         303|false                 |            122|false                     |      2.0|flat  |buff         |H  |
 
 Data summary:
 
