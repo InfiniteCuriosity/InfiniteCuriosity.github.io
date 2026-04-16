@@ -1,9 +1,13 @@
-<h1>Predicting Heart Disease Using the Cleveland Heart Data Set and Classification Ensembles</h1>
+<h1>Predicting Heart Disease by Non-Invasive Methods Using the Cleveland Heart Data Set and Classification Ensembles</h1>
 
 Russ Conte<br>
 April 16, 2026
 
 <h3>Abstract</h3>
+
+Heart disease is a large problem in the United States. Coronary Heart Disease is a condition that results in reduction of blood flow to the heart muscle due to build-up of plaque in the arteries of the heart.[^1]
+
+
 
 <h4>Reproducibility of the results</h4>
 You can get the same results with this data set. The methods, results and graphics are all fully reproducible, as described in this blog post
@@ -22,9 +26,9 @@ In this blog post we will look at:<br>
 <h4>How big is the problem?</h4>
 The issue of heart disease in the United States is huge. According to the Centers for Disease Control and Prevention:
 
-> Heart disease is the leading cause of death for men, women, and people of most racial and ethnic groups.[^1]<br>
-One person dies every 34 seconds from cardiovascular disease.[^1]<br>
-In 2023, 919,032 people died from cardiovascular disease. That's the equivalent of 1 in every 3 deaths.[^1]<br>
+> Heart disease is the leading cause of death for men, women, and people of most racial and ethnic groups.[^2]<br>
+One person dies every 34 seconds from cardiovascular disease.[^2]<br>
+In 2023, 919,032 people died from cardiovascular disease. That's the equivalent of 1 in every 3 deaths.[^2]<br>
 Heart disease is costly. The cost of health care services and medications from heart disease amounted to more than $168 billion between 2021 and 20222.<br>
 
 
@@ -34,6 +38,8 @@ Heart disease is costly. The cost of health care services and medications from h
 302 observations, 12 columns
 
 Source: https://www.kaggle.com/datasets/aavigan/cleveland-clinic-heart-disease-dataset<br>
+
+The original data set was posted at: https://archive.ics.uci.edu/dataset/45/heart+disease
 
 Head of the randomized data set:
 
@@ -211,4 +217,5 @@ The ClassificationEnsembles package was able to complete the entire analysis in 
 
 Footnotes:
 
-[^1]:National Center for Health Statistics. Multiple Cause of Death 2018–2023 on CDC WONDER Database. Accessed February 1, 2025. [https://wonder.cdc.gov/mcd.html](https://www.cdc.gov/heart-disease/data-research/facts-stats/index.html)
+[^1]:https://www.kaggle.com/datasets/aavigan/cleveland-clinic-heart-disease-dataset#Context
+[^2]:National Center for Health Statistics. Multiple Cause of Death 2018–2023 on CDC WONDER Database. Accessed February 1, 2025. [https://wonder.cdc.gov/mcd.html](https://www.cdc.gov/heart-disease/data-research/facts-stats/index.html)
