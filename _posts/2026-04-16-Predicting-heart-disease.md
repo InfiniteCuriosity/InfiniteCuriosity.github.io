@@ -83,6 +83,22 @@ Correlation of the numeric data:
 
 ![Barcharts](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/heart_disease/barchart_percentage.jpg)<br>
 
+Variance Inflation Factor report:
+
+|Feature                 |      VIF|
+|:-----------------------|--------:|
+|Age                     | 1.397062|
+|Sex                     | 1.220579|
+|Chest_pain_type         | 1.750709|
+|Resting_blood_pressure  | 1.191857|
+|Cholesteral             | 1.124163|
+|Fasting_blood_sugar     | 1.067441|
+|Max_heart_rate          | 1.712955|
+|Exercise_induced_angina | 1.459211|
+|Old_peak                | 1.780540|
+|Slope                   | 1.841826|
+|Sick_or_buff            | 1.926932|
+
 <h4>Summary of the Exploratory Data Analysis</h4>
 
 <h4>What the Exploratory Data Analysis suggests</h4>
