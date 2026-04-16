@@ -60,7 +60,7 @@ Data summary:
 
 Correlation of the numeric data:
 
-|                       |     Age| Resting_blood_pressure| Cholesteral| Max_heart_rate| Old_peak|
+|                       |     Age| Resting blood pressure| Cholesteral| Max heart rate| Old peak|
 |:----------------------|-------:|----------------------:|-----------:|--------------:|--------:|
 |Age                    |  1.0000|                 0.2776|      0.2148|        -0.3992|   0.2073|
 |Resting_blood_pressure |  0.2776|                 1.0000|      0.1240|        -0.0468|   0.1910|
