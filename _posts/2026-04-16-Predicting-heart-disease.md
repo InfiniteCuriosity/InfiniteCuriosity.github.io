@@ -13,6 +13,21 @@ One person dies every 34 seconds from cardiovascular disease.[^2]<br>
 In 2023, 919,032 people died from cardiovascular disease. That's the equivalent of 1 in every 3 deaths.[^2]<br>
 Heart disease is costly. The cost of health care services and medications from heart disease amounted to more than $168 billion between 2021 and 20222.<br>
 
+The data:
+
+| Age|Sex  |Chest pain type | Resting blood pressure| Cholesteral|Fasting blood sugar>120 | Max_heart_rate|Exercise_induced_angina | Old_peak|Slope |Sick_or_buff |Class |
+|---:|:----|:---------------|----------------------:|-----------:|:-------------------|--------------:|:-----------------------|--------:|:-----|:------------|:-----|
+|  67|male |asympt          |                    160|         286|false                 |            108|true                    |      1.5|flat  |sick         |S2    |
+|  67|male |asympt          |                    120|         229|false                 |            129|true                    |      2.6|flat  |sick         |S1    |
+|  37|male |notang          |                    130|         250|false                 |            187|false                     |      3.5|down  |buff         |H     |
+|  41|fem  |abnang          |                    130|         204|false                 |            172|false                     |      1.4|up    |buff         |H     |
+|  56|male |abnang          |                    120|         236|false                 |            178|false                     |      0.8|up    |buff         |H     |
+|  62|fem  |asympt          |                    140|         268|false                 |            160|false                     |      3.6|down  |sick         |S3    |
+|  57|fem  |asympt          |                    120|         354|false                 |            163|true                    |      0.6|up    |buff         |H     |
+|  63|male |asympt          |                    130|         254|false                 |            147|false                     |      1.4|flat  |sick         |S2    |
+|  53|male |asympt          |                    140|         203|true                |            155|true                    |      3.1|down  |sick         |S1    |
+|  57|male |asympt          |                    140|         192|false                |            148|false                     |      0.4|flat  |buff         |H     |
+
 <h4>Methods:</h4>
 Twelve classification models were run on the data, and the data was randomly resampled 25 times. Six of the classification models are individual models, and six are ensembles of models. The model with the highest accuracy score was Ensemble C50, which had a 100% accurate score all 25 resamples on the holdout data. The four models with the highest mean accuracy scores across the 25 resamples were all ensembles: Ensemble C50 (100%), Ensemble Bagged Random Forest (98.96%), Ensemble Naive Bayes (90.90%), and Ensemble Random Forest (84.72%).<br><br>
 
