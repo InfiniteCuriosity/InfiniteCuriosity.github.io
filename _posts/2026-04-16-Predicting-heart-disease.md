@@ -35,7 +35,7 @@ Heart disease is costly. The cost of health care services and medications from h
 
 Source: https://www.kaggle.com/datasets/aavigan/cleveland-clinic-heart-disease-dataset<br>
 
-Head of the data set:
+Head of the randomized data set:
 
 | Row # | Age|Sex  |Chest pain type | Resting blood pressure| Cholesteral|Fasting blood sugar | Max heart rate|Exercise induced angina | Old peak|Slope |Sick or buff |Class  |
 |:---|---:|:----|:---------------|----------------------:|-----------:|:-------------------|--------------:|:-----------------------|--------:|:-----|:------------|:--|
