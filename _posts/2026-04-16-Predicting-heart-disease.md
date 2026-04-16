@@ -158,3 +158,7 @@ First principles to solve the problem:<br>
 The ClassificationEnsembles package was able to complete the entire analysis in less than five minutes, providing results on the holdout data which meet the customer's requirements for predicting fraud in this data set with very high accuracy.
 
 #Rstats #DataScience #RHealth #HealthStats #Health #HeartDisease #Wellness #HeartHealth #Diabetes #Cardology #Doctor #Dataviz #ggplot2 #tidyverse
+
+Footnotes:
+
+[^1]National Center for Health Statistics. Multiple Cause of Death 2018–2023 on CDC WONDER Database. Accessed February 1, 2025. https://wonder.cdc.gov/mcd.html
