@@ -58,6 +58,16 @@ Data summary:
 |Max|77.00 |NA       |NA              |200.0          |564.0 |NA                  |202.0  |NA                      |6.200 |NA       |NA           |NA     |
 
 
+Correlation of the numeric data:
+
+|                       |     Age| Resting_blood_pressure| Cholesteral| Max_heart_rate| Old_peak|
+|:----------------------|-------:|----------------------:|-----------:|--------------:|--------:|
+|Age                    |  1.0000|                 0.2776|      0.2148|        -0.3992|   0.2073|
+|Resting_blood_pressure |  0.2776|                 1.0000|      0.1240|        -0.0468|   0.1910|
+|Cholesteral            |  0.2148|                 0.1240|      1.0000|        -0.0099|   0.0550|
+|Max_heart_rate         | -0.3992|                -0.0468|     -0.0099|         1.0000|  -0.3449|
+|Old_peak               |  0.2073|                 0.1910|      0.0550|        -0.3449|   1.0000|
+
 <h4>Why is this type of problem so difficult to solve?</h4>
 
 
