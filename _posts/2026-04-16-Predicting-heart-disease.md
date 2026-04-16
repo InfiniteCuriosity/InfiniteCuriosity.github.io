@@ -75,6 +75,10 @@ Correlation of the numeric data:
 
 ![Histograms of the data](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/heart_disease/boxplots.jpg)<br>
 
+<h4>Histograms of each numeric column</h4>
+
+![Histograms of each column](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/heart_disease/histograms.jpg)<br>
+
 <h4>Barcharts of each of the five conditions vs measure</h4>
 
 ![Barcharts](https://raw.githubusercontent.com/InfiniteCuriosity/InfiniteCuriosity.github.io/refs/heads/main/_posts/images/heart_disease/barchart_percentage.jpg)<br>
