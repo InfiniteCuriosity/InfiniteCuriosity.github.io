@@ -1,4 +1,5 @@
-<b><h1>How data science can help fight credit card fraud using real fraud data</h1></b>
+<h1>How data science can help fight credit card fraud using real fraud data</h1>
+
 
 Russ Conte<br>
 Monday April 06, 2026<br>
