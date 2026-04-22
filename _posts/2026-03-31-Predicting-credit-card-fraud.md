@@ -1,4 +1,4 @@
-<h1>How data science can help fight credit card fraud using real data!</h1>
+<h1>How you can understand how to fight credit card fraud using data science!</h1>
 
 
 Russ Conte<br>
