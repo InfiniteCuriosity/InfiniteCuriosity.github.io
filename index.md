@@ -6,12 +6,12 @@ This is a very warm, inviting and open space for us to explore how data science 
 
 <h1>Topics we'll cover</h1>
 We will cover pretty much everything!
-• Fighting international crime
-• Preventing heart disease without even touching the patient
-• Finding a fair price for a good used car
-• Fighting cancer in a totally non-invasive way
-• Reducing turnover (both voluntary and involuntary)
-• Predicting risk and minimizing the effects of risk
-• Finding the strongest predictor that will give you the biggest bang for your buck
-• Much, much more!
+• Fighting international crime<br>
+• Preventing heart disease without even touching the patient<br>
+• Finding a fair price for a good used car<br>
+• Fighting cancer in a totally non-invasive way<br>
+• Reducing turnover (both voluntary and involuntary)<br>
+• Predicting risk and minimizing the effects of risk<br>
+• Finding the strongest predictor that will give you the biggest bang for your buck<br>
+• Much, much more!<br>
 
