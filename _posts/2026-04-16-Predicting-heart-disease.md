@@ -276,11 +276,3 @@ Footnotes:
 
 [^1]:https://www.kaggle.com/datasets/aavigan/cleveland-clinic-heart-disease-dataset#Context
 [^2]:National Center for Health Statistics. Multiple Cause of Death 2018–2023 on CDC WONDER Database. Accessed February 1, 2025. [https://wonder.cdc.gov/mcd.html](https://www.cdc.gov/heart-disease/data-research/facts-stats/index.html)
-
-<script src="https://utteranc.es/client.js"
-        repo="[infinitecuriosity.github.io]"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
