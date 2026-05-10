@@ -1,3 +1,6 @@
+<img width="2816" height="1536" alt="Gemini_Generated_Image_red8esred8esred8" src="https://github.com/user-attachments/assets/adbcf72d-94ae-44b7-bb72-0959e76f8e97" />
+Image created with assistance from Google Gemini Pro
+
 <h1>AI Assisted Google Review Advisor including charts, tables, recommendations<br></h1>
 Russ Conte<br>
 May 10, 2026<br>
