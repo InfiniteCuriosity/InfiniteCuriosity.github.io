@@ -12,7 +12,11 @@ What actually works to keep your insurance rates low, based on the results from 
 
 By a landslide, smoking is the most aggressive predictor of high medical charges. I was shocked how much smoking increased the cost of health insurance. The variable importance metrics place it at the absolute top of the hierarchy. When looking at the extremes, the "Top 5%" of spenders are exclusively smokers, while the "Bottom 5%" are virtually all non-smokers. It’s not just a health risk; it’s a financial one.
 
-[Insert: top 5 percent vs bottom 5 percent charges by smoker.jpeg]
+This is the most important result from this study, by far:
+
+<img width="2436" height="1157" alt="top 5 percent vs bottom 5 percent charges by smoker" src="https://github.com/user-attachments/assets/9aa73b19-f230-476c-8c39-c5bb9983a1d4" />
+
+What I did is sort the Charges from largest (bad) to smallest (good). Then I broke it into two groups, the top 5% and bottom 5% of charges. What that chart shows is the top 5% of charges billed the insurance company over $3 million dollars, but the bottom 5% only billed $102,197. <i>That's a difference of a factor of 30!</i>
 
 2. The Heavyweight Contender: BMI
 
