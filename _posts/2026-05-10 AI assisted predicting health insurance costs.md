@@ -1,6 +1,6 @@
 May 10, 2026
 
-Russ Conte, written with assistance by Google Gemini Pro
+Russ Conte, written with assistance by Google Gemini Pro, with a link to an interactive dashboard
 
 Are you interested in keeping your health insurance premiums down? So is everyone else, but most people can do much better to get their insurance premiums under control.
 
@@ -16,29 +16,32 @@ This is the most important result from this study, by far:
 
 <img width="2436" height="1157" alt="top 5 percent vs bottom 5 percent charges by smoker" src="https://github.com/user-attachments/assets/9aa73b19-f230-476c-8c39-c5bb9983a1d4" />
 
-What I did is sort the Charges from largest (bad) to smallest (good). Then I broke it into two groups, the top 5% and bottom 5% of charges. What that chart shows is the top 5% of charges billed the insurance company over $3 million dollars, but the bottom 5% only billed $102,197. <i>That's a difference of a factor of 30!</i>
+What I did is sort the Charges from largest (bad) to smallest (good). Then I broke it into two groups, the top 5% and bottom 5% of charges. What that chart shows is the top 5% of charges billed the insurance company over $3 million dollars, but the bottom 5% only billed $102,197. <i>That's a difference of a factor of 30 for smokers vs non-smokers!</i>
+
+The recommendation here is beyond obvious: Stop smoking today! It's good for your health (as everyone knows) but it's also good for your bank account.
 
 2. The Heavyweight Contender: BMI
 
-Body Mass Index (BMI) holds the silver medal for predictability. Our correlation matrix and variable importance charts show a significant "tipping point" where BMI shifts from a mild factor to a primary driver of cost. In the visualization below, you can see the clear density of the highest-cost claimants hovering in the higher BMI brackets.
+Same ideas as #1 (smoking), I looked at BMI (body mass index), and it came in 2nd place for strongly predicting insurance rates. In the visualization below, you can see the clear density of the highest-cost claimants hovering in the higher BMI brackets.
 
-[Insert: Top 5% vs bottom 5% charges by BMI.jpg]
+<img width="2436" height="1157" alt="Top 5% vs bottom 5% charges by BMI" src="https://github.com/user-attachments/assets/471351de-d5c6-4bbc-837a-7243d988a561" />
+
+The effect of BMI is smaller than smoking, but still very significant.
 
 3. The Relentless March: Age
 
-While we can control our habits, we can't control the calendar. Age remains the third most influential variable. The data shows a steady, linear climb in charges as patients move from their 20s into their 60s. Interestingly, even the "healthiest" seniors often face higher base charges than the "least healthy" young adults, simply due to the biological baseline of aging.
+I'm sure no one will be surprised that age is the 3rd strongest predictor from this data set.
 
-[Insert: top 5% vs bottom 5% charges by age.jpg]
+<img width="2436" height="1157" alt="top 5% vs bottom 5% charges by age" src="https://github.com/user-attachments/assets/0419c97e-fbad-4deb-be66-9b943cfeec23" />
 
 The Technical Verdict
 
-To reach these conclusions, I utilized a variety of models, comparing everything from BayesGLM to Ensemble methods. As shown in the Variable Importance Report, the gap between our top three predictors and the rest of the field (like region or number of children) is substantial.
+To reach these conclusions, I utilized a large number of models (32 models), comparing everything from BayesGLM to Ensemble methods. The most accurate was a model named EnsembleEarth. You can see how well the predicted vs actual values lined up from this visualization:
 
-[Insert: variable_importance_barchart.jpeg]
+<img width="1152" height="720" alt="ensemble_earth_pred_vs_actual" src="https://github.com/user-attachments/assets/7d6392c1-5da5-4689-8fa3-d70b564c9a74" />
 
-The Correlation Matrix further validates these relationships, showing how these independent variables intersect to compound total charges.
-
-[Insert: Data Correlation.jpeg]
+You can play with an interactive dashboard of the results here: https://gemini.google.com/share/59e5dbce54b0
+(**you might need to click on Preview to get the dashboard to work. You will not need to log in to play with the dashboard**)
 
 The Bottom Line
 
