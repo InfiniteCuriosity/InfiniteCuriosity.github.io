@@ -49,4 +49,6 @@ The Bottom Line
 
 Data science confirms what doctors have said for years, but with the added weight of statistical significance: Lifestyle choices (Smoking and BMI) are the primary levers of insurance costs, often outweighing the inevitable impact of age.
 
+The biggest issue with these results is that this is only one set of data, and there might be other data that is more accurately predictive of YOUR insurance charges!
+
 #DataScience #MachineLearning #InsuranceAnalytics #PredictiveModeling #Statistics
