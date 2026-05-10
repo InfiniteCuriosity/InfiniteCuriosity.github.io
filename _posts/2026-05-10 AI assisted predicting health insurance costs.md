@@ -47,8 +47,8 @@ To reach these conclusions, I utilized a large number of models (32 models), com
 <img width="1152" height="720" alt="ensemble_earth_pred_vs_actual" src="https://github.com/user-attachments/assets/7d6392c1-5da5-4689-8fa3-d70b564c9a74" />
 
 <h2>You can play with an interactive dashboard of the results here:</h2><br>https://gemini.google.com/share/59e5dbce54b0<br><br>
-(**you might need to click on Preview to get the dashboard to work. You will not need to log in nor need a Google Gemini account to play with the dashboard, so have fun!!**)
-<img width="885" height="898" alt="click on preview" src="https://github.com/user-attachments/assets/16c1b176-634b-4595-b4f1-3e1198301324" />
+(**After you click on the link for the interactive dashboard, you might need to click on Preview to get the dashboard to work. You will not need to log in nor need a Google Gemini account to play with the dashboard, so have fun!!**)
+<img width="720" height="635" alt="click_on_preview" src="https://github.com/user-attachments/assets/9d62b5b7-b04a-4632-b114-91d34d2711fd" />
 
 Play with the sliders, checkboxes, and all the other interactive ways to connect with the data, to see the effects they have on insurance charges.
 
