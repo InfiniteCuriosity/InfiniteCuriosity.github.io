@@ -16,7 +16,7 @@ This is the most important result from this study, by far:
 
 <img width="2436" height="1157" alt="top 5 percent vs bottom 5 percent charges by smoker" src="https://github.com/user-attachments/assets/9aa73b19-f230-476c-8c39-c5bb9983a1d4" />
 
-What I did is sort the Charges from largest (bad) to smallest (good). Then I broke it into two groups, the top 5% and bottom 5% of charges. What that chart shows is the top 5% of charges billed the insurance company over $3 million dollars, but the bottom 5% only billed $102,197. <i>That's a difference of a factor of 30 for smokers vs non-smokers!</i>
+What I did is sort the Charges from largest (bad) to smallest (good). Then I broke it into two groups, the top 5% and bottom 5% of charges. What that chart shows is the top 5% of charges billed the insurance company over $3 million dollars, but the bottom 5% (same number of customers) only billed $102,197. <i>That's a difference of a factor of 30 for smokers vs non-smokers, for the same number of people in each group!</i>
 
 The recommendation here is beyond obvious: Stop smoking today! It's good for your health (as everyone knows) but it's also good for your bank account.
 
