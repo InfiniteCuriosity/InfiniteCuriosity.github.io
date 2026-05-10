@@ -2,6 +2,8 @@ May 10, 2026
 
 <h1>AI assisted predicting health insurance costs, and an interactive dashboard!</h1>
 
+<img width="1024" height="559" alt="Insurance_data_graphic" src="https://github.com/user-attachments/assets/e860aba2-e4a0-460e-ab9f-24f151ad8615" />
+
 Russ Conte, written with assistance by Google Gemini Pro
 
 Are you interested in keeping your health insurance premiums down? So is everyone else, but most people can do much better to get their insurance premiums under control.
