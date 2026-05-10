@@ -1,13 +1,16 @@
-ased on the predictive modeling and exploratory analysis of the insurance dataset, the results are clear. If you’re looking to keep your premiums low, the data suggests a simple (if difficult) lifestyle plan: don't smoke, watch the carbs, and—if at all possible—stop aging.
+May 10, 2026
 
-Here is a summary of the findings, ready for your LinkedIn audience.
+Russ Conte, written with assistance by Google Gemini Pro
 
-Predicting the Price of Living: A Data-Driven Deep Dive 📈
-I recently took a scalpel to a comprehensive insurance dataset to find out what actually drives medical charges. After running multiple models—including an Ensemble Earth model that performed with impressive precision (RMSE ~93.8)—the "Big Three" predictors have emerged.
+Are you interested in keeping your health insurance premiums down? So is everyone else, but most people can do much better to get their insurance premiums under control.
 
-1. The Smoke Signal: Smoking Status
+There is a famous data set of insurance rates. It's been used for decades (literally), and many people have created predictive models from the data. I also created a set of predictive models, but mine used an extremely diverse set of models, including individual models and ensembles of models, regular learning and deep learning, tuned and not-tuned models. The best resuls here on the hold out data beat the best previous results by a mile.
 
-By a landslide, smoking is the most aggressive predictor of high medical charges. The variable importance metrics place it at the absolute top of the hierarchy. When looking at the extremes, the "Top 5%" of spenders are almost exclusively smokers, while the "Bottom 5%" are virtually all non-smokers. It’s not just a health risk; it’s a financial one.
+What actually works to keep your insurance rates low, based on the results from the models? A few things work very well.
+
+1. The Smoke Signal: Smoking Status (Don't do it, or quit if you are a current smoker)
+
+By a landslide, smoking is the most aggressive predictor of high medical charges. I was shocked how much smoking increased the cost of health insurance. The variable importance metrics place it at the absolute top of the hierarchy. When looking at the extremes, the "Top 5%" of spenders are exclusively smokers, while the "Bottom 5%" are virtually all non-smokers. It’s not just a health risk; it’s a financial one.
 
 [Insert: top 5 percent vs bottom 5 percent charges by smoker.jpeg]
 
