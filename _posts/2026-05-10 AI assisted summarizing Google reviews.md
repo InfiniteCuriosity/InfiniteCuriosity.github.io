@@ -10,7 +10,7 @@ What could you do for your business if you could summarize your reviews, get cha
 <br>
 This is one of the many ways AI can assist you to get better results for your business. On May 10, 2026, I used Google Gemini Pro to do an analysis of Google Reviews of the Apple store in the Woodfield Mall. I do not have any connection to the Apple store in the Woodfield Mall, other than being a customer. Obviously this is a real example, not using any synthetic data.<br>
 <br>
-The full report is here: https://gemini.google.com/share/edc2b3e18881<br>
+The full report is here: https://gemini.google.com/share/edc2b3e18881<br><br>
 <br>
 The prompt I gave Google Gemini Pro:<br>
 
