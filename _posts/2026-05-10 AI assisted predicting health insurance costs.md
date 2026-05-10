@@ -43,6 +43,8 @@ To reach these conclusions, I utilized a large number of models (32 models), com
 You can play with an interactive dashboard of the results here:<br>https://gemini.google.com/share/59e5dbce54b0<br>
 (**you might need to click on Preview to get the dashboard to work. You will not need to log in to play with the dashboard**)
 
+Play with the sliders, checkboxes, and all the other interactive ways to connect with the data, to see the effects they have on insurance charges.
+
 The Bottom Line
 
 Data science confirms what doctors have said for years, but with the added weight of statistical significance: Lifestyle choices (Smoking and BMI) are the primary levers of insurance costs, often outweighing the inevitable impact of age.
