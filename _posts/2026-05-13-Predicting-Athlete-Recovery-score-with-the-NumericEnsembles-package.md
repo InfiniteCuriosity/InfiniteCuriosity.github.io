@@ -290,7 +290,7 @@ Numeric(data = read.csv('https://raw.githubusercontent.com/InfiniteCuriosity/Ens
 
 <h2>Model evaluations</h2>
 
-<h4>Accuracy (mean of the root means squared error across all resamples) and one standard deviation bars.</h4>
+<h4>Accuracy (mean of the root means squared error across all resamples) and one standard deviation bars. Sorted low (smaller error) to high (larger error)</h4>
 
 <img alt="accuracy_barchart" src="https://github.com/user-attachments/assets/b5929035-64f8-4302-b86c-e4428346a532" />
 
