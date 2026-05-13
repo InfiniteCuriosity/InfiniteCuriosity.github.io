@@ -314,7 +314,7 @@ Duration (mean) barchart<br>
 
 This plot shows the man time (in seconds) for each of the 25 models. EnsembleEarth, EnsembleBayesGLM and EnsembleNeuralnet have three of the four fastest times on this chart, making them an excellent choice.
 
-Accuracy table for the ten models with the lowest root mean squared error:<br>
+<h4>Accuracy table for the ten models with the lowest root mean squared error:<br></h4>
 
 | Model | Mean holdout RMSE | RMSE Lower 95% Conf Int | RMSE Upper 95% Conf Int | Overfitting lower 95% CI | Overfitting upper 95% CI | Bias | Mean train RMSE | Mean test RMSE | Mean validation RMSE |
 |:-------|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
@@ -334,50 +334,68 @@ There are a number of surprises in the table of the top ten results:
 • EnsembleEarth has good scores for RMSE, but the overfitting confidence interval (CI) does not include 1.00, therefore it will overfit when used in production and is not a good choice.
 • EnsembleBayesGLM and EnsembleNeuralnet have identical scores for accuracy and overfitting. Importantly, the 95% confidence interval for both includes 1.00, so either one is an excellent choice.
 
+<h4>Overfitting</h4>
+
 Overfitting is calculated by NumericEnsembles as:
 
- 
+
+$$
+Overfitting = \frac{\text{RMSE of holdout}}{\text{RMSE of training data}}
+$$
+<br>
 
 Closer to 1.00 is better for overfitting. A value close to 1.00 implies the RMSE of the holdout data is approximately the same as the RMSE for the training data, across the resamples.
 
 The NumericEnsembles package also graphs the overfitting values by each of the models, and all the resamples. In this case, the result is:
-Overfitting plot by model and each resample
 
+<img alt="overfitting_plot_free_scales" src="https://github.com/user-attachments/assets/51723b94-5234-421a-9d70-c929fbb46479" />
+<br>
 As the plot shows, the overfitting values will vary for each model. This is caused by the random resampling of the data 25 times. The x-axis on the overfitting plots is the overfitting value, the y-axis is the resample number. The solid black line is the mean of the overfitting values, the red line = 1.00 (the best possible score).
 
 This graph allows the reader to see all the overfitting results in a way that is neutral and fair across all models and resamples.
 
-Kolomogorov-Smirnov test barchart
+<img alt="k_s_test_barchart" src="https://github.com/user-attachments/assets/a30a37d4-57a6-4431-9609-3aea955e40f4" />
+
 Kogmogorov-Smirnov mean value barchart
 The Kolomogorov-Smirnov test measures the likelihood that a given data set (the predicted values from each of the 32 modela) are likely from another distribution (the training set). The chart is sorted with the best results on the left side of the chart.
 
-Our top choices, EnsembleNeuralnet and EnsembleBayesGLM are both above our criteria for decision (either p<0.05 or p<0.10), so both are satisfactory choices.
+<h2>Summary: Top choices and reasons why these were selected:</h2>
 
-Diagnostic plots. Each plot shows a set of four charts for each model:
-• Predicted vs Actual
-• Residuals
-• Histogram of Residuals
-• Q-Q Plot
+My top choices, EnsembleNeuralnet and EnsembleBayesGLM are both above our criteria for decision (either p<0.05 or p<0.10), so both are satisfactory choices.
 
-Ensemble Cubist summary plots:
-Ensemble Cubist summary plots
+Diagnostic plots. Each plot shows a set of four charts for each model:<br>
+• Predicted vs Actual<br>
+• Residuals<br>
+• Histogram of Residuals<br>
+• Q-Q Plot<br>
 
+EnsembleCubist:
 
-Ensemble Earth summary plots
+<img alt="ensemble_cubist_summary" src="https://github.com/user-attachments/assets/c7b36a31-0365-4544-b6e5-781777cc1588" />
 
-Ensemble BayesGLM summary plots
+EnsembleEarth:
 
+<img alt="ensemble_earth_summary" src="https://github.com/user-attachments/assets/90d2cefb-ddc5-40a5-95a7-8e4387a96ae4" />
+
+EnsembleBayesGLM:
+
+<img alt="ensemble_bayesglm_summary" src="https://github.com/user-attachments/assets/7d7eaa08-efbe-4b97-958d-618894a114f6" />
+<br>
 Criteria for decision from top three models:
-Measure	EnsembleCubist	EnsembleEarth	EnsembleBayesGLM
-Mean error (RMSE)	0.0455	0.0593	0.0641
-95% CI for error (RMSE)	0.0440 - 0.0471	0.0573 - 0.0614	0.0619 - 0.0664
-Mean overfitting	2.4246	1.0475	1.0305
-95% CI for overfitting	2.3402 - 2.5090	1.0110 - 1.0839	0.9946 - 1.0663
-Bias	0.00	-0.004	-0.002
-K-S Test	Best of all 32 models	5th best of all 32 models	6th best of all 32 models
-Duration (seconds)	0.2477	0.0339	0.0337
-Rating	Fail, mean overfitting is unacceptable	Weak, 95% range for overfitting is >1.00 for all values.	Best overall result.
-Meet our winner: EnsembleBayesGLM
+
+| Measure | EnsembleCubist | EnsembleEarth | EnsembleBayesGLM |
+|------------------|------------------|------------------|------------------|
+| Mean error (RMSE) | 0.0455 | 0.0593 | 0.0641 |
+| 95% CI for error (RMSE) | 0.0440 - 0.0471 | 0.0573 - 0.0614 | 0.0619 - 0.0664 |
+| Mean overfitting | 2.4246 | 1.0475 | 1.0305 |
+| 95% CI for overfitting | 2.3402 - 2.5090 | 1.0110 - 1.0839 | 0.9946 - 1.0663 |
+| Bias | 0.00 | -0.004 | -0.002 |
+| K-S Test | Best of all 32 models | 5th best of all 32 models | 6th best of all 32 models |
+| Duration (seconds) | 0.2477 | 0.0339 | 0.0337 |
+| Rating | Fail, mean overfitting is unacceptable | Weak, 95% range for overfitting is \>1.00 for all values. | Best overall result. |
+
+<h2>Meet our winner: EnsembleBayesGLM</h2>
+
 Model coefficients:
 EnsembleBayesGLM	x
 (Intercept)	0.0574771
@@ -399,9 +417,9 @@ Rpart	0.0036107
 SVM	-0.0170501
 Tree	0.0036107
 XGBoost	-0.0004376
-Summary:
-The analysis shows that it is possible to predict an athlete’s Recovery_Score (on a scale of 0 - 100) in this data set with a mean error rate of 0.0641 (95% CI: 0.0619 - 0.0664), overfitting mean of 1.0305 (95% CI: 0.9946 - 1.0663), and virtually zero bias, across 25 random resamples, using the NumericEnsembles package.
 
+<h1>Summary:</h1>
+The analysis shows that it is possible to predict an athlete’s Recovery_Score (on a scale of 0 - 100) in this data set with a mean error rate of 0.0641 (95% CI: 0.0619 - 0.0664), overfitting mean of 1.0305 (95% CI: 0.9946 - 1.0663), and virtually zero bias, across 25 random resamples, using the NumericEnsembles package.
 
 #DataScience #SportsAnalytics #MachineLearning #Biometrics #AthletePerformance #PredictiveModeling #HealthTech #Kaggle #RStats #SportsScience
 
