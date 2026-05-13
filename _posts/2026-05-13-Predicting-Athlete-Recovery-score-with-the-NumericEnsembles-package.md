@@ -162,7 +162,7 @@ We can see many of the values are approximately normally distributed, such as en
 
 The plot of Recovery_Score (on the y-axis) vs each of the predictors is very revealing. The extreme majority of the plots show the data within a clearly defined range.
 
-Correlation of the data
+<h4>Correlation of the data</h4>
 
 |                      | Athlete_ID|        Day| Day_of_Week|        Age|     Gender| Sport_Type| Training_Type| Training_Duration_Min| Training_Intensity| Sleep_Duration_Hours| Caffeine_Intake_mg| Stress_Level| Resting_Heart_Rate|     HRV_ms| Mood_Score| Muscle_Soreness| Energy_Level|          y|
 |:---------------------|----------:|----------:|-----------:|----------:|----------:|----------:|-------------:|---------------------:|------------------:|--------------------:|------------------:|------------:|------------------:|----------:|----------:|---------------:|------------:|----------:|
