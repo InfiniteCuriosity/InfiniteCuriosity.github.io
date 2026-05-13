@@ -20,29 +20,23 @@ The data set includes a number of metrics that athletes can use to improve their
 
 ⚡ Physical Exertion
 Training Type 
-
-Duration 
-
+Duration
 Intensity 
 
 🛌 Lifestyle Factors
 Sleep Duration 
-
 Caffeine Intake 
-
 Stress Level 
 
 ❤️ Physiological Responses
 Resting Heart Rate 
-
 Heart Rate Variability (HRV) 
-
 Muscle Soreness 
-
 Energy Level 
 
 🧠 Subjective Metrics
 Mood Score
+
 🎯 Target Variable
 recovery_score (0-100)
 
@@ -79,6 +73,12 @@ These are the top six rows of the data set. All the columns (features) can be ob
 <br>
 The data has 18 columns and 7774 rows. The data has been cleaned, there are no NAs or other issues with the data. It is a tidy data set.<br>
 <h4>Types of data</h4>
+
+```
+str(df)
+```
+
+
 <br>
 'data.frame':	7774 obs. of  18 variables:<br>
  $ Athlete_ID           : int  1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 ...<br>
