@@ -139,22 +139,19 @@ The numbers seem to be well represented. None of the values are close to 0, so w
 <br>
 The summary function gives the min, 1st Qu, Median, Mean, 3rd Qu and Max for each feature. Several are notable. The athletes range from 18 to 41 years old, include five different sport types and training types. The data also reports some athletes having 0.0 caffeine intake, a resting heart rate of 38.00 beats per minute, and recovery scores ranging from 0.00 to 100.00
 <br>
-Boxplots
-<img width="2400" height="1500" alt="boxplots" src="https://github.com/user-attachments/assets/362aaecd-33aa-4c9b-aee9-4ffa30aaebde" />
+<h4>Boxplots<h4>
+<img alt="boxplots" src="https://github.com/user-attachments/assets/362aaecd-33aa-4c9b-aee9-4ffa30aaebde" />
 <br>
 The box plots report a number of unusual findings. The majority of box plots do not have any outliers, but six of them do, as noted by the red dots, which indicate values outside the middle 66% of the values: Age and energy level (with all the values above the inter-quartile range), sleep duration has a number of values below the inter-quartile range, and HRV_ms, mood_score and Resting_heart_rate have values above and below the inter-quartile range.
-
-Outliers as measured by Cook’s Distance:
-
-
-
-Outliers as measured by Cook’s distance
+<br>
+<h4>Outliers as measured by Cook’s Distance:</h4>
+<br>
+<img alt="cooks_distance_plot" src="https://github.com/user-attachments/assets/b7178b4a-9baf-4ada-a502-4f93a5ad272e" />
+<br>
 This data set clearly has a lot of values that are reported as outliers. This report will keep the outliers, as they are not due to any systemic or methodological errors.
-
-Histograms of each numeric column
-
-
-
+<br>
+<img alt="Histograms_of_the_numeric_columns" src="https://github.com/user-attachments/assets/182b1417-32bc-4627-bf1a-4a55510729c4" />
+<br>
 Histograms of each numeric column
 We can see many of the values are approximately normally distributed, such as energy level, MRV_ms, mood_score, Muscle_Soreness, Recovery_Score, Resting_Heart_Rate, and Sleep_Duration_Hours. The plots for Training_Duration_Min and Training_Intensity show a slightly non-symmetrical result.
 
