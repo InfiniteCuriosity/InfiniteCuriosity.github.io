@@ -118,6 +118,7 @@ Stress Level:
 |High | Low | Medium |
 |:---:|:---:|:---:|
 |1572 | 1590 | 4612 | 
+
 The numbers seem to be well represented. None of the values are close to 0, so we should not have any issues with rare data.
 
 Summary of the data
