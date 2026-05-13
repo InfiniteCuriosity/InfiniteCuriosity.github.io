@@ -292,7 +292,9 @@ Numeric(data = read.csv('https://raw.githubusercontent.com/InfiniteCuriosity/Ens
 
 Accuracy plot (Root Mean Squared Error) by model and resample, free scales: The accuracy on each resample for each of the 32 models. This report shows the accuracy for each of the 25 random resamples for each of the 32 models.
 The y-axis is the rmse, the x-axis is the number of resample (from 1:25)
-Accuracy plot (root-mean squared error on left of each plot)
+
+<img alt="accuracy_plot_free_scales" src="https://github.com/user-attachments/assets/38f8d54b-45ec-40c6-b344-86eccffd512b" />
+
 The accuracy bar chart shows the root mean squared error for every resample on every model. This allows the reader to see all 32 models compared in a way that is neutral, fair and equal.
 
 The y-axis is the individual root mean squared error, the x-axis is the resample number (in this case from 1:25).
