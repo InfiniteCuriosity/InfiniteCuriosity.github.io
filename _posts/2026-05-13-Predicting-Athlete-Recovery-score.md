@@ -139,7 +139,7 @@ The numbers seem to be well represented. None of the values are close to 0, so w
 <br>
 The summary function gives the min, 1st Qu, Median, Mean, 3rd Qu and Max for each feature. Several are notable. The athletes range from 18 to 41 years old, include five different sport types and training types. The data also reports some athletes having 0.0 caffeine intake, a resting heart rate of 38.00 beats per minute, and recovery scores ranging from 0.00 to 100.00
 <br>
-<h4>Boxplots<h4>
+<h4>Boxplots</h4>
 <img alt="boxplots" src="https://github.com/user-attachments/assets/362aaecd-33aa-4c9b-aee9-4ffa30aaebde" />
 <br>
 The box plots report a number of unusual findings. The majority of box plots do not have any outliers, but six of them do, as noted by the red dots, which indicate values outside the middle 66% of the values: Age and energy level (with all the values above the inter-quartile range), sleep duration has a number of values below the inter-quartile range, and HRV_ms, mood_score and Resting_heart_rate have values above and below the inter-quartile range.
