@@ -324,7 +324,7 @@ Bias by model and resample
 
 <img alt="duration_barchart" src="https://github.com/user-attachments/assets/292ccaf0-b4b8-484b-b0dd-6b18c0e8fbcb" />
 
-Duration (mean) barchart<br>
+<h4>Duration (mean) barchart<br></h4>
 
 This plot shows the man time (in seconds) for each of the 25 models. EnsembleEarth, EnsembleBayesGLM and EnsembleNeuralnet have three of the four fastest times on this chart, making them an excellent choice.
 
