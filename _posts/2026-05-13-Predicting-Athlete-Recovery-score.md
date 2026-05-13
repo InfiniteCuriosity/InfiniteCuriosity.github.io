@@ -126,17 +126,16 @@ Stress Level:
 
 The numbers seem to be well represented. None of the values are close to 0, so we should not have any issues with rare data.
 
-Summary of the data
+<h4>Summary of the data</h4>
 
 |   |  Athlete_ID |     Day      | Day_of_Week  |     Age      |    Gender   |  Sport_Type  |Training_Type |Training_Duration_Min |Training_Intensity |Sleep_Duration_Hours |Caffeine_Intake_mg | Stress_Level |Resting_Heart_Rate |    HRV_ms     |  Mood_Score  |Muscle_Soreness | Energy_Level  |Recovery_Score |
 |:--|:------------|:-------------|:-------------|:-------------|:------------|:-------------|:-------------|:---------------------|:------------------|:--------------------|:------------------|:-------------|:------------------|:--------------|:-------------|:---------------|:--------------|:--------------|
-|   |Min.   :1000 |Min.   : 1.00 |Min.   :1.000 |Min.   :18.00 |Min.   :1.00 |Min.   :1.000 |Min.   :1.000 |Min.   : 10.00        |Min.   : 1.00      |Min.   :5.000        |Min.   :  0.0      |Min.   :1.000 |Min.   :38.00      |Min.   : 28.00 |Min.   :1.000 |Min.   : 1.000  |Min.   : 1.000 |Min.   :  0.00 |
-|   |1st Qu.:1074 |1st Qu.: 7.00 |1st Qu.:2.000 |1st Qu.:23.00 |1st Qu.:1.00 |1st Qu.:2.000 |1st Qu.:1.000 |1st Qu.: 36.00        |1st Qu.: 4.90      |1st Qu.:7.000        |1st Qu.:125.0      |1st Qu.:2.000 |1st Qu.:53.00      |1st Qu.: 65.00 |1st Qu.:4.500 |1st Qu.: 3.600  |1st Qu.: 2.000 |1st Qu.: 30.02 |
-|   |Median :1149 |Median :14.00 |Median :4.000 |Median :26.00 |Median :2.00 |Median :4.000 |Median :2.000 |Median : 56.00        |Median : 6.60      |Median :7.500        |Median :210.0      |Median :3.000 |Median :57.00      |Median : 75.00 |Median :5.300 |Median : 5.200  |Median : 3.200 |Median : 50.60 |
-|   |Mean   :1149 |Mean   :14.48 |Mean   :4.005 |Mean   :25.84 |Mean   :1.53 |Mean   :3.397 |Mean   :2.635 |Mean   : 52.61        |Mean   : 6.18      |Mean   :7.499        |Mean   :183.4      |Mean   :2.391 |Mean   :57.06      |Mean   : 74.67 |Mean   :5.242 |Mean   : 5.116  |Mean   : 3.343 |Mean   : 50.64 |
-|   |3rd Qu.:1224 |3rd Qu.:22.00 |3rd Qu.:6.000 |3rd Qu.:28.00 |3rd Qu.:2.00 |3rd Qu.:5.000 |3rd Qu.:4.000 |3rd Qu.: 69.00        |3rd Qu.: 7.90      |3rd Qu.:8.000        |3rd Qu.:265.0      |3rd Qu.:3.000 |3rd Qu.:61.00      |3rd Qu.: 84.00 |3rd Qu.:6.000 |3rd Qu.: 6.700  |3rd Qu.: 4.400 |3rd Qu.: 71.08 |
-|   |Max.   :1299 |Max.   :28.00 |Max.   :7.000 |Max.   :41.00 |Max.   :3.00 |Max.   :5.000 |Max.   :5.000 |Max.   :115.00        |Max.   :10.00      |Max.   :9.500        |Max.   :400.0      |Max.   :3.000 |Max.   :79.00      |Max.   :115.00 |Max.   :9.500 |Max.   :10.000  |Max.   :10.000 |Max.   :100.00 |
-
+|Max   |1000 | 1.00 |1.000 |18.00 |1.00 |1.000 |1.000 | 10.00        | 1.00      |5.000        |  0.0      |1.000 |38.00      | 28.00 |1.000 | 1.000  | 1.000 |  0.00 |
+|1st Qu   |1074 | 7.00 |2.000 |23.00 |1.00 |2.000 |1.000 | 36.00        | 4.90      |7.000        |125.0      |2.000 |53.00      | 65.00 |4.500 | 3.600  | 2.000 | 30.02 |
+|Median   |1149 |14.00 |4.000 |26.00 |2.00 |4.000 |2.000 | 56.00        | 6.60      |7.500        |210.0      |3.000 |57.00      | 75.00 |5.300 | 5.200  | 3.200 | 50.60 |
+|Mean   |1149 |14.48 |4.005 |25.84 |1.53 |3.397 |2.635 | 52.61        | 6.18      |7.499        |183.4      |2.391 |57.06      | 74.67 |5.242 | 5.116  | 3.343 | 50.64 |
+|3rd Qu   |1224 |22.00 |6.000 |28.00 |2.00 |5.000 |4.000 | 69.00        | 7.90      |8.000        |265.0      |3.000 |61.00      | 84.00 |6.000 | 6.700  | 4.400 | 71.08 |
+|Max   |1299 |28.00 |7.000 |41.00 |3.00 |5.000 |5.000 |115.00        |10.00      |9.500        |400.0      |3.000 |79.00      |115.00 |9.500 |10.000  |10.000 |100.00 |
 
 The summary function gives the min, 1st Qu, Median, Mean, 3rd Qu and Max for each feature. Several are notable. The athletes range from 18 to 41 years old, include five different sport types and training types. The data also reports some athletes having 0.0 caffeine intake, a resting heart rate of 38.00 beats per minute, and recovery scores ranging from 0.00 to 100.00
 
