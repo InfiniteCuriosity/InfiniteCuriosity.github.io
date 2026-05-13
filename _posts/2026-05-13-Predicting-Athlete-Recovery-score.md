@@ -98,7 +98,7 @@ str(df)
  $ Energy_Level         : num  5.9 5.8 5.6 2.7 1.1 3.1 4.1 1 1.1 1 ...<br>
  $ Recovery_Score       : num  51.1 63.7 71 37.2 12.3 82.3 44.5 25.1 27.4 0 ...<br>
 <br>
-The str function reports the type of data for each feature. 14 of the columns are integer or numeric, and four are factors. We can see the number of values for each factor:
+The str function reports the type of data for each feature. 14 of the columns are integer or numeric, and four are factors. We can see the number of values for each factor:<br>
 
 Gender:
 
