@@ -95,9 +95,9 @@ Types of data
 <br>
 The str function reports the type of data for each feature. 14 of the columns are integer or numeric, and four are factors. We can see the number of values for each factor:
 
-table(df$Gender)
-    Female       Male Non-binary 
-      3885       3661        228 
+Gender:
+|Female | Male | Non-binary|
+|3885 | 3661 | 228 |
 
 table(df$Sport_Type)
     Combat  Endurance      Mixed   Strength Team Sport 
