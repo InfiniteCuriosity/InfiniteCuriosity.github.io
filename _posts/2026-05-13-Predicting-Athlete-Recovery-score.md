@@ -55,7 +55,7 @@ This will load the data into R and make it easy for us to run the analysis.
 
 <h2>Exploratory Data Analysis</h2>
 
-<h4>Head of the data</h4>h4>
+<h4>Head of the data</h4>
 
 These are the top six rows of the data set. All the columns (features) can be observed. The target variable is the last column, Recovery_Score.
 
@@ -68,7 +68,7 @@ These are the top six rows of the data set. All the columns (features) can be ob
 |       1000|   5|           5|  28|      2|          5|             2|                    28|                9.2|                  6.7|                  0|            1|                 64|     62|        3.3|             7.4|          1.1|           12.3|
 |       1000|   6|           6|  28|      2|          5|             1|                    70|                5.5|                  8.4|                149|            2|                 58|     79|        6.2|             5.1|          3.1|           82.3|
 
-The data has 18 columns and 7774 rows. The data has been cleaned, there are no NAs or other issues with the data. It is a tidy data set.
+The data has 18 columns and 7774 rows. The data has been cleaned, there are no NAs or other issues with the data. It is a tidy data set.<br>
 
 Types of data
 <br>
