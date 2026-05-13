@@ -211,39 +211,43 @@ The numeric ensembles package automatically performs all of the steps necessary 
 • Convert strings to numeric values (there are multiple ways to do this in NumericEnsembles).<br>
 • Builds 18 individual models and 14 ensembles of models:<br>
 <br>
-Model	Library
-1	Bagging	ipred
-2	BayesGLM	arm
-3	BayesRNN	brnn
-4	Cubist	Cubist
-5	Earth	earth
-6	Elastic	glmnet
-7	Generalized Additive Models (with smoothing splines)	gam
-8	Gradient Boosted	gbm
-9	Lasso	glmnet
-10	Linear (tuned)	e1071
-11	Neuralnet	nnet
-12	Partial Least Squares	pls
-13	Principal Components	pls
-14	Ridge	glmnet
-15	RPart	rpart
-16	Support Vector Machines (tuned)	e1071
-17	Tree	tree
-18	XGBoost	xgb
-19	EnsembleBagging	ipred
-20	EnsembleBayesGLM	arm
-21	EnsembleBayesRNN	brnn
-22	EnsembleCubist	Cubist
-23	EnsembleEarth	earth
-24	EnsembleElastic	glmnet
-25	EnsembleGradientBoosted	gbm
-26	EnsembleLasso	glmnet
-27	EnsembleLinear (tuned)	e1071
-28	EnsembleNeuralnet	nnet
-29	EnsembleRidge	glmnet
-30	EnsembleRPart	rpart
-31	EnsembleSVM (tuned)	e1071
-32	EnsembleTrees	tree
+
+<h4>List of models and source packages</h4>
+
+|Number| Model | Package source|
+|:---:|:---:|:---:|
+|1	|Bagging	|ipred |
+|2 |	BayesGLM	|arm|
+|3	|BayesRNN	|brnn|
+|4	|Cubist	|Cubist|
+|5	|Earth	|earth|
+|6	|Elastic|	glmnet|
+|7	|Generalized Additive Models (with smoothing splines)|	gam|
+|8	|Gradient Boosted	|gbm|
+|9	| Lasso	| glmnet |
+|10	|Linear (tuned)	|e1071|
+|11 |	Neuralnet |	nnet|
+|12	|Partial Least Squares |	pls |
+|13 |	Principal Components |	pls|
+|14 |	Ridge |	glmnet|
+|15	|RPart|	rpart|
+|16	|Support Vector Machines (tuned)|	e1071|
+|17	|Tree|	tree|
+|18	|XGBoost	|xgb|
+|19	|EnsembleBagging	|ipred|
+|20|	EnsembleBayesGLM|	arm|
+|21	|EnsembleBayesRNN|	brnn|
+|22	|EnsembleCubist	|Cubist|
+|23	|EnsembleEarth|	earth|
+|24	|EnsembleElastic|	glmnet|
+|25	|EnsembleGradientBoosted	|gbm|
+|26	|EnsembleLasso	|glmnet|
+|27	|EnsembleLinear (tuned)	|e1071|
+|28	|EnsembleNeuralnet	|nnet|
+|29	|EnsembleRidge	|glmnet|
+|30	|EnsembleRPart	|rpart|
+|31	|EnsembleSVM (tuned)	|e1071|
+|32	|EnsembleTrees	|tree|
 
 
 Function call: (this will take 2-5 minutes to run)
