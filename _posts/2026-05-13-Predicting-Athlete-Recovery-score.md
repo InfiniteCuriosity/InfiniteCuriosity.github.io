@@ -155,29 +155,17 @@ This data set clearly has a lot of values that are reported as outliers. This re
 Histograms of each numeric column
 We can see many of the values are approximately normally distributed, such as energy level, MRV_ms, mood_score, Muscle_Soreness, Recovery_Score, Resting_Heart_Rate, and Sleep_Duration_Hours. The plots for Training_Duration_Min and Training_Intensity show a slightly non-symmetrical result.
 
-Recovery_Score (y) vs each predictor
-
-
+<h4>Recovery_Score (y) vs each predictor</h4>
 
 Recovery score vs each of the predictors
 The plot of Recovery_Score (on the y-axis) vs each of the predictors is very revealing. The extreme majority of the plots show the data within a clearly defined range.
 
-Correlation of the data (report)
+Correlation of the data
 
-library(tidyverse)
-
-── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+```
 df1 <- df %>% purrr::keep(is.numeric)
 head(cor(df1))
+```
 
                          Athlete_ID          Day   Day_of_Week           Age
 Athlete_ID             1.0000000000  0.003181412 -0.0007664656  0.0004031379
