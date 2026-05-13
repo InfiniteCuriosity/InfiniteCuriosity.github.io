@@ -61,6 +61,10 @@ This will load the data into R and make it easy for us to run the analysis.
 
 <h4>Head of the data</h4>
 
+```
+head(df)
+```
+
 These are the top six rows of the data set. All the columns (features) can be observed. The target variable is the last column, Recovery_Score.
 
 | Athlete_ID| Day| Day_of_Week| Age| Gender| Sport_Type| Training_Type| Training_Duration_Min| Training_Intensity| Sleep_Duration_Hours| Caffeine_Intake_mg| Stress_Level| Resting_Heart_Rate| HRV_ms| Mood_Score| Muscle_Soreness| Energy_Level| Recovery_Score|
