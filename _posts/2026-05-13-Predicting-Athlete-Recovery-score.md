@@ -420,8 +420,8 @@ XGBoost	-0.0004376<br>
 
 <h1>Summary:</h1>
 The analysis shows that it is possible to predict an athlete’s Recovery_Score (on a scale of 0 - 100) in this data set with a mean error rate of 0.0641 (95% CI: 0.0619 - 0.0664), overfitting mean of 1.0305 (95% CI: 0.9946 - 1.0663), and virtually zero bias, across 25 random resamples, using the NumericEnsembles package.<br>
-
-#DataScience #SportsAnalytics #MachineLearning #Biometrics #AthletePerformance #PredictiveModeling #HealthTech #Kaggle #RStats #SportsScience
+<br>
+#DataScience #SportsAnalytics #MachineLearning #Biometrics #AthletePerformance #PredictiveModeling #HealthTech #Kaggle #RStats #SportsScience<br>
 <br>
 Footnotes
 https://www.geeksforgeeks.org/machine-learning/bias-vs-variance-in-machine-learning/↩︎
