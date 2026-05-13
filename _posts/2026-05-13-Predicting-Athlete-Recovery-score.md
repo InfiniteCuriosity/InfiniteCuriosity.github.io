@@ -381,7 +381,7 @@ EnsembleBayesGLM:
 
 <img alt="ensemble_bayesglm_summary" src="https://github.com/user-attachments/assets/7d7eaa08-efbe-4b97-958d-618894a114f6" />
 <br>
-Criteria for decision from top three models:
+<h4>Criteria for decision from top three models:</h4>
 
 | Measure | EnsembleCubist | EnsembleEarth | EnsembleBayesGLM |
 |------------------|------------------|------------------|------------------|
