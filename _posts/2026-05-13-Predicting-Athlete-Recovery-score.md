@@ -251,12 +251,45 @@ The numeric ensembles package automatically performs all of the steps necessary 
 
 
 Function call: (this will take 2-5 minutes to run)
-Model evaluations
-Accuracy (mean of the root means squared error across all resamples) and one standard deviation bars.
 
+```
+#install.packages(NumericEnsembles)
 
+start_time <- Sys.time()
 
-Accuracy barchart
+library(NumericEnsembles)
+Numeric(data = read.csv('https://raw.githubusercontent.com/InfiniteCuriosity/EnsemblesData/refs/heads/main/athlete_recovery_synthetic.csv', stringsAsFactors = TRUE),
+  colnum = 18,
+  numresamples = 25,
+  remove_VIF_above = 5.00,
+  remove_data_correlations_greater_than = 0.99,
+  remove_ensemble_correlations_greater_than = 1.00,
+  scale_all_predictors_in_data = "N",
+  data_reduction_method = 0,
+  ensemble_reduction_method = 0,
+  how_to_handle_strings = 1,
+  predict_on_new_data = "N",
+  save_all_trained_models = "N",
+  stratified_random_column = 0,
+  set_seed = "N",
+  save_all_plots = "N",
+  use_parallel = "Y",
+  train_amount = 0.60,
+  test_amount = 0.20,
+  validation_amount = 0.20)
+
+  end_time <- Sys.time()
+  duration <- end_time - start_time
+  duration
+  warnings()
+```
+
+<h2>Model evaluations</h2>
+
+<h4>Accuracy (mean of the root means squared error across all resamples) and one standard deviation bars.</h4>
+
+<img alt="accuracy_barchart" src="https://github.com/user-attachments/assets/b5929035-64f8-4302-b86c-e4428346a532" />
+
 Accuracy plot (Root Mean Squared Error) by model and resample, free scales: The accuracy on each resample for each of the 32 models. This report shows the accuracy for each of the 25 random resamples for each of the 32 models.
 The y-axis is the rmse, the x-axis is the number of resample (from 1:25)
 Accuracy plot (root-mean squared error on left of each plot)
