@@ -68,9 +68,10 @@ These are the top six rows of the data set. All the columns (features) can be ob
 |       1000|   5|           5|  28|      2|          5|             2|                    28|                9.2|                  6.7|                  0|            1|                 64|     62|        3.3|             7.4|          1.1|           12.3|
 |       1000|   6|           6|  28|      2|          5|             1|                    70|                5.5|                  8.4|                149|            2|                 58|     79|        6.2|             5.1|          3.1|           82.3|
 
+<br>
 The data has 18 columns and 7774 rows. The data has been cleaned, there are no NAs or other issues with the data. It is a tidy data set.<br>
-
-Types of data
+<br>
+<h4>Types of data</h4>
 <br>
 'data.frame':	7774 obs. of  18 variables:<br>
  $ Athlete_ID           : int  1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 ...<br>
