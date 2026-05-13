@@ -123,43 +123,15 @@ The numbers seem to be well represented. None of the values are close to 0, so w
 
 Summary of the data
 
-summary(df)
+|   |  Athlete_ID |     Day      | Day_of_Week  |     Age      |    Gender   |  Sport_Type  |Training_Type |Training_Duration_Min |Training_Intensity |Sleep_Duration_Hours |Caffeine_Intake_mg | Stress_Level |Resting_Heart_Rate |    HRV_ms     |  Mood_Score  |Muscle_Soreness | Energy_Level  |Recovery_Score |
+|:--|:------------|:-------------|:-------------|:-------------|:------------|:-------------|:-------------|:---------------------|:------------------|:--------------------|:------------------|:-------------|:------------------|:--------------|:-------------|:---------------|:--------------|:--------------|
+|   |Min.   :1000 |Min.   : 1.00 |Min.   :1.000 |Min.   :18.00 |Min.   :1.00 |Min.   :1.000 |Min.   :1.000 |Min.   : 10.00        |Min.   : 1.00      |Min.   :5.000        |Min.   :  0.0      |Min.   :1.000 |Min.   :38.00      |Min.   : 28.00 |Min.   :1.000 |Min.   : 1.000  |Min.   : 1.000 |Min.   :  0.00 |
+|   |1st Qu.:1074 |1st Qu.: 7.00 |1st Qu.:2.000 |1st Qu.:23.00 |1st Qu.:1.00 |1st Qu.:2.000 |1st Qu.:1.000 |1st Qu.: 36.00        |1st Qu.: 4.90      |1st Qu.:7.000        |1st Qu.:125.0      |1st Qu.:2.000 |1st Qu.:53.00      |1st Qu.: 65.00 |1st Qu.:4.500 |1st Qu.: 3.600  |1st Qu.: 2.000 |1st Qu.: 30.02 |
+|   |Median :1149 |Median :14.00 |Median :4.000 |Median :26.00 |Median :2.00 |Median :4.000 |Median :2.000 |Median : 56.00        |Median : 6.60      |Median :7.500        |Median :210.0      |Median :3.000 |Median :57.00      |Median : 75.00 |Median :5.300 |Median : 5.200  |Median : 3.200 |Median : 50.60 |
+|   |Mean   :1149 |Mean   :14.48 |Mean   :4.005 |Mean   :25.84 |Mean   :1.53 |Mean   :3.397 |Mean   :2.635 |Mean   : 52.61        |Mean   : 6.18      |Mean   :7.499        |Mean   :183.4      |Mean   :2.391 |Mean   :57.06      |Mean   : 74.67 |Mean   :5.242 |Mean   : 5.116  |Mean   : 3.343 |Mean   : 50.64 |
+|   |3rd Qu.:1224 |3rd Qu.:22.00 |3rd Qu.:6.000 |3rd Qu.:28.00 |3rd Qu.:2.00 |3rd Qu.:5.000 |3rd Qu.:4.000 |3rd Qu.: 69.00        |3rd Qu.: 7.90      |3rd Qu.:8.000        |3rd Qu.:265.0      |3rd Qu.:3.000 |3rd Qu.:61.00      |3rd Qu.: 84.00 |3rd Qu.:6.000 |3rd Qu.: 6.700  |3rd Qu.: 4.400 |3rd Qu.: 71.08 |
+|   |Max.   :1299 |Max.   :28.00 |Max.   :7.000 |Max.   :41.00 |Max.   :3.00 |Max.   :5.000 |Max.   :5.000 |Max.   :115.00        |Max.   :10.00      |Max.   :9.500        |Max.   :400.0      |Max.   :3.000 |Max.   :79.00      |Max.   :115.00 |Max.   :9.500 |Max.   :10.000  |Max.   :10.000 |Max.   :100.00 |
 
-   Athlete_ID        Day         Day_of_Week         Age       
- Min.   :1000   Min.   : 1.00   Min.   :1.000   Min.   :18.00  
- 1st Qu.:1074   1st Qu.: 7.00   1st Qu.:2.000   1st Qu.:23.00  
- Median :1149   Median :14.00   Median :4.000   Median :26.00  
- Mean   :1149   Mean   :14.48   Mean   :4.005   Mean   :25.84  
- 3rd Qu.:1224   3rd Qu.:22.00   3rd Qu.:6.000   3rd Qu.:28.00  
- Max.   :1299   Max.   :28.00   Max.   :7.000   Max.   :41.00  
-        Gender          Sport_Type    Training_Type  Training_Duration_Min
- Female    :3885   Combat    : 852   Cardio  :2094   Min.   : 10.00       
- Male      :3661   Endurance :1781   HIIT    :2060   1st Qu.: 36.00       
- Non-binary: 228   Mixed     :1164   Rest    : 881   Median : 56.00       
-                   Strength  :1380   Strength:2069   Mean   : 52.61       
-                   Team Sport:2597   Yoga    : 670   3rd Qu.: 69.00       
-                                                     Max.   :115.00       
- Training_Intensity Sleep_Duration_Hours Caffeine_Intake_mg Stress_Level 
- Min.   : 1.00      Min.   :5.000        Min.   :  0.0      High  :1572  
- 1st Qu.: 4.90      1st Qu.:7.000        1st Qu.:125.0      Low   :1590  
- Median : 6.60      Median :7.500        Median :210.0      Medium:4612  
- Mean   : 6.18      Mean   :7.499        Mean   :183.4                   
- 3rd Qu.: 7.90      3rd Qu.:8.000        3rd Qu.:265.0                   
- Max.   :10.00      Max.   :9.500        Max.   :400.0                   
- Resting_Heart_Rate     HRV_ms         Mood_Score    Muscle_Soreness 
- Min.   :38.00      Min.   : 28.00   Min.   :1.000   Min.   : 1.000  
- 1st Qu.:53.00      1st Qu.: 65.00   1st Qu.:4.500   1st Qu.: 3.600  
- Median :57.00      Median : 75.00   Median :5.300   Median : 5.200  
- Mean   :57.06      Mean   : 74.67   Mean   :5.242   Mean   : 5.116  
- 3rd Qu.:61.00      3rd Qu.: 84.00   3rd Qu.:6.000   3rd Qu.: 6.700  
- Max.   :79.00      Max.   :115.00   Max.   :9.500   Max.   :10.000  
-  Energy_Level    Recovery_Score  
- Min.   : 1.000   Min.   :  0.00  
- 1st Qu.: 2.000   1st Qu.: 30.02  
- Median : 3.200   Median : 50.60  
- Mean   : 3.343   Mean   : 50.64  
- 3rd Qu.: 4.400   3rd Qu.: 71.08  
- Max.   :10.000   Max.   :100.00  
 The summary function gives the min, 1st Qu, Median, Mean, 3rd Qu and Max for each feature. Several are notable. The athletes range from 18 to 41 years old, include five different sport types and training types. The data also reports some athletes having 0.0 caffeine intake, a resting heart rate of 38.00 beats per minute, and recovery scores ranging from 0.00 to 100.00
 
 Boxplots
