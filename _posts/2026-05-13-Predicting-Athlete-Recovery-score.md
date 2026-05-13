@@ -299,36 +299,34 @@ The accuracy bar chart shows the root mean squared error for every resample on e
 
 The y-axis is the individual root mean squared error, the x-axis is the resample number (in this case from 1:25).
 
-Mean bias barchart
-
-
+<img alt="bias_barchart" src="https://github.com/user-attachments/assets/992b8254-3967-4f51-bf36-224b18569cfc" />
 
 Bias is calculated as the error that occurs if a model is too complex and is not able to capture the true patterns in the data.1
-
- 
-
 Closer to 0 is better for bias. The results for EnsembleBayesGLM and EnsembleNeuralnet show virtually zero bias, that adds to their strength as excellent candidates for this data set.
 
-Bias plot: This shows the bias of each result by model and each of the 25 resamples.
+<img alt="bias_plot" src="https://github.com/user-attachments/assets/b97ef917-81e1-4ce0-927e-97a759a11f07" />
+
 Bias by model and resample
 
-Duration barchart
-Duration (mean) barchart
+<img alt="duration_barchart" src="https://github.com/user-attachments/assets/292ccaf0-b4b8-484b-b0dd-6b18c0e8fbcb" />
+
+Duration (mean) barchart<br>
 
 This plot shows the man time (in seconds) for each of the 25 models. EnsembleEarth, EnsembleBayesGLM and EnsembleNeuralnet have three of the four fastest times on this chart, making them an excellent choice.
 
 Accuracy table for the ten models with the lowest root mean squared error:
 
-Model	Mean holdout RMSE	RMSE Lower 95% Conf Int	RMSE Upper 95% Conf Int	Overfitting lower 95% CI	Overfitting upper 95% CI	Bias	Mean train RMSE	Mean test RMSE	Mean validation RMSE
-Ensemble Cubist	0.0455	0.0440	0.0471	2.3402	2.5090	0e+00	0.0167	0.0270	0.0488
-Ensemble Earth	0.0593	0.0573	0.0614	1.0110	1.0839	-4e-04	0.0548	0.0552	0.0558
-Ensemble BayesGLM	0.0641	0.0619	0.0664	0.9946	1.0663	-2e-04	0.0609	0.0613	0.0619
-Ensemble Neuralnet	0.0641	0.0619	0.0664	0.9946	1.0663	-2e-04	0.0609	0.0613	0.0619
-BayesRNN	0.0705	0.0680	0.0729	0.9873	1.0586	-2e-04	0.0688	0.0688	0.0691
-Ensemble BayesRNN	0.1045	0.1009	0.1082	1.0039	1.0763	-6e-04	0.1023	0.1023	0.1046
-Ensemble Gradient Boosted	0.1895	0.1829	0.1961	1.3070	1.4013	1e-03	0.1403	0.1899	0.1905
-Ensemble Lasso	0.8059	0.7778	0.8340	0.9616	1.0310	-3e-03	0.8076	0.8053	0.8065
-Ensemble Elastic	1.0647	1.0276	1.1017	0.9536	1.0224	-2e-04	1.0732	1.0720	1.0573
+| Model | Mean holdout RMSE | RMSE Lower 95% Conf Int | RMSE Upper 95% Conf Int | Overfitting lower 95% CI | Overfitting upper 95% CI | Bias | Mean train RMSE | Mean test RMSE | Mean validation RMSE |
+    |:-------|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
+    | Ensemble Cubist | 0.0455 | 0.0440 | 0.0471 | 2.3402 | 2.5090 | 0e+00 | 0.0167 | 0.0270 | 0.0488 |
+    | Ensemble Earth | 0.0593 | 0.0573 | 0.0614 | 1.0110 | 1.0839 | -4e-04 | 0.0548 | 0.0552 | 0.0558 |
+    | Ensemble BayesGLM | 0.0641 | 0.0619 | 0.0664 | 0.9946 | 1.0663 | -2e-04 | 0.0609 | 0.0613 | 0.0619 |
+    | Ensemble Neuralnet | 0.0641 | 0.0619 | 0.0664 | 0.9946 | 1.0663 | -2e-04 | 0.0609 | 0.0613 | 0.0619 |
+    | BayesRNN | 0.0705 | 0.0680 | 0.0729 | 0.9873 | 1.0586 | -2e-04 | 0.0688 | 0.0688 | 0.0691 |
+    | Ensemble BayesRNN | 0.1045 | 0.1009 | 0.1082 | 1.0039 | 1.0763 | -6e-04 | 0.1023 | 0.1023 | 0.1046 |
+    | Ensemble Gradient Boosted | 0.1895 | 0.1829 | 0.1961 | 1.3070 | 1.4013 | 1e-03 | 0.1403 | 0.1899 | 0.1905 |
+    | Ensemble Lasso | 0.8059 | 0.7778 | 0.8340 | 0.9616 | 1.0310 | -3e-03 | 0.8076 | 0.8053 | 0.8065 |
+    | Ensemble Elastic | 1.0647 | 1.0276 | 1.1017 | 0.9536 | 1.0224 | -2e-04 | 1.0732 | 1.0720 | 1.0573 |
 
 There are a number of surprises in the table of the top ten results:
 • Nine of the top ten results are ensembles
