@@ -97,6 +97,7 @@ The str function reports the type of data for each feature. 14 of the columns ar
 
 Gender:
 |Female | Male | Non-binary|
+|:---:|:---:|
 |3885 | 3661 | 228 |
 
 table(df$Sport_Type)
