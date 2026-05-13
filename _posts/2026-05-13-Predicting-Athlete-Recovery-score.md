@@ -1,6 +1,6 @@
 <h1>Athlete Recovery and Biometric Training Analysis with 32 models, individual and ensembles</h1>
 
-<img width="2816" height="1536" alt="Athletes training" src="https://github.com/user-attachments/assets/388e214a-db21-49e8-bc82-3b7f56d10360" />
+<img alt="Athletes training" src="https://github.com/user-attachments/assets/388e214a-db21-49e8-bc82-3b7f56d10360" />
 
 Athlete Recovery and Biometric Training Analysis with 32 models, individual and ensembles
 
