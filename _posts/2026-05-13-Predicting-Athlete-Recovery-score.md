@@ -40,7 +40,7 @@ Mood Score
 🎯 Target Variable
 recovery_score (0-100)
 
-Github repository for reproducible results
+Github repository for reproducible results:<br>
 https://github.com/InfiniteCuriosity/EnsemblesData/blob/main/athlete_recovery_synthetic.csv
 
 Load the data:
