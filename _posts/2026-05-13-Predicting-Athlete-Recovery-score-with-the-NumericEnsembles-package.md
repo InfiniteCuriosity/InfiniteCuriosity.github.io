@@ -206,7 +206,7 @@ The data correlation report shows that none of the features are strongly correla
 
 As the bar chart shows, Heart Rate Variability, HRV_ms, is the strongest predictor by far, with a value of 102.4021. The second strongest predictor is sleep_duration_hours, at 64.1145. The third strongest predictor is Energy_Level at 32.1483. Muscle_Soreness has a value of -14.4799.<br>
 
-<h4>The NumericEnsembles package was used to analyze the data.</h4><br>
+<h2>The NumericEnsembles package was used to analyze the data.</h2><br>
 The numeric ensembles package automatically performs all of the steps necessary for an analysis to be completed. The steps include:<br>
 • Complete the exploratatory data analysis<br>
 • Split the data into train, test and validation (in this case 60%, 20%, 20%)<br>
@@ -216,7 +216,7 @@ The numeric ensembles package automatically performs all of the steps necessary 
 • Builds 18 individual models and 14 ensembles of models:<br>
 <br>
 
-<h4>List of models and source packages</h4>
+<h4>List of models and source packages used by NumericEnsembles:</h4>
 
 |Number| Model | Package source|
 |:---:|:---:|:---:|
