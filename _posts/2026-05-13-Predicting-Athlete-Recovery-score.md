@@ -49,7 +49,7 @@ Load the data:
 df <- read.csv('https://raw.githubusercontent.com/InfiniteCuriosity/EnsemblesData/refs/heads/main/athlete_recovery_synthetic.csv', stringsAsFactors = TRUE)
 ```
 
-This will load the data into R and make it easy for us to run the analysis.
+This will load the data into R and make it easy for us to run the analysis using NumericEnsembles.
 
 <h2>Exploratory Data Analysis</h2>
 
