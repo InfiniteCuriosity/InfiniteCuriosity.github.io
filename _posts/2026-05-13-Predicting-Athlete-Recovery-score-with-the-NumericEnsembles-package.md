@@ -136,6 +136,7 @@ The numbers seem to be well represented. None of the values are close to 0, so w
 |Mean   |1149 |14.48 |4.005 |25.84 |1.53 |3.397 |2.635 | 52.61        | 6.18      |7.499        |183.4      |2.391 |57.06      | 74.67 |5.242 | 5.116  | 3.343 | 50.64 |
 |3rd Qu   |1224 |22.00 |6.000 |28.00 |2.00 |5.000 |4.000 | 69.00        | 7.90      |8.000        |265.0      |3.000 |61.00      | 84.00 |6.000 | 6.700  | 4.400 | 71.08 |
 |Max   |1299 |28.00 |7.000 |41.00 |3.00 |5.000 |5.000 |115.00        |10.00      |9.500        |400.0      |3.000 |79.00      |115.00 |9.500 |10.000  |10.000 |100.00 |
+
 <br>
 The summary function gives the min, 1st Qu, Median, Mean, 3rd Qu and Max for each feature. Several are notable. The athletes range from 18 to 41 years old, include five different sport types and training types. The data also reports some athletes having 0.0 caffeine intake, a resting heart rate of 38.00 beats per minute, and recovery scores ranging from 0.00 to 100.00
 <br>
