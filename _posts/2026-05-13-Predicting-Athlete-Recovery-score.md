@@ -99,7 +99,7 @@ str(df)
  $ Recovery_Score       : num  51.1 63.7 71 37.2 12.3 82.3 44.5 25.1 27.4 0 ...<br>
 <br>
 The str function reports the type of data for each feature. 14 of the columns are integer or numeric, and four are factors. We can see the number of values for each factor:<br>
-
+<br>
 Gender:
 
 |Female | Male | Non-binary|
