@@ -200,6 +200,8 @@ The data correlation report shows that none of the features are strongly correla
            0.67280351            1.00000000 
 <br>
 
+<h4>Variable Importance Barchart</h4>
+
 <img alt="Variable_importance_barchart" src="https://github.com/user-attachments/assets/11cc4ebe-d584-4dec-b908-592f2a6677e8" />
 
 As the bar chart shows, Heart Rate Variability, HRV_ms, is the strongest predictor by far, with a value of 102.4021. The second strongest predictor is sleep_duration_hours, at 64.1145. The third strongest predictor is Energy_Level at 32.1483. Muscle_Soreness has a value of -14.4799.<br>
