@@ -396,27 +396,27 @@ EnsembleBayesGLM:
 
 <h2>Meet our winner: EnsembleBayesGLM</h2>
 
-Model coefficients:
-EnsembleBayesGLM	x
-(Intercept)	0.0574771
-Bagging	-0.0256597
-BayesGLM	62.5564948
-BayesRNN	0.0709828
-Cubist	-0.0120467
-Earth	0.0169641
-Elastic	-1.2504599
-GAM	0.0394361
-GBM	-0.0345526
-Lasso	0.2518555
-Linear	0.0036107
-Neuralnet	-61.3768755
-PCR	-0.0540149
-PLS	0.0356316
-Ridge	0.0243420
-Rpart	0.0036107
-SVM	-0.0170501
-Tree	0.0036107
-XGBoost	-0.0004376
+Model coefficients:<br>
+EnsembleBayesGLM	x<br>
+(Intercept)	0.0574771<br>
+Bagging	-0.0256597<br>
+BayesGLM	62.5564948<br>
+BayesRNN	0.0709828<br>
+Cubist	-0.0120467<br>
+Earth	0.0169641<br>
+Elastic	-1.2504599<br>
+GAM	0.0394361<br>
+GBM	-0.0345526<br>
+Lasso	0.2518555<br>
+Linear	0.0036107<br>
+Neuralnet	-61.3768755<br>
+PCR	-0.0540149<br>
+PLS	0.0356316<br>
+Ridge	0.0243420<br>
+Rpart	0.0036107<br>
+SVM	-0.0170501<br>
+Tree	0.0036107<br>
+XGBoost	-0.0004376<br>
 
 <h1>Summary:</h1>
 The analysis shows that it is possible to predict an athlete’s Recovery_Score (on a scale of 0 - 100) in this data set with a mean error rate of 0.0641 (95% CI: 0.0619 - 0.0664), overfitting mean of 1.0305 (95% CI: 0.9946 - 1.0663), and virtually zero bias, across 25 random resamples, using the NumericEnsembles package.
