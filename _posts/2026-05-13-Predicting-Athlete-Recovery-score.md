@@ -2,7 +2,7 @@
 
 <img alt="Athletes training" src="https://github.com/user-attachments/assets/388e214a-db21-49e8-bc82-3b7f56d10360" />
 
-Athletes training against a Chicago skyline. Image created with assistance from Google Gemini Pro.<br>
+Athletes training against a Chicago skyline. Image created with assistance from Google Gemini Pro.<br><br>
 Russ Conte<br>
 <br>
 May 13, 2026<br>
