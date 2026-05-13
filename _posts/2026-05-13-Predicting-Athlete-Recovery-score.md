@@ -152,12 +152,13 @@ This data set clearly has a lot of values that are reported as outliers. This re
 <br>
 <img alt="Histograms_of_the_numeric_columns" src="https://github.com/user-attachments/assets/182b1417-32bc-4627-bf1a-4a55510729c4" />
 <br>
-Histograms of each numeric column
+<h4>Histograms of each numeric column</h4>
 We can see many of the values are approximately normally distributed, such as energy level, MRV_ms, mood_score, Muscle_Soreness, Recovery_Score, Resting_Heart_Rate, and Sleep_Duration_Hours. The plots for Training_Duration_Min and Training_Intensity show a slightly non-symmetrical result.
 
 <h4>Recovery_Score (y) vs each predictor</h4>
 
-Recovery score vs each of the predictors
+<img  alt="predictor_vs_target" src="https://github.com/user-attachments/assets/e725744c-b1da-4d38-920c-b6cca864408c" />
+
 The plot of Recovery_Score (on the y-axis) vs each of the predictors is very revealing. The extreme majority of the plots show the data within a clearly defined range.
 
 Correlation of the data
@@ -202,6 +203,8 @@ Day_of_Week              -0.337284119 -0.063917091     0.05309288
 Age                       0.002450187  0.000595532    -0.22833171
 Training_Duration_Min     0.108552400 -0.034244362    -0.06124986
 Training_Intensity        0.786741402 -0.272163755    -0.31326421
+
+
 The data correlation report shows that none of the features are strongly correlated, and in particular there are no features which are strongly correlated with the target variable, Recovery_Score:
 
 cor(df1)[, 14]
