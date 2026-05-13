@@ -59,34 +59,16 @@ Head of the data
 
 head(df)
 
-  Athlete_ID Day Day_of_Week Age Gender Sport_Type Training_Type
-1       1000   1           1  28   Male Team Sport          HIIT
-2       1000   2           2  28   Male Team Sport        Cardio
-3       1000   3           3  28   Male Team Sport          HIIT
-4       1000   4           4  28   Male Team Sport        Cardio
-5       1000   5           5  28   Male Team Sport          HIIT
-6       1000   6           6  28   Male Team Sport        Cardio
-  Training_Duration_Min Training_Intensity Sleep_Duration_Hours
-1                    46                7.9                  7.7
-2                    71                7.0                  7.3
-3                    45                7.3                  7.7
-4                    86                7.5                  7.9
-5                    28                9.2                  6.7
-6                    70                5.5                  8.4
-  Caffeine_Intake_mg Stress_Level Resting_Heart_Rate HRV_ms Mood_Score
-1                270         High                 59     75        4.3
-2                258          Low                 55     79        5.9
-3                214       Medium                 57     77        5.1
-4                228         High                 61     71        3.0
-5                  0         High                 64     62        3.3
-6                149          Low                 58     79        6.2
-  Muscle_Soreness Energy_Level Recovery_Score
-1             4.8          5.9           51.1
-2             4.0          5.8           63.7
-3             4.0          5.6           71.0
-4             6.2          2.7           37.2
-5             7.4          1.1           12.3
-6             5.1          3.1           82.3
+
+| Athlete_ID| Day| Day_of_Week| Age| Gender| Sport_Type| Training_Type| Training_Duration_Min| Training_Intensity| Sleep_Duration_Hours| Caffeine_Intake_mg| Stress_Level| Resting_Heart_Rate| HRV_ms| Mood_Score| Muscle_Soreness| Energy_Level| Recovery_Score|
+|----------:|---:|-----------:|---:|------:|----------:|-------------:|---------------------:|------------------:|--------------------:|------------------:|------------:|------------------:|------:|----------:|---------------:|------------:|--------------:|
+|       1000|   1|           1|  28|      2|          5|             2|                    46|                7.9|                  7.7|                270|            1|                 59|     75|        4.3|             4.8|          5.9|           51.1|
+|       1000|   2|           2|  28|      2|          5|             1|                    71|                7.0|                  7.3|                258|            2|                 55|     79|        5.9|             4.0|          5.8|           63.7|
+|       1000|   3|           3|  28|      2|          5|             2|                    45|                7.3|                  7.7|                214|            3|                 57|     77|        5.1|             4.0|          5.6|           71.0|
+|       1000|   4|           4|  28|      2|          5|             1|                    86|                7.5|                  7.9|                228|            1|                 61|     71|        3.0|             6.2|          2.7|           37.2|
+|       1000|   5|           5|  28|      2|          5|             2|                    28|                9.2|                  6.7|                  0|            1|                 64|     62|        3.3|             7.4|          1.1|           12.3|
+|       1000|   6|           6|  28|      2|          5|             1|                    70|                5.5|                  8.4|                149|            2|                 58|     79|        6.2|             5.1|          3.1|           82.3|
+
 The data has 18 columns and 7774 rows. The data has been cleaned, there are no NAs or other issues with the data. It is a tidy data set.
 
 Types of data
