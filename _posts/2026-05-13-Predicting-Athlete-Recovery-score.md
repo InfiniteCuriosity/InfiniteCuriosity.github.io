@@ -77,8 +77,6 @@ The data has 18 columns and 7774 rows. The data has been cleaned, there are no N
 ```
 str(df)
 ```
-
-
 <br>
 'data.frame':	7774 obs. of  18 variables:<br>
  $ Athlete_ID           : int  1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 ...<br>
