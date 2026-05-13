@@ -101,17 +101,23 @@ Gender:
 |:---:|:---:|:---:|
 |3885 | 3661 | 228 |
 
-table(df$Sport_Type)
-    Combat  Endurance      Mixed   Strength Team Sport 
-       852       1781       1164       1380       2597 
+Sport Type:
 
-table(df$Training_Type)
-  Cardio     HIIT     Rest Strength     Yoga 
-    2094     2060      881     2069      670 
+|Combat | Endurance | Mixed | Strength | Team | Sport|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|852 | 1781 | 1164 | 1380| 2597| 
 
-table(df$Stress_Level)
-  High    Low Medium 
-  1572   1590   4612 
+Training Type:
+
+|Cardio | HIIT | Rest | Strength | Yoga |
+|:---:|:---:|:---:|:---:|:---:|
+|2094| 2060| 881| 2069| 670 |
+
+Stress Level:
+
+|High | Low | Medium |
+|:---:|:---:|:---:|
+|1572 | 1590 | 4612 | 
 The numbers seem to be well represented. None of the values are close to 0, so we should not have any issues with rare data.
 
 Summary of the data
