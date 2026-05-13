@@ -151,9 +151,10 @@ The box plots report a number of unusual findings. The majority of box plots do 
 <br>
 This data set clearly has a lot of values that are reported as outliers. This report will keep the outliers, as they are not due to any systemic or methodological errors.
 <br>
+<h4>Histograms of each numeric column</h4>
+<br>
 <img alt="Histograms_of_the_numeric_columns" src="https://github.com/user-attachments/assets/182b1417-32bc-4627-bf1a-4a55510729c4" />
 <br>
-<h4>Histograms of each numeric column</h4>
 We can see many of the values are approximately normally distributed, such as energy level, MRV_ms, mood_score, Muscle_Soreness, Recovery_Score, Resting_Heart_Rate, and Sleep_Duration_Hours. The plots for Training_Duration_Min and Training_Intensity show a slightly non-symmetrical result.
 
 <h4>Recovery_Score (y) vs each predictor</h4>
