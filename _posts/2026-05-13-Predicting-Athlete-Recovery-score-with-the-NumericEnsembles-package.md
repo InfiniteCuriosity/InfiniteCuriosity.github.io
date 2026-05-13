@@ -303,7 +303,15 @@ The y-axis is the rmse, the x-axis is the number of resample (from 1:25)
 
 The accuracy bar chart shows the root mean squared error for every resample on every model. This allows the reader to see all 32 models compared in a way that is neutral, fair and equal.
 
+<h4>Accuracy Plot: Holdout vs Train</h4>
+
+<img alt="total_plot_free_scales" src="https://github.com/user-attachments/assets/88f7f671-dd31-4877-811d-2b368faaf300" />
+
+This plot allows the reader to see how each of the 32 models performed for each of the 25 resamples, on the train and holdout data.
+
 The y-axis is the individual root mean squared error, the x-axis is the resample number (in this case from 1:25).
+
+<h4>Bias</h4>
 
 <img alt="bias_barchart" src="https://github.com/user-attachments/assets/992b8254-3967-4f51-bf36-224b18569cfc" />
 
