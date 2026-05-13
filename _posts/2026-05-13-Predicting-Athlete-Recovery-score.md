@@ -70,7 +70,6 @@ These are the top six rows of the data set. All the columns (features) can be ob
 
 <br>
 The data has 18 columns and 7774 rows. The data has been cleaned, there are no NAs or other issues with the data. It is a tidy data set.<br>
-<br>
 <h4>Types of data</h4>
 <br>
 'data.frame':	7774 obs. of  18 variables:<br>
