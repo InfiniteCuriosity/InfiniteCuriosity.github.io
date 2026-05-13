@@ -294,6 +294,8 @@ Numeric(data = read.csv('https://raw.githubusercontent.com/InfiniteCuriosity/Ens
 
 <img alt="accuracy_barchart" src="https://github.com/user-attachments/assets/b5929035-64f8-4302-b86c-e4428346a532" />
 
+<h4>Accuracy by each model and all 25 resamples</h4>
+
 Accuracy plot (Root Mean Squared Error) by model and resample, free scales: The accuracy on each resample for each of the 32 models. This report shows the accuracy for each of the 25 random resamples for each of the 32 models.
 The y-axis is the rmse, the x-axis is the number of resample (from 1:25)
 
