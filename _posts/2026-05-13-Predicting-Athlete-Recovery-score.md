@@ -196,23 +196,19 @@ The data correlation report shows that none of the features are strongly correla
            0.82443209            0.54573368           -0.50008110 
          Energy_Level        Recovery_Score 
            0.67280351            1.00000000 
-Variable Importance bar chart
-Variable importance bar chart
+<br>
+
+<img alt="Variable_importance_barchart" src="https://github.com/user-attachments/assets/11cc4ebe-d584-4dec-b908-592f2a6677e8" />
+
 As the bar chart shows, Heart Rate Variability, HRV_ms, is the strongest predictor by far, with a value of 102.4021. The second strongest predictor is sleep_duration_hours, at 64.1145. The third strongest predictor is Energy_Level at 32.1483. Muscle_Soreness has a value of -14.4799.
 
-The NumericEnsembles package was used to analyze the data.
+<h4>The NumericEnsembles package was used to analyze the data.</h4>
 The numeric ensembles package automatically performs all of the steps necessary for an analysis to be completed. The steps include:
-
 • Complete the exploratatory data analysis
-
 • Split the data into train, test and validation (in this case 60%, 20%, 20%)
-
 • Remove features above a user specified value for VIF (I choose 5.00)
-
 • Remove columns above a user specified value for correlation (I chose 0.99)
-
 • Convert strings to numeric values (there are multiple ways to do this in NumericEnsembles).
-
 • Builds 18 individual models and 14 ensembles of models:
 
 Model	Library
@@ -248,6 +244,8 @@ Model	Library
 30	EnsembleRPart	rpart
 31	EnsembleSVM (tuned)	e1071
 32	EnsembleTrees	tree
+
+
 Function call: (this will take 2-5 minutes to run)
 Model evaluations
 Accuracy (mean of the root means squared error across all resamples) and one standard deviation bars.
