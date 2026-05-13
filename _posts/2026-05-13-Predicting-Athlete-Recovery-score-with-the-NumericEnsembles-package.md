@@ -368,6 +368,8 @@ As the plot shows, the overfitting values will vary for each model. This is caus
 
 This graph allows the reader to see all the overfitting results in a way that is neutral and fair across all models and resamples.
 
+<h4>Kogmogorov-Smirnov test</h4>
+
 <img alt="k_s_test_barchart" src="https://github.com/user-attachments/assets/a30a37d4-57a6-4431-9609-3aea955e40f4" />
 
 Kogmogorov-Smirnov mean value barchart
