@@ -1,3 +1,5 @@
+<h1>Athlete Recovery and Biometric Training Analysis with 32 models, individual and ensembles</h1>
+
 <img width="2816" height="1536" alt="Athletes training" src="https://github.com/user-attachments/assets/388e214a-db21-49e8-bc82-3b7f56d10360" />
 
 Athlete Recovery and Biometric Training Analysis with 32 models, individual and ensembles
@@ -131,6 +133,7 @@ Summary of the data
 |   |Mean   :1149 |Mean   :14.48 |Mean   :4.005 |Mean   :25.84 |Mean   :1.53 |Mean   :3.397 |Mean   :2.635 |Mean   : 52.61        |Mean   : 6.18      |Mean   :7.499        |Mean   :183.4      |Mean   :2.391 |Mean   :57.06      |Mean   : 74.67 |Mean   :5.242 |Mean   : 5.116  |Mean   : 3.343 |Mean   : 50.64 |
 |   |3rd Qu.:1224 |3rd Qu.:22.00 |3rd Qu.:6.000 |3rd Qu.:28.00 |3rd Qu.:2.00 |3rd Qu.:5.000 |3rd Qu.:4.000 |3rd Qu.: 69.00        |3rd Qu.: 7.90      |3rd Qu.:8.000        |3rd Qu.:265.0      |3rd Qu.:3.000 |3rd Qu.:61.00      |3rd Qu.: 84.00 |3rd Qu.:6.000 |3rd Qu.: 6.700  |3rd Qu.: 4.400 |3rd Qu.: 71.08 |
 |   |Max.   :1299 |Max.   :28.00 |Max.   :7.000 |Max.   :41.00 |Max.   :3.00 |Max.   :5.000 |Max.   :5.000 |Max.   :115.00        |Max.   :10.00      |Max.   :9.500        |Max.   :400.0      |Max.   :3.000 |Max.   :79.00      |Max.   :115.00 |Max.   :9.500 |Max.   :10.000  |Max.   :10.000 |Max.   :100.00 |
+
 
 The summary function gives the min, 1st Qu, Median, Mean, 3rd Qu and Max for each feature. Several are notable. The athletes range from 18 to 41 years old, include five different sport types and training types. The data also reports some athletes having 0.0 caffeine intake, a resting heart rate of 38.00 beats per minute, and recovery scores ranging from 0.00 to 100.00
 
