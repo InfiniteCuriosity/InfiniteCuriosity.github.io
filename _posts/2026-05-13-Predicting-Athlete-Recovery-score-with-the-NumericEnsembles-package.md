@@ -288,7 +288,7 @@ Numeric(data = read.csv('https://raw.githubusercontent.com/InfiniteCuriosity/Ens
   warnings()
 ```
 
-<h2>No warnings or error</h2>
+<h2>No warnings or errors</h2>
 
 If you look at the bottom of that code chunk, you'll see that it reports warnings. There were zero warnings or errors when I ran this code.
 
