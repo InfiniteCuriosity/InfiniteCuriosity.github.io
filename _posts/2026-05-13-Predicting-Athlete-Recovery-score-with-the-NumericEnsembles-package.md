@@ -41,7 +41,7 @@ Mood Score
 recovery_score (0-100)
 
 Github repository for reproducible results:<br>
-https://github.com/InfiniteCuriosity/EnsemblesData/blob/main/athlete_recovery_synthetic.csv
+<a href = "https://github.com/InfiniteCuriosity/EnsemblesData/blob/main/athlete_recovery_synthetic.csv">https://github.com/InfiniteCuriosity/EnsemblesData/blob/main/athlete_recovery_synthetic.csv</a>
 
 Load the data:
 
