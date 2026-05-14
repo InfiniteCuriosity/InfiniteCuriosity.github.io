@@ -313,6 +313,12 @@ The y-axis is the individual root mean squared error, the x-axis is the resample
 
 <h4>Bias</h4>
 
+Bias is measured by the NumericEnsembles package as:
+
+<img alt="Bias" src="https://github.com/user-attachments/assets/8ab961e2-4239-4be6-93d9-8e9260ad4b45" />
+
+The mean bias of each of the models is reported as:
+
 <img alt="bias_barchart" src="https://github.com/user-attachments/assets/992b8254-3967-4f51-bf36-224b18569cfc" />
 
 Bias is calculated as the error that occurs if a model is too complex and is not able to capture the true patterns in the data.1
