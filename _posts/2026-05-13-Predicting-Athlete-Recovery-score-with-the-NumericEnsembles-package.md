@@ -358,10 +358,8 @@ There are a number of surprises in the table of the top ten results:
 
 Overfitting is calculated by NumericEnsembles as:
 
+<img alt="Overfitting" src="https://github.com/user-attachments/assets/eec41e77-43d4-4335-9c1b-de48b68df6f4" />
 
-$$
-Overfitting = \frac{\text{RMSE of holdout}}{\text{RMSE of training data}}
-$$
 <br>
 
 Closer to 1.00 is better for overfitting. A value close to 1.00 implies the RMSE of the holdout data is approximately the same as the RMSE for the training data, across the resamples.
