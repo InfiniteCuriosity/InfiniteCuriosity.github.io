@@ -368,11 +368,11 @@ The NumericEnsembles package also graphs the overfitting values by each of the m
 
 <img alt="overfitting_plot_free_scales" src="https://github.com/user-attachments/assets/51723b94-5234-421a-9d70-c929fbb46479" />
 <br>
-As the plot shows, the overfitting values will vary for each model. This is caused by the random resampling of the data 25 times. The x-axis on the overfitting plots is the overfitting value, the y-axis is the resample number. The solid black line is the mean of the overfitting values, the red line = 1.00 (the best possible score).
+As the plot shows, the overfitting values will vary for each model. This is caused by the random resampling of the data 25 times. The x-axis on the overfitting plots is resample number, the y-axis is the overfitting value. The solid black line is the mean of the overfitting values, the red line = 1.00 (the best possible score).
 
 This graph allows the reader to see all the overfitting results in a way that is neutral and fair across all models and resamples.
 
-<h4>Kogmogorov-Smirnov test</h4>
+<h4>Kolgmogorov-Smirnov test</h4>
 
 <img alt="k_s_test_barchart" src="https://github.com/user-attachments/assets/a30a37d4-57a6-4431-9609-3aea955e40f4" />
 
