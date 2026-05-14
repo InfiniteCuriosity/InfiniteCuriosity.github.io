@@ -16,7 +16,7 @@ The prompt I gave Google Gemini Pro:<br>
 Create three summary charts of the Google reviews for the Apple Store at the Woodfield Mall in Schaumburg, Illinois. One chart is the number of stars. The second chart is customer sentiment. The third chart is the month of the review. Make each of these a separate chart.
 The reviews data is:
 
-<a href = "https://www.google.com/maps/place/Apple+Woodfield/@42.045949,-88.0401213,16z/data=!3m1!5s0x880faf9741d6140f:0x663c92cce41e8886!4m8!3m7!1s0x880faf96c7f69451:0xa81c0f988d4f6cde!8m2!3d42.045949!4d-88.037541!9m1!1b1!16s%2Fg%2F1tczfhd7?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D>Google reviews of the Apple store in the Woodfield Mall</a>
+<a href = "https://www.google.com/maps/place/Apple+Woodfield/@42.045949,-88.0401213,16z/data=!3m1!5s0x880faf9741d6140f:0x663c92cce41e8886!4m8!3m7!1s0x880faf96c7f69451:0xa81c0f988d4f6cde!8m2!3d42.045949!4d-88.037541!9m1!1b1!16s%2Fg%2F1tczfhd7?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D">Google reviews of the Apple store in the Woodfield Mall</a>
 
 Based on the reviews, recommend three decisions the store can do to increase their ratings on Google Reviews.
 
