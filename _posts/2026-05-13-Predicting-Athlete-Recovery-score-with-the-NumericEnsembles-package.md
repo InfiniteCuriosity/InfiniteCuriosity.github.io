@@ -288,6 +288,10 @@ Numeric(data = read.csv('https://raw.githubusercontent.com/InfiniteCuriosity/Ens
   warnings()
 ```
 
+<h2>No warnings or error</h2>
+
+If you look at the bottom of that code chunk, you'll see that it reports warnings. There were zero warnings or errors when I ran this code.
+
 <h2>Model evaluations</h2>
 
 <h4>Accuracy (mean of the root means squared error across all resamples) and one standard deviation bars. Sorted low (smaller error) to high (larger error)</h4>
