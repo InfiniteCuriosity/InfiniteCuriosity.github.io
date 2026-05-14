@@ -10,13 +10,15 @@ What could you do for your business if you could summarize your reviews, get cha
 <br>
 This is one of the many ways AI can assist you to get better results for your business. On May 10, 2026, I used Google Gemini Pro to do an analysis of Google Reviews of the Apple store in the Woodfield Mall. I do not have any connection to the Apple store in the Woodfield Mall, other than being a customer. Obviously this is a real example, not using any synthetic data.<br>
 <br>
-The full report is here: https://gemini.google.com/share/edc2b3e18881<br>
+The full report is here: <a href = "https://gemini.google.com/share/edc2b3e18881>https://gemini.google.com/share/edc2b3e18881</a><br>
 <br>
 The prompt I gave Google Gemini Pro:<br>
 
 Create three summary charts of the Google reviews for the Apple Store at the Woodfield Mall in Schaumburg, Illinois. One chart is the number of stars. The second chart is customer sentiment. The third chart is the month of the review. Make each of these a separate chart.
 The reviews data is:
-https://www.google.com/maps/place/Apple+Woodfield/@42.045949,-88.0401213,16z/data=!3m1!5s0x880faf9741d6140f:0x663c92cce41e8886!4m8!3m7!1s0x880faf96c7f69451:0xa81c0f988d4f6cde!8m2!3d42.045949!4d-88.037541!9m1!1b1!16s%2Fg%2F1tczfhd7?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D
+
+<a href = "https://www.google.com/maps/place/Apple+Woodfield/@42.045949,-88.0401213,16z/data=!3m1!5s0x880faf9741d6140f:0x663c92cce41e8886!4m8!3m7!1s0x880faf96c7f69451:0xa81c0f988d4f6cde!8m2!3d42.045949!4d-88.037541!9m1!1b1!16s%2Fg%2F1tczfhd7?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D>Google reviews of the Apple store in the Woodfield Mall</a>
+
 Based on the reviews, recommend three decisions the store can do to increase their ratings on Google Reviews.
 
 **Summary report: (from Google Gemini Pro)**
